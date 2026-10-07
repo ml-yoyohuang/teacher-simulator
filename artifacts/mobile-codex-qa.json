@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-08",
+  "method": "Chromium with emulated touch viewports; real HUD/menu/pointer inputs. Dev scene API only prepares combat targets and advances quest content; does not synthesize discovery records. Physical phones not tested.",
+  "cameras": [
+    {
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "currentPixels": 75.8526390405496,
+      "previousPixels": 34.4784722911589,
+      "ratio": 2.2000000000000006,
+      "span": 5.909090909090908,
+      "drawCalls": 6,
+      "geometryCount": 6,
+      "pixelRatio": 1,
+      "overflow": false
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "mobile": true,
+      "currentPixels": 39.622180088150266,
+      "previousPixels": 18.010081858250118,
+      "ratio": 2.2,
+      "span": 5.227272727272727,
+      "drawCalls": 8,
+      "geometryCount": 6,
+      "pixelRatio": 1,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "currentPixels": 41.56172736519258,
+      "previousPixels": 41.56172736519258,
+      "ratio": 1,
+      "span": 11.5,
+      "drawCalls": 10,
+      "geometryCount": 6,
+      "pixelRatio": 1,
+      "overflow": false
+    }
+  ],
+  "discoveries": {
+    "students": {
+      "timid": 1
+    },
+    "parents": {
+      "courier": 1
+    },
+    "objects": {
+      "prop:table": 1,
+      "item:chalk_eraser": 1
+    }
+  },
+  "persistence": "passed reload and saved profile roundtrip",
+  "rotation": "same-page portrait to landscape keeps mobile zoom and collapsed state",
+  "errors": [],
+  "status": "pass"
+}

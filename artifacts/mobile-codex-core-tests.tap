@@ -1,0 +1,38 @@
+✔ exact content registries and reference validity (0.683833ms)
+✔ atomic item take / throw / NPC take / return / wear / rescue ownership (1.908333ms)
+✔ one swing hits a target once, down event once, nurse protected (14.237083ms)
+✔ alert thresholds, cooldown, prank blame, hidden line of sight (0.376291ms)
+✔ family causal queue, delay, unique incident, global group slots (16.477208ms)
+✔ navigation all zones reachable, swept dodge cannot pass walls (7.041458ms)
+✔ quest pins and held items exclude restoration; same identity returns (0.504416ms)
+✔ reward ledger, purchase bounds, complete save round trip and invalid import (0.453708ms)
+✔ cancel old attempts, mode reset queues and pending, chapter freely selectable (1.122084ms)
+✔ 24+16 mission mechanics have executable completion chains, no ledger duplication (7.591583ms)
+✔ choir silent 32 beats completes, fixed simulation pause preserves beat (0.215459ms)
+✔ 20 mode switches resource counts remain bounded and item identity consistent (0.874417ms)
+✔ every portable, pushable, fixed and wearable declared action has real state effects (2.131375ms)
+✔ all 12 personalities choose specific observable reaction states (0.640875ms)
+✔ all 19 parents use defined ability plus real gate entry and legal budgets (18.841042ms)
+✔ exam paper scatter keeps one bundle ID and requires three real pickups (14.861917ms)
+✔ contact interrupted before two seconds never schedules; completion does (11.828292ms)
+✔ q09 completes through natural 65→0 simulation rather than a synthetic completion event (36.204791ms)
+✔ airborne portable can be caught in hand range and flight identity clears (0.303209ms)
+✔ parent projectile derives position only and keeps its own valid item identity (24.94225ms)
+✔ repeated parent waves reuse bounded projectile pool and delete departed interpolation records (0.459667ms)
+✔ unreserved same-type auxiliary item cannot satisfy a pinned mission delivery (0.19575ms)
+✔ tutorial papers require an explicit E interaction at podium and ignore nearby distractions (0.432083ms)
+✔ tutorial R drop only completes for the correct papers next to the podium (0.142ms)
+✔ podium E placement also works after skipping tutorial without granting task completion (0.191583ms)
+✔ phone camera enlarges portrait and landscape 2.2 times, desktop retains span (0.391875ms)
+✔ all student and parent types record actual knockdowns, deduplicate damage after zero HP, survive resets (2.27825ms)
+✔ actual player swings record furniture, repaired furniture counts again, NPC prank and setup excluded (1.831583ms)
+✔ player thrown items record first broken transition, NPC projectiles excluded, trash and cones included (1.264875ms)
+✔ codex save migration, roundtrip and invalid data validation (0.56025ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 251.343167

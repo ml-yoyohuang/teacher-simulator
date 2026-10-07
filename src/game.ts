@@ -1,3 +1,4 @@
+import {recordKnockdown,CodexGroup} from './knockdowns';
 import {balance,Vec,items,itemDefs,students,staff,parentDefs,parents,missions,missionDefs,chapters,center,zoneAt,destination,locations,Step} from './data';
 import {World,distance,norm} from './world';
 import {Profile,fresh,reward,purchase} from './save';
@@ -13,7 +14,22 @@ export class Game{
  objects=new Map<string,Item>();npcs:NPC[]=[];props:any[]=[];alert=0;reason='校園一切正常';lastTrouble=-100;eventLog:Event[]=[];listeners:((e:Event)=>void)[]=[];attempt:Attempt|null=null;familyQueue:any[]=[];recentParents:string[]=[];pending:any[]=[];cooldowns=new Map<string,number>();report={damage:0,downed:0,parents:0,maxAlert:0};lastReport:any=null;profile:Profile;onSave=()=>{};onToast=(s:string)=>{};tutorial=-1;race:any=null;choir:any=null;notes:string[]=[];serviceReady=0;movement=0;pathBudget=0;cameraVisible:(p:Vec)=>boolean=()=>false;rosterSeed:number;tickMs=0;aiMs=0;stats={ticks:0,events:0};zoneAway=new Map<string,number>();
  constructor(profile=fresh(),seed=6477){this.profile=profile;this.rng=new RNG(seed);this.rosterSeed=seed;this.reset('normal')}
  get level(){return alertLevel(this.alert)}get step(){return this.attempt?missionDefs[this.attempt.mission].steps[this.attempt.step]:null}get held(){return this.player.item?this.objects.get(this.player.item):null}get chase(){return this.npcs.filter(n=>['Chase','Attack','Search'].includes(n.state)&&n.role!=='student')}
- emit(type:string,data:any={},actor='player_music_teacher',target?:string,source?:string){const e:Event={eventId:`${this.session}:${++this.seq}`,sessionId:this.session,actorId:actor,targetId:target,sourceId:source,zoneId:zoneAt(this.player),timestamp:this.time,type,data};this.eventLog.push(e);if(this.eventLog.length>350)this.eventLog.shift();this.stats.events++;if(['propDamaged','coneDown','spill'].includes(type)&&actor===this.player.id)this.report.damage++;if(actor===this.player.id||['familyArrived','choirDone'].includes(type)){this.profile.statistics[type]=(this.profile.statistics[type]||0)+1;}this.objective(e);this.tutorialEvent(e);this.listeners.forEach(f=>f(e));return e}
+ emit(type:string,data:any={},actor='player_music_teacher',target?:string,source?:string){const e:Event={eventId:`${this.session}:${++this.seq}`,sessionId:this.session,actorId:actor,targetId:target,sourceId:source,zoneId:zoneAt(this.player),timestamp:this.time,type,data};this.eventLog.push(e);if(this.eventLog.length>350)this.eventLog.shift();this.stats.events++;if(['propDamaged','coneDown','spill'].includes(type)&&actor===this.player.id)this.report.damage++;if(actor===this.player.id||['familyArrived','choirDone'].includes(type)){this.profile.statistics[type]=(this.profile.statistics[type]||0)+1;}this.recordCodex(e);this.objective(e);this.tutorialEvent(e);this.listeners.forEach(f=>f(e));return e}
+ recordCodex(e:Event){
+ if(e.actorId!==this.player.id)return;
+ let group:CodexGroup,id:string;
+ if(e.type==='NPCDowned'){
+  const n=this.npcs.find(n=>n.id===e.data.npc);if(!n||n.hp!==0)return;
+  group=n.role==='student'?'students':'parents';id=n.type;
+ }else if(e.type==='propDamaged'){
+  const p=this.props.find(p=>p.id===e.data.id);if(!p?.broken)return;
+  group='objects';id='prop:'+p.type;
+ }else if(['coneDown','spill','itemBroken'].includes(e.type)){
+  const i=this.objects.get(e.data.id);if(!i?.broken)return;
+  group='objects';id='item:'+i.type;
+ }else return;
+ if(recordKnockdown(this.profile.knockdownCodex,group,id))this.onSave();
+ }
  toast(s:string){this.onToast(s)}
  reset(mode=this.mode){this.previous.clear();this.session++;this.pending=[];this.familyQueue=[];this.cancelMission();this.mode=mode;this.profile.lastMode=mode;this.objects.clear();this.npcs=[];this.props=[];this.cooldowns.clear();this.zoneAway.clear();this.alert=0;this.lastTrouble=-100;this.reason='校園一切正常';this.report={damage:0,downed:0,parents:0,maxAlert:0};Object.assign(this.player,{x:21,z:-14,hp:100,item:null,wig:null,glasses:null,attack:null,attackCooldown:0,dodge:0,dodgeCooldown:0,hidden:false,inv:0});this.race=null;this.choir=null;
  let offset:Record<string,number>={};for(let def of items){let c=center(def.zone),i=offset[def.zone]||0;offset[def.zone]=i+1;this.createItem(def.id,`${def.id}:0`,{x:c.x-4+(i%4)*2.6,z:c.z-2+Math.floor(i/4)*2.6})}
@@ -133,8 +149,8 @@ export class Game{
  if(i.state==='held'||i.state==='worn'){let holder=i.owner===this.player.id?this.player:this.npcs.find(n=>n.id===i.owner);if(holder){i.x=holder.x;i.z=holder.z;i.y=i.state==='worn'?1.65:1.05}continue}
  if(i.state!=='airborne')continue;i.age+=dt;let next={x:i.x+(i.vx||0)*dt,z:i.z+(i.vz||0)*dt};let previous={x:i.x,z:i.z};if(!this.world.visible(previous,next)||Math.abs(next.x)>30||Math.abs(next.z)>24){i.vx=-(i.vx||0)*.25;i.vz=-(i.vz||0)*.25;}else{i.x=next.x;i.z=next.z}i.vy=(i.vy||0)-9.8*dt;i.y+=(i.vy||0)*dt;
  let enemy=i.flight?.startsWith('npc:');if(i.y<2&&i.y>-.1){if(enemy){if(distance(i,this.player)<.7&&!i.hit.has(this.player.id)){i.hit.add(this.player.id);let n=this.npcs.find(n=>i.flight.includes(n.id));if(n)this.damagePlayer(8,n)}}else for(let n of this.npcs)if(n.active&&n.hp>0&&distance(i,n)<.65&&!i.hit.has(n.id)&&i.hits<(i.type==='basketball'?2:1)){i.hit.add(n.id);i.hits++;this.damageNPC(n,itemDefs[i.type]?.throwDamage||5,i.flight,true)}
- if(i.type==='basketball')for(let cone of this.objects.values())if(cone.type==='traffic_cone'&&!cone.broken&&distance(cone,i)<.8){cone.broken=true;cone.state='damaged';this.emit('coneDown',{id:cone.id,item:'basketball'})}}
- if(i.y<=0){i.y=0;this.emit('land',{id:i.id,item:i.type},'system');if(i.type==='basketball'&&i.age<2.5&&Math.abs(i.vy||0)>1.5){i.vy=Math.abs(i.vy||0)*.5;i.vx*=.65;i.vz*=.65}else if(i.type==='spinning_top'&&i.age<6){i.vy=0;i.vx*=.9;i.vz*=.9;for(let n of this.npcs)if(n.active&&n.hp>0&&distance(n,i)<.7&&!i.hit.has(n.id)&&i.hits<3){i.hit.add(n.id);i.hits++;this.damageNPC(n,5,i.flight)}}else{Object.assign(i,{state:'settled',vx:0,vz:0,vy:0,rest:this.time});if(i.type==='exam_papers'){i.papers=[{x:i.x-.5,z:i.z+.3,taken:false},{x:i.x+.5,z:i.z+.3,taken:false},{x:i.x,z:i.z-.5,taken:false}];}i.broken=!['basketball','soft_parcel'].includes(i.type);this.checkDelivery(i);this.refreshColliders()}}
+ if(i.type==='basketball')for(let cone of this.objects.values())if(cone.type==='traffic_cone'&&!cone.broken&&distance(cone,i)<.8){cone.broken=true;cone.state='damaged';this.emit('coneDown',{id:cone.id,item:'basketball'},enemy?'system':this.player.id)}}
+ if(i.y<=0){i.y=0;this.emit('land',{id:i.id,item:i.type},'system');if(i.type==='basketball'&&i.age<2.5&&Math.abs(i.vy||0)>1.5){i.vy=Math.abs(i.vy||0)*.5;i.vx*=.65;i.vz*=.65}else if(i.type==='spinning_top'&&i.age<6){i.vy=0;i.vx*=.9;i.vz*=.9;for(let n of this.npcs)if(n.active&&n.hp>0&&distance(n,i)<.7&&!i.hit.has(n.id)&&i.hits<3){i.hit.add(n.id);i.hits++;this.damageNPC(n,5,i.flight)}}else{Object.assign(i,{state:'settled',vx:0,vz:0,vy:0,rest:this.time});if(i.type==='exam_papers'){i.papers=[{x:i.x-.5,z:i.z+.3,taken:false},{x:i.x+.5,z:i.z+.3,taken:false},{x:i.x,z:i.z-.5,taken:false}];}const wasBroken=i.broken;i.broken=!['basketball','soft_parcel'].includes(i.type);if(i.broken&&!wasBroken)this.emit('itemBroken',{id:i.id},i.flight?.startsWith('npc:')?'system':this.player.id);this.checkDelivery(i);this.refreshColliders()}}
  if(i.age>8){i.state='settled';i.y=0;i.rest=this.time}
  }}
  moveNPC(n:NPC,target:Vec,dt:number,speed:number){if(distance(n,target)<.2)return;if(n.repath<=0&&this.pathBudget>0){n.path=this.world.path(n,target);n.repath=.5+this.rng.next()*.15;this.pathBudget--}let next=n.path[0]||target;if(distance(n,next)<.3){n.path.shift();next=n.path[0]||target}let f=norm(next.x-n.x,next.z-n.z);n.face=f;let p=this.world.move(n,f.x*speed*dt,f.z*speed*dt,.32);n.x=p.x;n.z=p.z;}
