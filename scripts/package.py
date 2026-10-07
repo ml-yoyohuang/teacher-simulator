@@ -2,7 +2,7 @@ from pathlib import Path
 import json,zipfile,hashlib
 root=Path(__file__).resolve().parent.parent
 out=root/'artifacts'/'dongshan-campus-complete.zip'
-include_dirs=['src','tests','scripts','public','dist','LICENSES','dongshan_campus_spec']
+include_dirs=['.github','src','tests','scripts','public','dist','LICENSES','dongshan_campus_spec']
 include_files=['README.md','ASSET_GUIDE.md','BALANCE.md','DECISIONS.md','SPEC_COVERAGE.md','QA_REPORT.md','PERFORMANCE_REPORT.md','KNOWN_ISSUES.md','PROGRESS.md','package.json','pnpm-lock.yaml','tsconfig.json','vite.config.ts','index.html','soundtest.html','start-local.command','.gitignore']
 files=[]
 for directory in include_dirs:

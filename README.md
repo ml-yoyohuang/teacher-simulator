@@ -20,6 +20,10 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 
 ## 原始碼開發
 
+GitHub Pages 使用 `.github/workflows/pages.yml`：推送到 `main` 或手動執行 Actions，會安裝鎖定依賴、跑核心測試、建置並發布 `dist`。儲存庫 Settings → Pages → Source 設為 **GitHub Actions**，不用選資料夾。正式分享圖網址取自 Pages 設定，支援專案子路徑與自訂網域。部署成品只包含遊戲、試聽頁與素材，不發布測試紀錄或原始碼。
+
+workflow 的 Actions 頁面會顯示發布結果；只有 build 成功且成品檢查通過才部署。遠端 `main` 必須包含工作流程；單純在本機 commit 不會觸發發布。
+
 Node.js 22.12+（本次實測24.19.0）、pnpm 11。確切依賴版本在 package.json 與 pnpm-lock.yaml。
 
 ```sh
