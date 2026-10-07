@@ -116,3 +116,7 @@ Chromium觸控模擬驗收：390×844與844×390人物1.75m投影高度分別75.
 390×844觸控測試通過：E拿取、動作選單點名、平靜学生先轉頭而反擊者仍反擊、觸控投擲、靜音／減少動畫、暫停期限不變、拿回立即取消廣播／特效／聲部。有視窗Chromium實際最小化使document.hidden=true，自動暫停並清空聲部；恢復需按繼續，沒有再次啟動落地事件。QA關閉Playwright 1.56.0主CDP連線強制前景設定，沒有改遊戲或偽造visibility事件。拿回聲部取消另於真實廣播期間手動觸發共用AudioEngine提示音，確認实际振盪器停止；此音訊探針不是AI吸引事件。
 
 未驗證：實體iPhone／Android、Safari、長時間發熱／耗電、人工喇叭聽感。本版沒有重跑先前20分鐘效能測量，舊數據不能當成本版實測。遊戲不申請裝置麥克風權限、不錄音、不使用語音辨識。
+
+重現麥克風瀏覽器驗收：先啟動5173開發伺服器，再執行 `QA_HEADED=1 pnpm exec tsx scripts/microphone-qa.ts`；此腳本需可顯示及最小化的Chromium視窗以測真實背景。只重測手機部分可加 `QA_PART=mobile`，會沿用先前實測桌面JSON。正式成品回歸使用 `pnpm exec tsx scripts/mobile-release-qa.ts`，公開版加 `QA_URL=https://ml-yoyohuang.github.io/teacher-simulator/`。
+
+正式公開發布通過：[Actions 37667242101](https://github.com/ml-yoyohuang/teacher-simulator/actions/runs/37667242101)，功能提交65c78c7。發布完成後重新使用公開網址驗證，本地與公開的game-DF68QNW-.js一致；27種道具說明含麥克風、原手機提示／圖鑑／轉向、32音效／5音樂入口、24一般任務與1200×630 OG正常，pageerror及HTTP錯誤皆0。證據：artifacts/mobile-pages-release-qa.json、pages-live-qa.json。第一次部署尚進行中的探測看到舊30音效而停止，待Actions成功後重測才列為通過。
