@@ -1,0 +1,413 @@
+{
+  "date": "2026-10-08",
+  "status": "pass",
+  "sounds": [
+    {
+      "id": "move",
+      "notes": [
+        {
+          "frequency": 120,
+          "type": "sine",
+          "time": 0,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "swing",
+      "notes": [
+        {
+          "frequency": 240,
+          "type": "triangle",
+          "time": 0.010666666666666666,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "CombatResolved",
+      "notes": [
+        {
+          "frequency": 180,
+          "type": "sine",
+          "time": 0.042666666666666665,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "playerHit",
+      "notes": [
+        {
+          "frequency": 110,
+          "type": "sine",
+          "time": 0.08,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "throw",
+      "notes": [
+        {
+          "frequency": 360,
+          "type": "sine",
+          "time": 0.112,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "land",
+      "notes": [
+        {
+          "frequency": 150,
+          "type": "sine",
+          "time": 0.144,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "take",
+      "notes": [
+        {
+          "frequency": 580,
+          "type": "sine",
+          "time": 0.176,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "drop",
+      "notes": [
+        {
+          "frequency": 300,
+          "type": "sine",
+          "time": 0.21333333333333335,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "propDamaged",
+      "notes": [
+        {
+          "frequency": 90,
+          "type": "triangle",
+          "time": 0.24533333333333332,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "notice",
+      "notes": [
+        {
+          "frequency": 440,
+          "type": "sine",
+          "time": 0.2773333333333333,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "alertFall",
+      "notes": [
+        {
+          "frequency": 330,
+          "type": "sine",
+          "time": 0.30933333333333335,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "contactComplete",
+      "notes": [
+        {
+          "frequency": 680,
+          "type": "sine",
+          "time": 0.3466666666666667,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "familyArrived",
+      "notes": [
+        {
+          "frequency": 220,
+          "type": "sine",
+          "time": 0.37866666666666665,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "NPCDowned",
+      "notes": [
+        {
+          "frequency": 160,
+          "type": "sine",
+          "time": 0.4106666666666667,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "recover",
+      "notes": [
+        {
+          "frequency": 520,
+          "type": "sine",
+          "time": 0.44266666666666665,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "npcRecovered",
+      "notes": [
+        {
+          "frequency": 520,
+          "type": "sine",
+          "time": 0.48,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "missionComplete",
+      "notes": [
+        {
+          "frequency": 784,
+          "type": "sine",
+          "time": 0.512,
+          "contextState": "running"
+        },
+        {
+          "frequency": 980,
+          "type": "sine",
+          "time": 0.632,
+          "contextState": "running"
+        },
+        {
+          "frequency": 1176,
+          "type": "sine",
+          "time": 0.752,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "rollCall",
+      "notes": [
+        {
+          "frequency": 650,
+          "type": "sine",
+          "time": 0.544,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "dodge",
+      "notes": [
+        {
+          "frequency": 420,
+          "type": "sine",
+          "time": 0.576,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "coffee",
+      "notes": [
+        {
+          "frequency": 260,
+          "type": "sine",
+          "time": 0.6133333333333333,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "purchase",
+      "notes": [
+        {
+          "frequency": 800,
+          "type": "sine",
+          "time": 0.6453333333333333,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "drink",
+      "notes": [
+        {
+          "frequency": 540,
+          "type": "sine",
+          "time": 0.6773333333333333,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "raceStart",
+      "notes": [
+        {
+          "frequency": 900,
+          "type": "sine",
+          "time": 0.7146666666666667,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "reflect",
+      "notes": [
+        {
+          "frequency": 1200,
+          "type": "sine",
+          "time": 0.7466666666666667,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "conduct",
+      "notes": [
+        {
+          "frequency": 660,
+          "type": "sine",
+          "time": 0.7786666666666666,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "instrument-piano",
+      "notes": [
+        {
+          "frequency": 440,
+          "type": "sine",
+          "time": 0.8106666666666666,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "instrument-recorder",
+      "notes": [
+        {
+          "frequency": 587,
+          "type": "sine",
+          "time": 0.8426666666666667,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "instrument-triangle",
+      "notes": [
+        {
+          "frequency": 1320,
+          "type": "sine",
+          "time": 0.88,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "instrument-castanets",
+      "notes": [
+        {
+          "frequency": 320,
+          "type": "sine",
+          "time": 0.912,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "instrument-drumstick",
+      "notes": [
+        {
+          "frequency": 180,
+          "type": "sine",
+          "time": 0.944,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    }
+  ],
+  "music": [
+    {
+      "id": "explore",
+      "notes": 3,
+      "status": "pass"
+    },
+    {
+      "id": "chase",
+      "notes": 3,
+      "status": "pass"
+    },
+    {
+      "id": "anniversary-explore",
+      "notes": 3,
+      "status": "pass"
+    },
+    {
+      "id": "anniversary-chase",
+      "notes": 3,
+      "status": "pass"
+    },
+    {
+      "id": "choir",
+      "notes": 32,
+      "status": "pass"
+    }
+  ],
+  "dimensions": [
+    1200,
+    630
+  ],
+  "noSaveWrites": true,
+  "mobileLayout": true,
+  "errors": [],
+  "note": "驗證實際 Web Audio 節點與排程；人工聽感仍待使用者試聽。"
+}

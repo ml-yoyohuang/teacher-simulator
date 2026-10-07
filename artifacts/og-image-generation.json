@@ -1,0 +1,11 @@
+{
+  "tool": "image_gen built-in",
+  "source": "artifacts/courtyard.png",
+  "output": "public/og-image.png",
+  "dimensions": [
+    1200,
+    630
+  ],
+  "prompt": "Use case: compositing. Edit target: attached actual screenshot of the playable game courtyard. Asset: Open Graph social share banner, EXACT 1200 x 630 pixels. Transform this actual game screenshot into a clean editorial share card. Preserve the actual low-poly geometry, flat palette, fixed isometric camera, yellow-dress brown-bob teacher and other characters exactly as screenshot; do not invent game objects or improve rendered detail. Remove all original HUD, labels, buttons, joystick and speech. Crop scene into left two-thirds showing teacher and courtyard; use matching warm cream panel in right third with generous padding. Exact Traditional Chinese headline, large bold dark forest-green:「東山校園」then mustard-gold「大騷動」. Small subline「開心導師的校園日常」. No other text, no watermark, no English, no fake UI. Keep image visibly based on original playable game, not illustrated remake. Opaque background. Output exactly 1200x630.",
+  "normalization": "Generated PNG normalized to exact 1200×630 with macOS sips; original preserved in Codex generated_images."
+}

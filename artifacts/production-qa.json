@@ -7,7 +7,8 @@
   "errors": [],
   "requests": [
     "http://127.0.0.1:4173/",
-    "http://127.0.0.1:4173/assets/index-C1ESl1jW.js",
-    "http://127.0.0.1:4173/assets/index-tQbkyaCO.css"
+    "http://127.0.0.1:4173/assets/game-BZbbp2D4.js",
+    "http://127.0.0.1:4173/assets/audio-BB2LLPqm.js",
+    "http://127.0.0.1:4173/assets/game-tQbkyaCO.css"
   ]
 }
