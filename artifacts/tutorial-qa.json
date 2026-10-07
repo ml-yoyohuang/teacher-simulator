@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-08",
+  "status": "pass",
+  "before": {
+    "tutorial": 2,
+    "held": "exam_papers:0",
+    "paper": {
+      "id": "exam_papers:0",
+      "owner": "player_music_teacher",
+      "x": -25,
+      "z": -17.5,
+      "y": 1.05
+    },
+    "deliveries": 0
+  },
+  "after": {
+    "tutorial": 3,
+    "held": null,
+    "paper": {
+      "id": "exam_papers:0",
+      "owner": null,
+      "x": -25,
+      "z": -19,
+      "y": 1.06
+    },
+    "deliveries": 1
+  },
+  "errors": [],
+  "method": "Real W/E keyboard inputs; repositioned teacher and a distracting chalk eraser through dev scene API. No synthetic delivery or tutorial completion."
+}

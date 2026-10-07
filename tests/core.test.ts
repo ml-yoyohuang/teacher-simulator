@@ -27,3 +27,23 @@ test('airborne portable can be caught in hand range and flight identity clears',
 test('parent projectile derives position only and keeps its own valid item identity',()=>{let g=new Game();g.spawnParent('shopping_bag');let n=g.npcs.find(n=>n.role==='parent');g.npcProjectile(n,'soft_parcel');let i=g.objects.get('npc-projectile:soft_parcel:0');assert.equal(i.type,'soft_parcel');assert.equal(i.id,'npc-projectile:soft_parcel:0');assert.deepEqual(i.home,{x:n.x,z:n.z});g.refreshColliders();g.assertOwnership();tick(g,3);assert.equal(i.type,'soft_parcel')});
 test('repeated parent waves reuse bounded projectile pool and delete departed interpolation records',()=>{let g=new Game();let initial=g.objects.size;for(let k=0;k<30;k++){g.spawnParent('shopping_bag');let n=g.npcs.find(n=>n.role==='parent');g.npcProjectile(n,'soft_parcel');let i=g.objects.get('npc-projectile:soft_parcel:0');i.state='settled';g.previous.set(n.id,{x:n.x,z:n.z});g.releaseNPC(n);g.npcs=g.npcs.filter(x=>x!==n);assert.equal(g.previous.has(n.id),false)}assert.equal(g.objects.size,initial+1);g.assertOwnership()});
 test('unreserved same-type auxiliary item cannot satisfy a pinned mission delivery',()=>{let g=new Game();g.reset('anniversary');g.startMission('an02');let i=g.createItem('cardboard_box','courier-unrelated',{x:-4,z:4});assert.equal(g.checkDelivery(i),false);assert.equal(g.attempt.count,0)});
+test('tutorial papers require an explicit E interaction at podium and ignore nearby distractions',()=>{
+ const g=new Game();g.startTutorial();g.tutorial=1;const papers=carry(g,'exam_papers');assert.equal(g.tutorial,2);
+ go(g,{x:locations.podium.x,z:locations.podium.z+1.5});
+ const chalk=get(g,'chalk_eraser');Object.assign(chalk,{x:g.player.x,z:g.player.z,state:'settled'});
+ tick(g,.2);assert.equal(g.held.id,papers.id);assert.equal(g.tutorial,2,'walking near podium must not auto-deliver');
+ assert.equal(g.nearest().id,'tutorial:podium');g.interact();
+ assert.equal(g.player.item,null);assert.equal(g.tutorial,3);assert.equal(papers.owner,null);assert.equal(papers.state,'settled');
+ assert.equal(papers.x,locations.podium.x);assert.equal(papers.z,locations.podium.z);assert.equal(papers.y,1.06);
+ assert.equal(g.eventLog.filter(e=>e.type==='deliverTutorial').length,1);g.assertOwnership();
+});
+test('tutorial R drop only completes for the correct papers next to the podium',()=>{
+ const g=new Game();g.tutorial=2;const papers=carry(g,'exam_papers');g.drop();assert.equal(g.tutorial,2,'office drop is not delivery');
+ g.take(papers.id);go(g,{x:locations.podium.x,z:locations.podium.z+1.5});g.player.face={x:0,z:-1};g.drop();assert.equal(g.tutorial,3);
+ g.tutorial=2;const book=carry(g,'textbook');go(g,{x:locations.podium.x,z:locations.podium.z+1.5});g.drop(book.id,locations.podium);assert.equal(g.tutorial,2);
+});
+test('podium E placement also works after skipping tutorial without granting task completion',()=>{
+ const g=new Game();g.startMission('q01');const papers=carry(g,'exam_papers');go(g,{x:locations.podium.x,z:locations.podium.z+1.5});
+ assert.equal(g.nearest().id,'tutorial:podium');g.interact();assert.equal(g.player.item,null);assert.equal(papers.y,1.06);
+ assert.equal(g.attempt.mission,'q01');assert.equal(g.attempt.count,0);assert.equal(g.tutorial,-1);g.assertOwnership();
+});

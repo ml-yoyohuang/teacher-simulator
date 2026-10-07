@@ -1,0 +1,33 @@
+✔ exact content registries and reference validity (0.801125ms)
+✔ atomic item take / throw / NPC take / return / wear / rescue ownership (1.867834ms)
+✔ one swing hits a target once, down event once, nurse protected (14.804166ms)
+✔ alert thresholds, cooldown, prank blame, hidden line of sight (0.380375ms)
+✔ family causal queue, delay, unique incident, global group slots (18.167917ms)
+✔ navigation all zones reachable, swept dodge cannot pass walls (7.52975ms)
+✔ quest pins and held items exclude restoration; same identity returns (0.4315ms)
+✔ reward ledger, purchase bounds, complete save round trip and invalid import (0.438708ms)
+✔ cancel old attempts, mode reset queues and pending, chapter freely selectable (0.940708ms)
+✔ 24+16 mission mechanics have executable completion chains, no ledger duplication (7.674917ms)
+✔ choir silent 32 beats completes, fixed simulation pause preserves beat (0.22675ms)
+✔ 20 mode switches resource counts remain bounded and item identity consistent (1.119208ms)
+✔ every portable, pushable, fixed and wearable declared action has real state effects (2.893917ms)
+✔ all 12 personalities choose specific observable reaction states (0.47825ms)
+✔ all 19 parents use defined ability plus real gate entry and legal budgets (20.190708ms)
+✔ exam paper scatter keeps one bundle ID and requires three real pickups (16.241292ms)
+✔ contact interrupted before two seconds never schedules; completion does (13.383625ms)
+✔ q09 completes through natural 65→0 simulation rather than a synthetic completion event (38.297959ms)
+✔ airborne portable can be caught in hand range and flight identity clears (0.264791ms)
+✔ parent projectile derives position only and keeps its own valid item identity (30.068167ms)
+✔ repeated parent waves reuse bounded projectile pool and delete departed interpolation records (0.735792ms)
+✔ unreserved same-type auxiliary item cannot satisfy a pinned mission delivery (0.256166ms)
+✔ tutorial papers require an explicit E interaction at podium and ignore nearby distractions (0.551333ms)
+✔ tutorial R drop only completes for the correct papers next to the podium (0.159542ms)
+✔ podium E placement also works after skipping tutorial without granting task completion (0.199958ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 304.651458

@@ -86,3 +86,9 @@
 成功執行：[Actions 37654572022](https://github.com/ml-yoyohuang/teacher-simulator/actions/runs/37654572022)。公開網站：[東山校園大騷動](https://ml-yoyohuang.github.io/teacher-simulator/)、[聲音試聽頁](https://ml-yoyohuang.github.io/teacher-simulator/soundtest.html)。
 
 公開Chromium驗收通過：真正WebGL頁面啟動、鍵盤移動輸入、24任務選單、開心導師HUD、30音效／5音樂試聽入口、實際播放觸發與停止、1200×630圖片與完整HTTPS OG網址。pageerror與HTTP失敗回應均0，dev API未包含於正式版。證據見artifacts/pages-live-qa.json、pages-deployment.json、pages-settings.json與兩張pages-live真實截圖。人工聽感、實體手機效能及社群實際分享爬蟲仍未驗證。
+
+## 2026-10-08 考卷／講臺教學修正
+
+修正教學寫「E放下」卻未提供講臺交付互動、走近反而自動放下的矛盾。拿考卷靠近講臺時提供最高優先級的E放置目標，放到講臺頂部，旁邊粉筆擦與人物不會搶走互動；一般模式也可使用，不會因此完成應送辦公室的q01任務。教學只在實際交付後進下一步，走近不自動放下；R在正確位置放下仍可完成。教學新增黃色目標圈。
+
+核心回歸共25組通過；新增三組驗證明確E、R位置／類型限制與跳過教學後的E放置。artifacts/tutorial-qa.json另記錄實際W/E鍵盤操作、同一考卷身份與講臺高度；使用dev情境調整位置及附近粉筆擦，未直接寫入教學完成狀態或假造交付事件。

@@ -1,0 +1,14 @@
+import {chromium} from '@playwright/test';import assert from 'node:assert/strict';import fs from 'node:fs';
+const browser=await chromium.launch({headless:true});const page=await browser.newPage({viewport:{width:1440,height:900}});const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto(process.env.QA_URL||'http://127.0.0.1:5173');await page.locator('[data-action=start]').click();
+const state=()=>page.evaluate(()=>{const g=(window as any).__dongshan.game;const p=[...g.objects.values()].find((i:any)=>i.type==='exam_papers') as any;return {tutorial:g.tutorial,held:g.player.item,paper:{id:p.id,owner:p.owner,x:p.x,z:p.z,y:p.y},deliveries:g.eventLog.filter((e:any)=>e.type==='deliverTutorial').length}});
+await page.keyboard.down('KeyW');await page.waitForTimeout(500);await page.keyboard.up('KeyW');assert.equal((await state()).tutorial,1);
+await page.evaluate(()=>{const g=(window as any).__dongshan.game;const i=[...g.objects.values()].find((i:any)=>i.type==='exam_papers') as any;g.player.x=i.x;g.player.z=i.z+1});
+await page.keyboard.press('KeyE');assert.equal((await state()).tutorial,2);
+await page.evaluate(()=>{const g=(window as any).__dongshan.game;g.player.x=-25;g.player.z=-17.5;g.player.inv=100;const c=[...g.objects.values()].find((i:any)=>i.type==='chalk_eraser') as any;c.x=-25;c.z=-17.5});
+await page.waitForTimeout(500);const before=await state();assert.equal(before.tutorial,2);assert.equal(before.held,before.paper.id);
+assert.match(await page.locator('#context').innerText(),/放下考卷到教室講臺/);
+await page.keyboard.press('KeyE');await page.waitForTimeout(100);const after=await state();assert.equal(after.tutorial,3);assert.equal(after.held,null);assert.equal(after.paper.owner,null);assert.equal(after.paper.x,-25);assert.equal(after.paper.z,-19);assert.equal(after.paper.y,1.06);assert.equal(after.deliveries,1);
+await page.screenshot({path:'artifacts/tutorial-delivery.png'});assert.deepEqual(errors,[]);
+fs.writeFileSync('artifacts/tutorial-qa.json',JSON.stringify({date:'2026-10-08',status:'pass',before,after,errors,method:'Real W/E keyboard inputs; repositioned teacher and a distracting chalk eraser through dev scene API. No synthetic delivery or tutorial completion.'},null,2));
+console.log('PASS: real keyboard E puts original papers onto podium, advances tutorial once; approaching alone retains papers.');await browser.close();
