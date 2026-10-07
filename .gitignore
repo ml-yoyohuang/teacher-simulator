@@ -3,3 +3,5 @@ node_modules/
 .DS_Store
 artifacts/*.zip
 artifacts/failure-*.png
+img2.jpeg
+img1.jpeg
