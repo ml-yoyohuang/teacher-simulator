@@ -69,7 +69,7 @@
 - 使用者Chrome/Safari瀏覽器擴充、私密模式與各系統儲存策略。
 - 無視覺輔助者完成3D戰鬥（不做可及性完整宣稱）。
 
-已確認source build與靜態載入，未公開發布或購買任何服務。真機複查方法見PERFORMANCE_REPORT.md。原始證據保留，未以生成圖片充當遊戲截圖。
+初次交付已確認source build與靜態載入，當時未公開發布或購買任何服務。真機複查方法見PERFORMANCE_REPORT.md。原始證據保留，未以生成圖片充當遊戲截圖。
 
 ## 2026-10-08 試聽頁、更名與分享圖更新
 
@@ -78,3 +78,11 @@
 名稱依使用者要求統一更名為「開心導師」，包含程式、README、規格及重新建置的部署成品。既有歷史驗收截圖保留原樣，並非當前名稱的證據。
 
 `public/og-image.png` 是以真正中庭畫面製作的 1200×630 分享宣傳圖，經 imagegen 編排與 HUD 移除，屬分享素材；原始遊戲驗收截圖仍在 artifacts 中。分享爬蟲尚未在公開網域測試；部署時以 SITE_URL 建置完整圖片網址。
+
+## 2026-10-08 GitHub Pages 正式發布
+
+依使用者授權，儲存庫預設分支與部署分支均為 main，Pages Source 改為 GitHub Actions。工作流程執行 locked install、22組核心測試、正式建置、成品及OG網址检查，再發布dist。第一次Linux安裝因pnpm 11未核准esbuild腳本而停止，補上僅允許esbuild的pnpm-workspace.yaml後重新部署成功。
+
+成功執行：[Actions 37654572022](https://github.com/ml-yoyohuang/teacher-simulator/actions/runs/37654572022)。公開網站：[東山校園大騷動](https://ml-yoyohuang.github.io/teacher-simulator/)、[聲音試聽頁](https://ml-yoyohuang.github.io/teacher-simulator/soundtest.html)。
+
+公開Chromium驗收通過：真正WebGL頁面啟動、鍵盤移動輸入、24任務選單、開心導師HUD、30音效／5音樂試聽入口、實際播放觸發與停止、1200×630圖片與完整HTTPS OG網址。pageerror與HTTP失敗回應均0，dev API未包含於正式版。證據見artifacts/pages-live-qa.json、pages-deployment.json、pages-settings.json與兩張pages-live真實截圖。人工聽感、實體手機效能及社群實際分享爬蟲仍未驗證。

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-08",
+  "site": "https://ml-yoyohuang.github.io/teacher-simulator/",
+  "status": "pass",
+  "browser": "141.0.7390.37",
+  "dimensions": [
+    1200,
+    630
+  ],
+  "tasks": 24,
+  "sounds": 30,
+  "music": 5,
+  "debugExcluded": true,
+  "errors": [],
+  "failed": [],
+  "note": "公開 GitHub Pages 真實瀏覽器載入、鍵盤輸入、選單與試聽觸發；不代表人工聽感或實體手機效能。"
+}

@@ -10,7 +10,7 @@
 python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 ```
 
-在瀏覽器開啟 `http://127.0.0.1:4173`。需要 WebGL 2；不要直接以 file:// 開啟 HTML。`dist/` 可整個放到任意静態主機與子路徑（base='./'），不需要 Node 伺服器執行遊戲。此交付只做本地預覽，未公開發布。
+在瀏覽器開啟 `http://127.0.0.1:4173`。需要 WebGL 2；不要直接以 file:// 開啟 HTML。`dist/` 可整個放到任意静態主機與子路徑（base='./'），不需要 Node 伺服器執行遊戲。已發布至 [GitHub Pages 正式遊戲](https://ml-yoyohuang.github.io/teacher-simulator/)，也可使用本地預覽。
 
 亦可執行 `node scripts/serve.mjs` 啟動相同靜態成品。macOS 可雙擊 `start-local.command`（第一次可能需由終端機執行）。
 
