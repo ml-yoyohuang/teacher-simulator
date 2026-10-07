@@ -1,0 +1,36 @@
+{
+  "baseline": {
+    "duration": 1200.876,
+    "samples": 1192,
+    "p50": 16.699999999953434,
+    "p95": 16.70000000006985,
+    "maxP95": 16.800000000046566,
+    "maxCalls": 12,
+    "maxTriangles": 17214,
+    "maxNPC": 16,
+    "maxGeometry": 7,
+    "maxTextures": 9,
+    "maxVoices": 0,
+    "maxMusic": 2,
+    "maxObjects": 31,
+    "minObjects": 31,
+    "errors": []
+  },
+  "finalFullLoad": {
+    "duration": 120.05,
+    "samples": 435,
+    "p50": 16.69999999999709,
+    "p95": 33.30000000000291,
+    "maxP95": 33.400000000001455,
+    "maxCalls": 10,
+    "maxTriangles": 21920,
+    "maxNPC": 16,
+    "maxGeometry": 7,
+    "maxTextures": 9,
+    "maxVoices": 5,
+    "maxMusic": 2,
+    "maxObjects": 31,
+    "minObjects": 31,
+    "errors": []
+  }
+}

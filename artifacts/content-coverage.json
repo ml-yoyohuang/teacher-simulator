@@ -1,0 +1,1076 @@
+{
+  "counts": {
+    "zones": 10,
+    "items": 26,
+    "students": 12,
+    "parents": 19,
+    "staff": 7,
+    "normalMissions": 24,
+    "chapters": 4,
+    "eventMissions": 16
+  },
+  "records": [
+    {
+      "kind": "zone",
+      "id": "courtyard",
+      "label": "中庭",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: grid reachability",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "zone",
+      "id": "classroom",
+      "label": "一般教室",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: grid reachability",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "zone",
+      "id": "music_room",
+      "label": "音樂教室",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: grid reachability",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "zone",
+      "id": "staff_room",
+      "label": "導師辦公室",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: grid reachability",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "zone",
+      "id": "principal_room",
+      "label": "校長室",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: grid reachability",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "zone",
+      "id": "corridor",
+      "label": "共用走廊",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: grid reachability",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "zone",
+      "id": "playground",
+      "label": "操場一角",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: grid reachability",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "zone",
+      "id": "gate",
+      "label": "校門與警衛室",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: grid reachability",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "zone",
+      "id": "co_op",
+      "label": "合作社",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: grid reachability",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "zone",
+      "id": "infirmary",
+      "label": "保健室",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: grid reachability",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "chalk_eraser",
+      "label": "粉筆擦",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "basketball",
+      "label": "籃球",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "toy_mallet",
+      "label": "玩具槌",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "drumstick",
+      "label": "鼓棒",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "folder",
+      "label": "資料夾",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "trophy",
+      "label": "獎盃",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "textbook",
+      "label": "課本",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "broom",
+      "label": "掃把",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "spinning_top",
+      "label": "陀螺",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "trash_bin",
+      "label": "垃圾桶",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "badminton_racket",
+      "label": "羽球拍",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "table_tennis_racket",
+      "label": "桌球拍",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "stopwatch",
+      "label": "碼錶",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "traffic_cone",
+      "label": "三角錐",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "recorder",
+      "label": "直笛",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "music_stand",
+      "label": "譜架",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "piano",
+      "label": "鋼琴",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "triangle",
+      "label": "三角鐵",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "castanets",
+      "label": "響板",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "coffee_machine",
+      "label": "咖啡機",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "wall_clock",
+      "label": "時鐘",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "office_chair",
+      "label": "辦公椅",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "exam_papers",
+      "label": "考卷（3份）",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "principal_wig",
+      "label": "校長假髮",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "principal_glasses",
+      "label": "眼鏡",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "laptop",
+      "label": "筆電",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "timid",
+      "label": "膽小",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "fighter",
+      "label": "反擊",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "tattletale",
+      "label": "告狀",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "spectator",
+      "label": "圍觀",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "filmer",
+      "label": "拍片",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "friend",
+      "label": "朋友助陣",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "mediator",
+      "label": "勸架",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "scavenger",
+      "label": "撿道具",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "prankster",
+      "label": "惡作劇",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "guardian",
+      "label": "護寶",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "athlete",
+      "label": "體育健將",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "student",
+      "id": "reader",
+      "label": "冷靜旁觀",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "spatula",
+      "label": "鍋鏟",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "sports",
+      "label": "運動",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "briefcase",
+      "label": "公事包",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "shopping_bag",
+      "label": "購物袋",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "nagging",
+      "label": "碎念",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "protective",
+      "label": "護子",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "pta_leader",
+      "label": "家長會代表",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "umbrella",
+      "label": "雨傘",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "gardener",
+      "label": "園藝",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "yoga",
+      "label": "瑜伽",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "courier",
+      "label": "快遞",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "photographer",
+      "label": "攝影",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "whistle",
+      "label": "哨子",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "camper",
+      "label": "露營",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "runner",
+      "label": "路跑",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "neat",
+      "label": "潔癖",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "armored",
+      "label": "護具",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "drama",
+      "label": "戲劇社",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "parent",
+      "id": "duo",
+      "label": "雙人默契",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts + artifacts/parent-models.json",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "staff",
+      "id": "patrol_teacher",
+      "label": "巡堂老師",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "staff",
+      "id": "pe_teacher",
+      "label": "體育老師",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "staff",
+      "id": "dean",
+      "label": "教務主任",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "staff",
+      "id": "principal",
+      "label": "校長",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "staff",
+      "id": "nurse",
+      "label": "校護",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "staff",
+      "id": "shop_aunt",
+      "label": "合作社阿姨",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "staff",
+      "id": "guard_uncle",
+      "label": "警衛伯伯",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "chapter",
+      "id": "parent_day",
+      "label": "親師日",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "chapter",
+      "id": "anniversary",
+      "label": "校慶",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "chapter",
+      "id": "choir_contest",
+      "label": "合唱團比賽",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "chapter",
+      "id": "final_exam",
+      "label": "期末考",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: registry/state",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q01",
+      "label": "請交回考卷",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q02",
+      "label": "樂器請歸位",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q03",
+      "label": "維持環境整潔",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q04",
+      "label": "代理校長巡堂",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q05",
+      "label": "節奏感測驗",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q06",
+      "label": "校園保齡球",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q07",
+      "label": "老師沒有在逃跑",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q08",
+      "label": "辦公室借用程式",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q09",
+      "label": "請保持安靜",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q10",
+      "label": "上課鐘還沒響",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q11",
+      "label": "老師需要一杯咖啡",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q12",
+      "label": "失物招領",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q13",
+      "label": "體育器材盤點",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q14",
+      "label": "校長今天髮量驚人",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q15",
+      "label": "辦公室人體工學",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q16",
+      "label": "三角鐵獨奏會",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q17",
+      "label": "禁止奔跑示範",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q18",
+      "label": "這球算妳的",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q19",
+      "label": "整潔也是一種戰術",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q20",
+      "label": "請勿拍攝上課內容",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q21",
+      "label": "老師只是來購物",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q22",
+      "label": "公開觀課日",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q23",
+      "label": "校長的筆電去哪了",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "q24",
+      "label": "一場非常正常的運動會",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "pd01",
+      "label": "家長請這邊坐",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "pd02",
+      "label": "老師的桌面管理",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "pd03",
+      "label": "學生說了什麼？",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "pd04",
+      "label": "合照前請整理儀容",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "an01",
+      "label": "攤位佈置大師",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "an02",
+      "label": "合作社救援",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "an03",
+      "label": "校長致詞中",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "an04",
+      "label": "校慶保齡球",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "cc01",
+      "label": "譜架少了一個",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "cc02",
+      "label": "團員請集合",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "cc03",
+      "label": "不要帶陀螺上臺",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "cc04",
+      "label": "指揮老師準備好了",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "fe01",
+      "label": "考卷不是傳單",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "fe02",
+      "label": "時間到了嗎？",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "fe03",
+      "label": "走廊禁止喧嘩",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "mission",
+      "id": "fe04",
+      "label": "監考老師去哪了",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/core.test.ts: 40 event/mechanic chains",
+      "fullHumanPlaythrough": "not tested"
+    }
+  ]
+}

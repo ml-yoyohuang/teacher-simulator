@@ -1,0 +1,15 @@
+{
+  "duration": 120.168,
+  "samples": 435,
+  "p50Median": 16.69999999999709,
+  "p95Median": 16.70000000001164,
+  "p95Max": 100,
+  "maxCalls": 11,
+  "maxTriangles": 22248,
+  "maxNPC": 16,
+  "maxProjectiles": 6,
+  "voicesMax": 4,
+  "musicMax": 3,
+  "objectMax": 32,
+  "errors": []
+}

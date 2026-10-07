@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "browser": "141.0.7390.37",
+  "debugExcluded": true,
+  "tasks": 24,
+  "calendarEntries": 5,
+  "errors": [],
+  "requests": [
+    "http://127.0.0.1:4173/",
+    "http://127.0.0.1:4173/assets/index-C1ESl1jW.js",
+    "http://127.0.0.1:4173/assets/index-tQbkyaCO.css"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "sha256": "3a4e9725f9b00e0a9235a205e53bdb43900c0f5f64bc7c14ea2401ea4fe5822b",
+  "files": [
+    "src/audio.ts",
+    "src/data.ts",
+    "src/env.d.ts",
+    "src/game.ts",
+    "src/input.ts",
+    "src/main.ts",
+    "src/render.ts",
+    "src/save.ts",
+    "src/style.css",
+    "src/ui.ts",
+    "src/world.ts"
+  ]
+}

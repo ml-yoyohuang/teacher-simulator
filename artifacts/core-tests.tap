@@ -1,0 +1,30 @@
+✔ exact content registries and reference validity (0.778042ms)
+✔ atomic item take / throw / NPC take / return / wear / rescue ownership (2.608459ms)
+✔ one swing hits a target once, down event once, nurse protected (15.4645ms)
+✔ alert thresholds, cooldown, prank blame, hidden line of sight (0.409375ms)
+✔ family causal queue, delay, unique incident, global group slots (19.639916ms)
+✔ navigation all zones reachable, swept dodge cannot pass walls (8.160209ms)
+✔ quest pins and held items exclude restoration; same identity returns (0.437208ms)
+✔ reward ledger, purchase bounds, complete save round trip and invalid import (0.432875ms)
+✔ cancel old attempts, mode reset queues and pending, chapter freely selectable (0.788541ms)
+✔ 24+16 mission mechanics have executable completion chains, no ledger duplication (8.256125ms)
+✔ choir silent 32 beats completes, fixed simulation pause preserves beat (0.230667ms)
+✔ 20 mode switches resource counts remain bounded and item identity consistent (1.057042ms)
+✔ every portable, pushable, fixed and wearable declared action has real state effects (3.080542ms)
+✔ all 12 personalities choose specific observable reaction states (0.583083ms)
+✔ all 19 parents use defined ability plus real gate entry and legal budgets (23.654ms)
+✔ exam paper scatter keeps one bundle ID and requires three real pickups (17.556042ms)
+✔ contact interrupted before two seconds never schedules; completion does (13.669292ms)
+✔ q09 completes through natural 65→0 simulation rather than a synthetic completion event (42.441584ms)
+✔ airborne portable can be caught in hand range and flight identity clears (0.334375ms)
+✔ parent projectile derives position only and keeps its own valid item identity (28.730417ms)
+✔ repeated parent waves reuse bounded projectile pool and delete departed interpolation records (0.483834ms)
+✔ unreserved same-type auxiliary item cannot satisfy a pinned mission delivery (0.4535ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 318.275458

@@ -1,0 +1,61 @@
+from pathlib import Path
+import json,statistics,hashlib
+root=Path(__file__).resolve().parent.parent
+baseline=json.loads((root/'artifacts/stress.json').read_text());full=json.loads((root/'artifacts/full-stress.json').read_text())
+def summary(obj,warmup):
+ s=obj['samples'][warmup:]
+ return dict(duration=obj['duration'],samples=len(obj['samples']),p50=statistics.median(x['p50'] for x in s),p95=statistics.median(x['p95'] for x in s),maxP95=max(x['p95'] for x in s),maxCalls=max(x['drawCalls'] for x in s),maxTriangles=max(x['triangles'] for x in s),maxNPC=max(x['activeNPC'] for x in s),maxGeometry=max(x['geometry'] for x in s),maxTextures=max(x['textures'] for x in s),maxVoices=max(x['voices'] for x in s),maxMusic=max(x['music'] for x in s),maxObjects=max(x['objects'] for x in s),minObjects=min(x['objects'] for x in s),errors=obj['errors'])
+a,b=summary(baseline,5),summary(full,20)
+(root/'artifacts/performance-summary.json').write_text(json.dumps({'baseline':a,'finalFullLoad':b},indent=2))
+text=f'''# 效能與資源報告
+
+日期：2026-10-08。主機Apple M4 Pro、24GB RAM、macOS26.5.1 arm64；Chromium {full['browser']} headless。844×390、touch emulation、DPR1、Low。這是桌機GPU測量，沒有實體手機結果。
+
+## 方法
+
+呈現間隔來自requestAnimationFrame，不把30Hz固定模擬當FPS。Renderer保留最近1200次呈現間隔，每份sample儲存該窗口p50/p95與render.info.render.calls/triangles、memory、活躍人物、音訊聲部與身份檢查。表中「窗口中位p95」是多份窗口p95的中位數，不是把重複窗口當成獨立原始幀求整段p95。
+
+最終版本記錄未截斷的rAF間隔，排除未開始／暫停頁。起始五秒作暖機，不納入穩態欄，原始資料完整保留。長時間基線是最後功能修正前的候選版本，其首幀記錄上限100ms；穩態觀察16–33ms不受該上限影響。之後修正了歸零事件、衍生物ID、指定任務物件與插值／原始rAF量測，再用最終版本跑滿負載及規則／操作回歸。沒有宣稱20分鐘基線就是最後build的逐幀測量。
+
+## 實際結果
+
+| 測試 | 時長 | 窗口p50中位 | 窗口p95中位 | 最差窗口p95（暖機後） | draw calls最大 | triangles最大 | 活躍NPC最大 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 連續基線／3家長起始與2教師 | {a['duration']:.1f}s | {a['p50']:.2f}ms | {a['p95']:.2f}ms | {a['maxP95']:.2f}ms | {a['maxCalls']} | {a['maxTriangles']} | {a['maxNPC']} |
+| 最終滿負載／3家長、學生、6投擲物 | {b['duration']:.1f}s | {b['p50']:.2f}ms | {b['p95']:.2f}ms | {b['maxP95']:.2f}ms | {b['maxCalls']} | {b['maxTriangles']} | {b['maxNPC']} |
+
+基線{a['samples']}份sample，最終滿負載{b['samples']}份；未處理JavaScript錯誤分別{len(a['errors'])}／{len(b['errors'])}。六投擲物、家長3、Low16 NPC上限均實際出现且未超限；循環家長衍生包裹／箱子採每型6個固定池，活躍飛行總數仍6。22組核心測試另檢查30次家長波次不增加物件池、離場記錄清理。
+
+暖機初期長幀與並行測試短峰保留在JSON。這些桌機數據不能證明較舊手機達到30FPS，也不能证明十分钟熱穩定。
+
+## 資源
+
+| 項目 | 連續基線最大 | 最終滿負載最大 |
+|---|---:|---:|
+| WebGL geometry | {a['maxGeometry']} | {b['maxGeometry']} |
+| WebGL textures | {a['maxTextures']} | {b['maxTextures']} |
+| SFX聲部 | {a['maxVoices']} | {b['maxVoices']} |
+| 音樂聲部 | {a['maxMusic']} | {b['maxMusic']} |
+| 物件身份數 | {a['minObjects']}–{a['maxObjects']} | {b['minObjects']}–{b['maxObjects']} |
+
+20次場景切換的基線與逐次數值見artifacts/resource-switches.json。Geometry回7、可見紋理回合理基線，無持續累積。裝飾池Low48／Standard96，2.6秒過期；共用幾何與材質保留，模式標示紋理逐次dispose；每種臨時家長投擲物固定池、離場NPC插值紀錄刪除。
+
+Low目標≤90 draw calls／70k三角形，實際桌機場景低於預算。Standard DPR≤1.5、Low≤1，沒有即時shadow map／PBR後處理。自適應連續3秒慢幀降DPR／Low，20秒充足餘量才恢復；手動選項鎖定。音效12／音樂6上限。固定30Hz、最多四步補算、rAF人物／手持物插值；失焦／背景／context lost暫停。
+
+生產JS約617KB未gzip／171KB gzip、CSS約14KB，無網路素材。Vite有>500KB單chunk提示，屬載入體積提示而非build失敗；未藉調大warning閾值掩蓋。實際dist載入請求只有HTML、JS、CSS。
+
+## 真機十分鐘複查（尚未执行）
+
+1. 1分鐘：首次開啟、教學、靜音切換，記錄裝置／OS／瀏覽器／畫質／電池模式。
+2. 2分鐘：觸控拿課本、球、掃把移動／投擲，觀察雙指與誤觸。
+3. 2分鐘：引三家長與兩老師，繞中庭、教室—走廊—音樂室、操場—校門；甩開視線。
+4. 1分鐘：翻家具、抓假髮、佩戴／放下／歸還。
+5. 1分鐘：選單捲動／旋屏，不重置世界、不截斷按鈕。
+6. 1分鐘：切親師日對話與訪客。
+7. 1分鐘：合唱視覺節拍，靜音指揮。
+8. 1分鐘：後台30秒、回來等待繼續、保健室恢復／救援。
+
+開發HUD記錄同樣的rAF窗口；目標Low p95≤33.3ms，先看最差窗口與暖機／發熱，不只平均FPS。若達不到先調DPR／LOD／AI頻率，不刪19家長或40任務。Safari真機、熱穩定與聽感均not tested。
+'''
+(root/'PERFORMANCE_REPORT.md').write_text(text)
+print(json.dumps({'baseline':a,'final':b}))

@@ -1,0 +1,80 @@
+# 東山校園大騷動
+
+原創 low-poly 3D、固定斜俯視、單人離線進度的虛構校園沙盒。主角是棕色鮑伯頭、黃色有領小腿長洋裝的成年「優等女導師」。無後端、帳號、廣告或 CDN。音樂與音效均為程式合成，並非真人演奏／合唱。
+
+## 直接遊玩部署成品
+
+在這個目錄啟動：
+
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
+```
+
+在瀏覽器開啟 `http://127.0.0.1:4173`。需要 WebGL 2；不要直接以 file:// 開啟 HTML。`dist/` 可整個放到任意静態主機與子路徑（base='./'），不需要 Node 伺服器執行遊戲。此交付只做本地預覽，未公開發布。
+
+亦可執行 `node scripts/serve.mjs` 啟動相同靜態成品。macOS 可雙擊 `start-local.command`（第一次可能需由終端機執行）。
+
+## 原始碼開發
+
+Node.js 22.12+（本次實測24.19.0）、pnpm 11。確切依賴版本在 package.json 與 pnpm-lock.yaml。
+
+```sh
+pnpm install --frozen-lockfile
+pnpm dev
+pnpm test
+pnpm build
+pnpm preview
+```
+
+npm 對應命令也可用：`npm install`、`npm run dev`、`npm test`、`npm run build`。交付的正式 lockfile 為 pnpm-lock.yaml，驗證使用 pnpm 工具鏈。
+
+自動驗收：
+
+```sh
+pnpm exec playwright install chromium
+# 先開啟開發伺服器；預設腳本測試 5174，可用 QA_URL 指定
+QA_URL=http://127.0.0.1:5173 pnpm qa
+QA_URL=http://127.0.0.1:5173 pnpm exec tsx scripts/stress.ts
+pnpm coverage
+```
+
+開發伺服器禁用熱重載，以免重載中斷長時間驗收；修改後手動刷新。生產成品沒有開發驗證面板與 window.__dongshan。
+
+## 遊玩
+
+首次由辦公室出發，可跳過／重看教學。所有任務與四活動立即可選，無章節解鎖。任務一次追蹤一項；取消與重試免費。首次普通任務30點、長任務60點、活動40點、章完成80點，重玩不再給點。
+
+手機：左下搖桿推深快跑，右下揮打、閃避、互動；長按互動／按「動作」選取使用、放下、戴上、歸還；拿物後才顯示投擲鍵。合唱時顯示指揮鍵。橫豎屏皆可，不強制旋屏。
+
+桌機：WASD／方向鍵移動、Shift快跑、J／滑鼠左鍵揮打、K／Space閃避、E互動、Q投擲、R放下、F點名、Enter指揮、Esc暫停。滑鼠面向使用地面射線。
+
+黃色圈是交付／定位點。原物件歸還需回到其原位置。考卷是一包三份，投撒後需拾回三張才再成包。一次手持一件，假髮與眼鏡各有獨立頭部位。大型鋼琴、咖啡機不能拿起；辦公椅只能推。
+
+家長必須由有效通知或技巧任務準備安排，六秒預告後從校門沿路進場。最多三具家長、兩位積極追逐教職員。失去視線後搜尋，工具間／講臺後可以藏身；被看見躲入仍會被查。警戒未解除時進保健室不能洗掉追逐。平靜時校護免費恢復；倒地救援重置當次事件並提供真實統計。
+
+遇任務物件卡住：待辦 → 重置任務物件（保留既有 instanceId）。長期紀錄自動存於 localStorage，可匯出／匯入JSON；重開從平靜校園100HP開始，不存瞬時戰鬥。一個分頁寫入，多分頁可明確接管。
+
+## 文件與證據
+
+- SPEC_COVERAGE.md：內容數量、項目與驗證層級。
+- QA_REPORT.md：實際操作、純規則測試及未驗證範圍。
+- PERFORMANCE_REPORT.md：實際 rAF 測量、持續運行、資源回收。
+- ASSET_GUIDE.md：原創幾何／掛點與替換方式。
+- BALANCE.md：單一平衡設定、各道具與家長差異。
+- DECISIONS.md、KNOWN_ISSUES.md、PROGRESS.md：決策、限制與製作紀錄。
+- artifacts/：真實遊戲截圖、JSON測量與測試結果。
+- dongshan_campus_spec/：原始規格，沒有以畫面取代驗收。
+
+`QA_REPORT.md` 區分「真實輸入」「合法情境準備」「事件／規則鏈」。40項規則測試不代表40項都由人工從出生点完整通關。真機手機效能、Safari與音訊聽感未宣稱通過。
+
+## 架構
+
+`data.ts` 為全部內容與平衡資料；`game.ts` 是30Hz模擬、身份交易、事件、AI、任務與重置；`world.ts` 是牆、碰撞與格網導航；`render.ts` 是原創3D幾何、固定鏡頭、共用InstancedMesh與動畫；`input.ts` 是雙指／鍵鼠；`audio.ts` 是合成聲部與25ms音樂排程；`save.ts` 是驗證、ledger與分頁租約；`ui.ts` 是HUD、可鍵盤操作的選單與功能入口。
+
+可重現 seed：6477。開發暫停頁 → 驗證面板可查看型別、傳送、生成家長、警戒、效能與事件追蹤；不能直接標任務完成。
+
+## 來源
+
+場景、角色、道具、音符序列、UI為本地原創程式生成。img1.jpeg/img2.jpeg僅作美術方向參考，不在遊戲載入、不複製圖中角色。第三方依賴保留在 LICENSES/，程式未另行宣告整包開放授權。
+
+製作核對：[Three.js官方文件](https://threejs.org/docs/)、[Pointer Events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)、[Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)。

@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-07T16:20:03.354Z",
+  "browser": "141.0.7390.37",
+  "results": [
+    {
+      "name": "desktop keyboard screen-relative movement + pause clears input",
+      "status": "pass"
+    },
+    {
+      "name": "q01 real UI task select, pick papers, drop at delivery",
+      "status": "pass"
+    },
+    {
+      "name": "broom swing, ball throw and recover same id",
+      "status": "pass"
+    },
+    {
+      "name": "wear original wig via action menu, retain yellow dress",
+      "status": "pass"
+    },
+    {
+      "name": "push office chair has actual displacement",
+      "status": "pass"
+    },
+    {
+      "name": "triangle instrument + coffee cup unique derived instance",
+      "status": "pass"
+    },
+    {
+      "name": "parent day dialog choices have different effects, photo physical gathering",
+      "status": "pass"
+    },
+    {
+      "name": "anniversary deliver three goods via E/R, original IDs",
+      "status": "pass"
+    },
+    {
+      "name": "choir 32-beat visual timeline complete using actual conduct keys",
+      "status": "pass"
+    },
+    {
+      "name": "final exam clock question actual selection completes",
+      "status": "pass"
+    },
+    {
+      "name": "save export/import, invalid import preserves existing points",
+      "status": "pass"
+    },
+    {
+      "name": "two tabs lease has one writer, explicit takeover",
+      "status": "pass"
+    },
+    {
+      "name": "storage failure continues play and export remains available",
+      "status": "pass"
+    },
+    {
+      "name": "stress parent and teacher caps, fixed seed, recovery report",
+      "status": "pass"
+    },
+    {
+      "name": "20 actual mode switches GPU geometry/textures return to baseline",
+      "status": "pass"
+    },
+    {
+      "name": "390×844 two finger pointer capture, cancel, no stuck input + rotation",
+      "status": "pass"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "fps": 30.030030030027405,
+    "p50": 33.19999999999709,
+    "p95": 33.400000000001455,
+    "drawCalls": 10,
+    "triangles": 9452,
+    "geometry": 7,
+    "textures": 4,
+    "activeNPC": 4,
+    "aiMs": 0.10000000149011612,
+    "simulationMs": 0.10000000149011612,
+    "quality": "low",
+    "samples": 1200
+  }
+}

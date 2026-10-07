@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "name": "q04 wear, three zones observed by actual simulation, original wig return",
+      "status": "pass"
+    },
+    {
+      "name": "q06 bowling hit detection from actual thrown balls",
+      "status": "pass"
+    },
+    {
+      "name": "q14 original wig on trophy, leave room, principal delayed discovery",
+      "status": "pass"
+    },
+    {
+      "name": "q23 real NPC dialogue traces laptop owner chain, return same instance",
+      "status": "pass"
+    },
+    {
+      "name": "q20 interrupted filmer sight three times with actual LOS wall",
+      "status": "pass"
+    },
+    {
+      "name": "q09 natural decay uses live simulation, no reset reward",
+      "status": "pass"
+    },
+    {
+      "name": "all 19 parent model factories render and global slots observed",
+      "status": "pass"
+    },
+    {
+      "name": "WebGL context lost pauses and restores, no background combat catchup",
+      "status": "pass"
+    }
+  ],
+  "errors": []
+}

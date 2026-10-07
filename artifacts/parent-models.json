@@ -1,0 +1,116 @@
+[
+  {
+    "id": "spatula",
+    "parents": 1,
+    "triangles": 14136,
+    "ownership": true
+  },
+  {
+    "id": "sports",
+    "parents": 1,
+    "triangles": 14198,
+    "ownership": true
+  },
+  {
+    "id": "briefcase",
+    "parents": 1,
+    "triangles": 14102,
+    "ownership": true
+  },
+  {
+    "id": "shopping_bag",
+    "parents": 1,
+    "triangles": 14102,
+    "ownership": true
+  },
+  {
+    "id": "nagging",
+    "parents": 1,
+    "triangles": 14102,
+    "ownership": true
+  },
+  {
+    "id": "protective",
+    "parents": 1,
+    "triangles": 14102,
+    "ownership": true
+  },
+  {
+    "id": "pta_leader",
+    "parents": 3,
+    "triangles": 14998,
+    "ownership": true
+  },
+  {
+    "id": "umbrella",
+    "parents": 1,
+    "triangles": 14138,
+    "ownership": true
+  },
+  {
+    "id": "gardener",
+    "parents": 1,
+    "triangles": 14134,
+    "ownership": true
+  },
+  {
+    "id": "yoga",
+    "parents": 1,
+    "triangles": 14102,
+    "ownership": true
+  },
+  {
+    "id": "courier",
+    "parents": 1,
+    "triangles": 14114,
+    "ownership": true
+  },
+  {
+    "id": "photographer",
+    "parents": 1,
+    "triangles": 14134,
+    "ownership": true
+  },
+  {
+    "id": "whistle",
+    "parents": 1,
+    "triangles": 14170,
+    "ownership": true
+  },
+  {
+    "id": "camper",
+    "parents": 1,
+    "triangles": 14182,
+    "ownership": true
+  },
+  {
+    "id": "runner",
+    "parents": 1,
+    "triangles": 14102,
+    "ownership": true
+  },
+  {
+    "id": "neat",
+    "parents": 1,
+    "triangles": 14102,
+    "ownership": true
+  },
+  {
+    "id": "armored",
+    "parents": 1,
+    "triangles": 14126,
+    "ownership": true
+  },
+  {
+    "id": "drama",
+    "parents": 1,
+    "triangles": 14102,
+    "ownership": true
+  },
+  {
+    "id": "duo",
+    "parents": 2,
+    "triangles": 14486,
+    "ownership": true
+  }
+]
