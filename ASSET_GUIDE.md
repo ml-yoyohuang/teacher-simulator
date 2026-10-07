@@ -10,7 +10,7 @@
 | student:<0..35> | humanParts(role=student) | 十二性格的共用程式骨架 |
 | 七個 staff ID | humanParts(role=staff) | 護士帽、警衛帽、阿姨圍裙、主任／校長裝束 |
 | 十九 parent ID | humanParts(role=parent) | 各型髮型、道具、護具、帽、包、傘等輪廓差異 |
-| 26 itemDefs.modelKey | itemModel(typeId) | 真正Box/Cylinder/Sphere/Cone/Torus組合 |
+| 目前27種基礎 itemDefs.modelKey（另8種衍生物） | itemModel(typeId) | 真正Box/Cylinder/Sphere/Cone/Torus組合 |
 | prop:<zone>:<index> | propModel(type) | 家具、練習假人、講臺、工具間、活動攤位 |
 | zone:<id> | Renderer.rebuild / World.walls | 地面、門、分組牆、標示 |
 | sfx:<eventType> | AudioEngine.event | 拾取、落地、戰鬥、任務等合成聲音 |
@@ -42,3 +42,9 @@ Y向上、XZ地面，單位公尺。物件pivot是底面中心；人體約1.7m�
 遊戲 → 設定 → 試聽。首次開始由手勢建立AudioContext，失敗仍可靜音玩。音效頻率表與原創音符序列在audio.ts，不引用歌曲。需要替換時使用本地短音檔，保持事件映射、主音量壓縮、聲部限制（音效12／音樂6）、pause時停止未來聲音以及音量設定。
 
 合唱為80BPM、32拍、8提示，聲畫都由同一simulation songTime對映到AudioContext排程，暫停不推进。不是真人合唱。人工聽感與手機音訊延遲尚待實測。
+
+## 校園無線麥克風
+
+`itemModel('wireless_microphone')`：0.7m內的低分段深灰握柄、灰藍球形網罩／深色橫網線與黃色環帶，全部使用既有cylinder/sphere/box與共享材質，不新增貼圖或光源。一般手持沿原anchor，擴音點名時右手與麥克風抬到臉旁約1秒。地面可回收道具不是decor，拋物線與判定依game資料、碰撞不依網罩外形。聲波重用torus实例，正常至多2動態圈+1靜態圈，lowMotion仅靜態；一個DOM氣泡跟隨有效聲源，取消當下由runtime狀態清除。
+
+新增`microphoneBroadcast`（520Hz起音）與`microphonePulse`（740Hz短提示）；與普通點名共用650Hz提示。均在AudioEngine內合成，廣播source標籤供取消即stop，使用既有音量、mute、12聲部。soundtest.html逐項可試聽，目前32音效、5音樂。沒有任何裝置麥克風／錄音／語音辨識API。

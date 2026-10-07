@@ -2,7 +2,7 @@
   "date": "2026-10-08",
   "url": "http://127.0.0.1:4173/",
   "status": "pass",
-  "expectedBundle": "assets/game-dmSxQZht.js",
+  "expectedBundle": "assets/game-DF68QNW-.js",
   "errors": [],
   "failed": [],
   "checks": [
@@ -13,6 +13,7 @@
     "empty object state",
     "rotation retains collapse",
     "no page overflow",
+    "27 source-derived item guide entries and microphone description",
     "no dev API"
   ],
   "limitations": [

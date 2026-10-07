@@ -1,3 +1,4 @@
+import {SOUND_EFFECTS,MUSIC_TRACKS} from '../src/audio';
 import {chromium} from '@playwright/test';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
@@ -21,13 +22,13 @@ await page.locator('#tasks').click();assert.equal(await page.locator('.task-card
 await page.locator('[data-action=close]').first().click();
 await page.screenshot({path:'artifacts/pages-live-game.png'});
 await page.goto(new URL('soundtest.html',site).href,{waitUntil:'networkidle'});
-assert.equal(await page.locator('[data-sfx]').count(),30);assert.equal(await page.locator('[data-music]').count(),5);
+assert.equal(await page.locator('[data-sfx]').count(),SOUND_EFFECTS.length);assert.equal(await page.locator('[data-music]').count(),MUSIC_TRACKS.length);
 await page.locator('[data-sfx="missionComplete"]').click();await page.waitForTimeout(100);
 assert.match(await page.locator('#status').innerText(),/任務完成/);
 await page.locator('[data-music="chase"]').click();await page.waitForTimeout(100);
 assert.match(await page.locator('#status').innerText(),/正在播放：追逐/);
 await page.locator('#stop').click();assert.equal(await page.locator('#status').innerText(),'已停止播放');
 assert.deepEqual(errors,[]);assert.deepEqual(failed,[]);
-const result={date:'2026-10-08',site,status:'pass',browser:await browser.version(),dimensions,tasks:24,sounds:30,music:5,debugExcluded:true,errors,failed,note:'公開 GitHub Pages 真實瀏覽器載入、鍵盤輸入、選單與試聽觸發；不代表人工聽感或實體手機效能。'};
+const result={date:'2026-10-08',site,status:'pass',browser:await browser.version(),dimensions,tasks:24,sounds:SOUND_EFFECTS.length,music:MUSIC_TRACKS.length,debugExcluded:true,errors,failed,note:'公開 GitHub Pages 真實瀏覽器載入、鍵盤輸入、選單與試聽觸發；不代表人工聽感或實體手機效能。'};
 fs.writeFileSync('artifacts/pages-live-qa.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));
 await browser.close();

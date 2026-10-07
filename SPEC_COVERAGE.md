@@ -5,7 +5,7 @@
 | registry | 數量 | 證據 |
 |---|---:|---|
 | zone | 10 | 格網通路／碰撞測試；真實3D模型 |
-| item | 26 | 每種portable/pushable/fixed/wearable操作實測狀態 |
+| item | 27 | 每種portable/pushable/fixed/wearable操作實測狀態 |
 | student | 12 | 性格反應FSM測試、部分真實NPC互動 |
 | parent | 19 | 有效入場／預算／ability測試及逐型3D生成 |
 | staff | 7 | 場景角色與各服務/查詢/巡查路徑 |
@@ -17,10 +17,12 @@
 
 | 項目 | 狀態 | 證據／限制 |
 |---|---|---|
+|手機2.2倍鏡頭／擊倒圖鑑／提示收合|pass (模擬)|tests/mobile-codex.test.ts、artifacts/mobile-codex-qa.json；保留本次更新前功能|
+|校園無線麥克風／擴音點名／落地誘餌|pass (規則＋實際輸入)|tests/microphone.test.ts、artifacts/microphone-qa.json與真實演示影片；真機及人工聽感未驗證|
 |真正3D／原創主角|pass|artifacts/courtyard.png、office.png；WebGLRenderer/角色幾何|
 |固定斜俯視／屏幕方向／室內牆切低|pass|桌機W方向及真實室內截圖；render.ts固定正交相機|
 |10區連續地圖／三種路線|pass (規則)|World格網各區可達與動態障礙；非人工逐區長時間調查|
-|26道具全部允許操作|pass (規則＋代表輸入)|全操作test；掃把/球/假髮/椅/三角鐵/咖啡真實輸入|
+|27道具全部允許操作|pass (規則＋代表輸入)|全操作test；掃把/球/假髮/椅/三角鐵/咖啡真實輸入|
 |十二性格／十九家長／七教職員|pass (機制)|FSM與逐型生成測試；尚無19型各自人工完整交戰|
 |通知因果／警戒池／預告／3家長2教師|pass|聯絡中斷與完成測試、預算測試、真實壓力場景|
 |警戒／視線／搜尋／藏點|pass (規則＋代表輸入)|未目擊/目擊藏入測試、拍攝打斷、自然降級|
@@ -74,6 +76,7 @@
 |item|principal_wig|校長假髮|pass|
 |item|principal_glasses|眼鏡|pass|
 |item|laptop|筆電|pass|
+|item|wireless_microphone|校園無線麥克風|pass|
 |student|timid|膽小|pass|
 |student|fighter|反擊|pass|
 |student|tattletale|告狀|pass|

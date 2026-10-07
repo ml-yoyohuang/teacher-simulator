@@ -18,8 +18,8 @@ await page.addInitScript(()=>{
  };
 });
 await page.goto('http://127.0.0.1:4173/soundtest.html');
-assert.equal(await page.locator('[data-sfx]').count(),30);
-assert.equal(await page.locator('[data-music]').count(),5);
+assert.equal(await page.locator('[data-sfx]').count(),SOUND_EFFECTS.length);
+assert.equal(await page.locator('[data-music]').count(),MUSIC_TRACKS.length);
 const sounds=[];
 for(const sound of SOUND_EFFECTS){
  const before=await page.evaluate(()=>(window as any).__notes.length);
@@ -60,5 +60,5 @@ await page.locator('[data-action=start]').click();await page.locator('#skip').cl
 assert.match(await page.locator('.hp-line').innerText(),/開心導師/);
 assert.equal(errors.length,0);
 fs.writeFileSync('artifacts/soundtest-qa.json',JSON.stringify({date:'2026-10-08',status:'pass',sounds,music,dimensions,noSaveWrites:true,mobileLayout:true,errors,note:'驗證實際 Web Audio 節點與排程；人工聽感仍待使用者試聽。'},null,2));
-console.log('PASS: 30 sound effects, 5 music tracks including 32 choir notes, stop, no save writes, mobile layout, renamed HUD and 1200×630 OG image.');
+console.log(`PASS: ${SOUND_EFFECTS.length} sound effects, ${MUSIC_TRACKS.length} music tracks including 32 choir notes, stop, no save writes, mobile layout, renamed HUD and 1200×630 OG image.`);
 await browser.close();

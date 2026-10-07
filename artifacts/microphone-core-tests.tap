@@ -1,0 +1,250 @@
+TAP version 13
+# Subtest: exact content registries and reference validity
+ok 1 - exact content registries and reference validity
+  ---
+  duration_ms: 0.659875
+  type: 'test'
+  ...
+# Subtest: atomic item take / throw / NPC take / return / wear / rescue ownership
+ok 2 - atomic item take / throw / NPC take / return / wear / rescue ownership
+  ---
+  duration_ms: 1.839875
+  type: 'test'
+  ...
+# Subtest: one swing hits a target once, down event once, nurse protected
+ok 3 - one swing hits a target once, down event once, nurse protected
+  ---
+  duration_ms: 14.545875
+  type: 'test'
+  ...
+# Subtest: alert thresholds, cooldown, prank blame, hidden line of sight
+ok 4 - alert thresholds, cooldown, prank blame, hidden line of sight
+  ---
+  duration_ms: 0.418375
+  type: 'test'
+  ...
+# Subtest: family causal queue, delay, unique incident, global group slots
+ok 5 - family causal queue, delay, unique incident, global group slots
+  ---
+  duration_ms: 17.194459
+  type: 'test'
+  ...
+# Subtest: navigation all zones reachable, swept dodge cannot pass walls
+ok 6 - navigation all zones reachable, swept dodge cannot pass walls
+  ---
+  duration_ms: 6.949792
+  type: 'test'
+  ...
+# Subtest: quest pins and held items exclude restoration; same identity returns
+ok 7 - quest pins and held items exclude restoration; same identity returns
+  ---
+  duration_ms: 0.448375
+  type: 'test'
+  ...
+# Subtest: reward ledger, purchase bounds, complete save round trip and invalid import
+ok 8 - reward ledger, purchase bounds, complete save round trip and invalid import
+  ---
+  duration_ms: 0.473375
+  type: 'test'
+  ...
+# Subtest: cancel old attempts, mode reset queues and pending, chapter freely selectable
+ok 9 - cancel old attempts, mode reset queues and pending, chapter freely selectable
+  ---
+  duration_ms: 0.912333
+  type: 'test'
+  ...
+# Subtest: 24+16 mission mechanics have executable completion chains, no ledger duplication
+ok 10 - 24+16 mission mechanics have executable completion chains, no ledger duplication
+  ---
+  duration_ms: 7.576667
+  type: 'test'
+  ...
+# Subtest: choir silent 32 beats completes, fixed simulation pause preserves beat
+ok 11 - choir silent 32 beats completes, fixed simulation pause preserves beat
+  ---
+  duration_ms: 0.216833
+  type: 'test'
+  ...
+# Subtest: 20 mode switches resource counts remain bounded and item identity consistent
+ok 12 - 20 mode switches resource counts remain bounded and item identity consistent
+  ---
+  duration_ms: 0.967042
+  type: 'test'
+  ...
+# Subtest: every portable, pushable, fixed and wearable declared action has real state effects
+ok 13 - every portable, pushable, fixed and wearable declared action has real state effects
+  ---
+  duration_ms: 2.782792
+  type: 'test'
+  ...
+# Subtest: all 12 personalities choose specific observable reaction states
+ok 14 - all 12 personalities choose specific observable reaction states
+  ---
+  duration_ms: 0.466292
+  type: 'test'
+  ...
+# Subtest: all 19 parents use defined ability plus real gate entry and legal budgets
+ok 15 - all 19 parents use defined ability plus real gate entry and legal budgets
+  ---
+  duration_ms: 19.418625
+  type: 'test'
+  ...
+# Subtest: exam paper scatter keeps one bundle ID and requires three real pickups
+ok 16 - exam paper scatter keeps one bundle ID and requires three real pickups
+  ---
+  duration_ms: 15.122209
+  type: 'test'
+  ...
+# Subtest: contact interrupted before two seconds never schedules; completion does
+ok 17 - contact interrupted before two seconds never schedules; completion does
+  ---
+  duration_ms: 11.629084
+  type: 'test'
+  ...
+# Subtest: q09 completes through natural 65→0 simulation rather than a synthetic completion event
+ok 18 - q09 completes through natural 65→0 simulation rather than a synthetic completion event
+  ---
+  duration_ms: 37.861167
+  type: 'test'
+  ...
+# Subtest: airborne portable can be caught in hand range and flight identity clears
+ok 19 - airborne portable can be caught in hand range and flight identity clears
+  ---
+  duration_ms: 0.37825
+  type: 'test'
+  ...
+# Subtest: parent projectile derives position only and keeps its own valid item identity
+ok 20 - parent projectile derives position only and keeps its own valid item identity
+  ---
+  duration_ms: 26.488583
+  type: 'test'
+  ...
+# Subtest: repeated parent waves reuse bounded projectile pool and delete departed interpolation records
+ok 21 - repeated parent waves reuse bounded projectile pool and delete departed interpolation records
+  ---
+  duration_ms: 0.461875
+  type: 'test'
+  ...
+# Subtest: unreserved same-type auxiliary item cannot satisfy a pinned mission delivery
+ok 22 - unreserved same-type auxiliary item cannot satisfy a pinned mission delivery
+  ---
+  duration_ms: 0.188125
+  type: 'test'
+  ...
+# Subtest: tutorial papers require an explicit E interaction at podium and ignore nearby distractions
+ok 23 - tutorial papers require an explicit E interaction at podium and ignore nearby distractions
+  ---
+  duration_ms: 0.444584
+  type: 'test'
+  ...
+# Subtest: tutorial R drop only completes for the correct papers next to the podium
+ok 24 - tutorial R drop only completes for the correct papers next to the podium
+  ---
+  duration_ms: 0.138125
+  type: 'test'
+  ...
+# Subtest: podium E placement also works after skipping tutorial without granting task completion
+ok 25 - podium E placement also works after skipping tutorial without granting task completion
+  ---
+  duration_ms: 0.188459
+  type: 'test'
+  ...
+# Subtest: microphone registry, one original instance per mode, obtainable home and unique operations
+ok 26 - microphone registry, one original instance per mode, obtainable home and unique operations
+  ---
+  duration_ms: 2.867792
+  type: 'test'
+  ...
+# Subtest: amplified roll reaches ten meters, turns first, shares cooldown with ordinary roll, excludes hostile and parents
+ok 27 - amplified roll reaches ten meters, turns first, shares cooldown with ordinary roll, excludes hostile and parents
+  ---
+  duration_ms: 2.711583
+  type: 'test'
+  ...
+# Subtest: walls block amplified roll and broadcasts; no global commands
+ok 28 - walls block amplified roll and broadcasts; no global commands
+  ---
+  duration_ms: 0.664875
+  type: 'test'
+  ...
+# Subtest: actual throw lands once, never broadcasts from drop, catch before landing disarms, still recoverable
+ok 29 - actual throw lands once, never broadcasts from drop, catch before landing disarms, still recoverable
+  ---
+  duration_ms: 1.77775
+  type: 'test'
+  ...
+# Subtest: visible pursuer stays focused; loses view, searches and follows legal route to microphone
+ok 30 - visible pursuer stays focused; loses view, searches and follows legal route to microphone
+  ---
+  duration_ms: 1.113666
+  type: 'test'
+  ...
+# Subtest: pursuer that witnesses this throw knows bait even after losing view
+ok 31 - pursuer that witnesses this throw knows bait even after losing view
+  ---
+  duration_ms: 1.052959
+  type: 'test'
+  ...
+# Subtest: search investigation cooldown per NPC and original microphone, no repeated tether, reacquisition preempts
+ok 32 - search investigation cooldown per NPC and original microphone, no repeated tether, reacquisition preempts
+  ---
+  duration_ms: 0.939625
+  type: 'test'
+  ...
+# Subtest: guarding, task states, protective parent and unreachable routes ignore sound without consuming cooldown
+ok 33 - guarding, task states, protective parent and unreachable routes ignore sound without consuming cooldown
+  ---
+  duration_ms: 1.187709
+  type: 'test'
+  ...
+# Subtest: pickup, removal, mode reset, rescue and restoration clear runtime broadcasts and sound references
+ok 34 - pickup, removal, mode reset, rescue and restoration clear runtime broadcasts and sound references
+  ---
+  duration_ms: 1.441625
+  type: 'test'
+  ...
+# Subtest: mute and low motion do not change attraction; frozen game time never repeats pulses
+ok 35 - mute and low motion do not change attraction; frozen game time never repeats pulses
+  ---
+  duration_ms: 1.257459
+  type: 'test'
+  ...
+# Subtest: phone camera enlarges portrait and landscape 2.2 times, desktop retains span
+ok 36 - phone camera enlarges portrait and landscape 2.2 times, desktop retains span
+  ---
+  duration_ms: 0.34375
+  type: 'test'
+  ...
+# Subtest: all student and parent types record actual knockdowns, deduplicate damage after zero HP, survive resets
+ok 37 - all student and parent types record actual knockdowns, deduplicate damage after zero HP, survive resets
+  ---
+  duration_ms: 2.582042
+  type: 'test'
+  ...
+# Subtest: actual player swings record furniture, repaired furniture counts again, NPC prank and setup excluded
+ok 38 - actual player swings record furniture, repaired furniture counts again, NPC prank and setup excluded
+  ---
+  duration_ms: 2.302084
+  type: 'test'
+  ...
+# Subtest: player thrown items record first broken transition, NPC projectiles excluded, trash and cones included
+ok 39 - player thrown items record first broken transition, NPC projectiles excluded, trash and cones included
+  ---
+  duration_ms: 1.174791
+  type: 'test'
+  ...
+# Subtest: codex save migration, roundtrip and invalid data validation
+ok 40 - codex save migration, roundtrip and invalid data validation
+  ---
+  duration_ms: 0.62275
+  type: 'test'
+  ...
+1..40
+# tests 40
+# suites 0
+# pass 40
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 281.565625

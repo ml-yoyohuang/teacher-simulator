@@ -8,7 +8,7 @@ files=[]
 for directory in include_dirs:
  files.extend(p for p in (root/directory).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name != '.DS_Store')
 files.extend(root/f for f in include_files)
-files.extend(p for p in (root/'artifacts').iterdir() if p.suffix in ['.png','.json','.tap'] and not p.name.startswith('failure-') and p.name != 'DELIVERY_MANIFEST.json')
+files.extend(p for p in (root/'artifacts').iterdir() if p.suffix in ['.png','.json','.tap','.webm'] and not p.name.startswith('failure-') and p.name != 'DELIVERY_MANIFEST.json')
 for p in files:
  if not p.exists():raise FileNotFoundError(p)
 manifest={str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(files)}

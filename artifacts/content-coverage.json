@@ -1,7 +1,7 @@
 {
   "counts": {
     "zones": 10,
-    "items": 26,
+    "items": 27,
     "students": 12,
     "parents": 19,
     "staff": 7,
@@ -332,6 +332,15 @@
       "registered": true,
       "ruleTest": "pass",
       "operationEvidence": "tests/core.test.ts: every declared action",
+      "fullHumanPlaythrough": "not tested"
+    },
+    {
+      "kind": "item",
+      "id": "wireless_microphone",
+      "label": "校園無線麥克風",
+      "registered": true,
+      "ruleTest": "pass",
+      "operationEvidence": "tests/microphone.test.ts + artifacts/microphone-qa.json: call/decoy/ownership",
       "fullHumanPlaythrough": "not tested"
     },
     {

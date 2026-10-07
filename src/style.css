@@ -9,3 +9,5 @@
 @media(max-width:900px){.side-nav{top:calc(200px + var(--quest-card-height,100px) + 10px)}}
 @media(max-width:600px){.side-nav{top:calc(172px + var(--quest-card-height,100px) + 10px)}}
 @media(max-height:500px) and (min-width:601px){.side-nav{top:158px}}
+
+#microphone-speech{position:absolute;max-width:220px;transform:translate(-50%,-100%);padding:9px 13px;border-radius:12px;background:#fff5d8ed;border:1px solid #e5bd4a;color:#234c42;font-size:11px;line-height:1.5;pointer-events:none;z-index:3}
