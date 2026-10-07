@@ -104,3 +104,5 @@ Chromium觸控模擬驗收：390×844與844×390人物1.75m投影高度分別75.
 正式dist成品使用真實UI、無開發API的觸控验收通過：12學生、19家長、空物品狀態、收合／展開／轉向、沒有水平溢出，pageerror與HTTP錯誤均0。證據：`artifacts/mobile-production-release-qa.json`。TypeScript、Vite build與Pages成品／OG檢查通過。公開版驗收另記於`artifacts/mobile-pages-release-qa.json`（僅在成功發布後產生）。
 
 限制：舊存檔只有擊倒總數，無法還原個別種類，更新後才開始收集。未使用實體iPhone／Android，手機Safari、GPU效能、耗電及長時間發熱仍未實測。
+
+公開部署與驗收已完成：[Actions 37659948059](https://github.com/ml-yoyohuang/teacher-simulator/actions/runs/37659948059)成功。公開頁面載入的game-dmSxQZht.js與本地測過成品一致，手機觸控收合／展開、走動保留狀態、12學生與19家長條目、物品空狀態、轉向及無開發API皆通過，HTTP錯誤與pageerror均0；證據：`artifacts/mobile-pages-release-qa.json`與實際公開畫面截圖。

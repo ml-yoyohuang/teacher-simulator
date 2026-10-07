@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-08",
+  "url": "https://ml-yoyohuang.github.io/teacher-simulator/",
+  "status": "pass",
+  "expectedBundle": "assets/game-dmSxQZht.js",
+  "errors": [],
+  "failed": [],
+  "checks": [
+    "production bundle matches local tested build",
+    "real touch HUD collapse and expand",
+    "movement retains collapse",
+    "12 student and 19 parent roster entries",
+    "empty object state",
+    "rotation retains collapse",
+    "no page overflow",
+    "no dev API"
+  ],
+  "limitations": [
+    "Emulated Chromium; no physical phone or Safari test."
+  ]
+}
