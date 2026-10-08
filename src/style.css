@@ -5,7 +5,7 @@
 
 #speech{position:absolute;max-width:230px;transform:translate(-50%,-100%);background:#fbf6e5;color:#3d5a49;border-radius:14px;padding:10px 16px;box-shadow:0 4px 15px #234c4215;font-size:11px;line-height:1.6;z-index:3}#speech:after{content:'';position:absolute;left:50%;bottom:-8px;border:8px solid transparent;border-top-color:#fbf6e5;border-bottom:0}
 
-.quest{pointer-events:auto}.quest #quest-toggle{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;margin:0;padding:0;border:0;border-radius:6px;background:transparent;text-align:left}.quest #quest-toggle .eyebrow{flex:1}.quest #quest-chevron{font-size:18px}.quest.is-collapsed{padding-top:4px;padding-bottom:4px}.codex-tabs{display:flex;gap:8px;flex-wrap:wrap}.incident-codex .undiscovered{background:#e8e7df;color:#889187}.incident-codex .discovered{border:1px solid #b6c9a6}.incident-codex small{display:block;margin-top:12px;color:#536b56}
+.quest{pointer-events:auto}.quest #quest-toggle{display:flex;align-items:center;gap:10px;width:100%;min-height:48px;margin:0;padding:0;border:0;border-radius:6px;background:transparent;text-align:left}.quest #quest-toggle .eyebrow{flex:1}.quest #quest-chevron{font-size:12px}.quest.is-collapsed{padding-top:4px;padding-bottom:4px}.codex-tabs{display:flex;gap:8px;flex-wrap:wrap}.incident-codex .undiscovered{background:#e8e7df;color:#889187}.incident-codex .discovered{border:1px solid #b6c9a6}.incident-codex small{display:block;margin-top:12px;color:#536b56}
 @media(max-width:900px){.side-nav{top:calc(200px + var(--quest-card-height,100px) + 10px)}}
 @media(max-width:600px){.side-nav{top:calc(172px + var(--quest-card-height,100px) + 10px)}}
 @media(max-height:500px) and (min-width:601px){.side-nav{top:158px}}
@@ -19,4 +19,8 @@
 #meeting-controls{z-index:8}@media(max-width:600px){#meeting-controls{top:236px}#meeting-display{top:328px;width:85%}}
 
 .quest #quest-chevron{display:flex;align-items:center;justify-content:center;align-self:center;width:24px;height:24px;line-height:1;flex-shrink:0}.codex-thumb{width:100%;height:100px;object-fit:contain;background:#dbe4d0;border-radius:8px;margin-bottom:10px}.dog-status{background:#ecebdd;padding:14px;border-radius:12px;margin:12px 0}.dog-target{border:2px solid #d6a237}#dogs-entry{font-size:11px;padding:8px;min-width:48px;width:auto}.dog-heart{color:#bb6f81}.quest.is-collapsed #quest-toggle{align-items:center}
-@media(max-width:600px){.quest.is-collapsed{width:172px}.quest.is-collapsed .eyebrow{font-size:0;display:flex;align-items:center}.quest.is-collapsed #zone{font-size:10px}.quest.is-collapsed #quest-toggle{min-height:40px}.codex-thumb{height:85px}}
+@media(max-width:600px){.quest.is-collapsed{width:172px}.quest.is-collapsed .eyebrow{display:flex;align-items:center}.quest.is-collapsed .quest-caption{display:none}.quest.is-collapsed #zone{font-size:10px}.quest.is-collapsed #quest-toggle{min-height:40px}.codex-thumb{height:85px}}
+
+#drop{position:absolute;right:160px;bottom:91px;width:56px;height:56px}#meeting-ready{color:#466852;line-height:1.5}#toast.toast-dog{display:flex;align-items:center;gap:12px;padding:10px 16px;text-align:left}.toast-dog-face{display:block;width:52px;height:52px;flex:0 0 52px}.toast-dog-face svg{display:block;width:100%;height:100%}.toast-text{line-height:1.6}
+@media(max-width:600px){#drop{right:134px;bottom:90px;width:52px;height:52px}#toast.toast-dog{gap:9px;padding:9px 12px;max-width:88%}.toast-dog-face{width:48px;height:48px;flex-basis:48px}}
+@media(max-height:500px) and (min-width:601px){#drop{bottom:80px;width:52px;height:52px}}

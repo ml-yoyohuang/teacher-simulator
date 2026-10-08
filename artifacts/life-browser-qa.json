@@ -1,0 +1,327 @@
+{
+  "browser": "141.0.7390.37",
+  "viewport": "1280x800; mobile 390x844",
+  "errors": [],
+  "receipts": [
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 375,
+        "blocked": false,
+        "player": {
+          "x": -25.392253077483723,
+          "z": -20.249712786689685
+        }
+      }
+    },
+    {
+      "lunch": {
+        "clock": 13.699999999999962,
+        "serial": 0,
+        "mealSerial": 1,
+        "mealCooldown": 89.83333333333334,
+        "stomach": 14.833333333333334,
+        "pendingMeal": null,
+        "cooldowns": {},
+        "nextMain": 100000000,
+        "nextSide": 100000000,
+        "recent": [],
+        "achievements": [
+          "午餐提出書面意見"
+        ],
+        "active": [],
+        "ledger": [
+          {
+            "incidentId": "meal:1",
+            "eventType": "lunch",
+            "sourceActorId": "player_music_teacher",
+            "targetActorId": null,
+            "itemInstanceId": null,
+            "zoneId": "classroom",
+            "gameTime": 13.533333333333296,
+            "resolutionReason": "午餐提出異議"
+          }
+        ]
+      }
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 241,
+        "blocked": false,
+        "player": {
+          "x": -9.917983674200583,
+          "z": -8.907495886349386
+        }
+      }
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 93,
+        "blocked": false,
+        "player": {
+          "x": -17.204769187016048,
+          "z": -16.627998931193655
+        }
+      }
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 398,
+        "blocked": false,
+        "player": {
+          "x": -15.516983505682216,
+          "z": 15.054394276215625
+        }
+      }
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 307,
+        "blocked": false,
+        "player": {
+          "x": -16.943145271747813,
+          "z": -18.938312052949463
+        }
+      }
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 2,
+        "blocked": false,
+        "player": {
+          "x": -17.14597660710574,
+          "z": -18.708303588232695
+        }
+      }
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 20,
+        "blocked": false,
+        "player": {
+          "x": -19.348440941072642,
+          "z": -18.079042930775643
+        }
+      }
+    },
+    {
+      "theft": [
+        {
+          "incidentId": "life:2",
+          "eventType": "baseball",
+          "sourceActorId": "student:1",
+          "targetActorId": null,
+          "itemInstanceId": "broom:0",
+          "zoneId": "playground",
+          "gameTime": 39.43333333333366,
+          "resolutionReason": "掃把折斷"
+        },
+        {
+          "incidentId": "life:2",
+          "eventType": "baseball",
+          "sourceActorId": "system",
+          "targetActorId": null,
+          "itemInstanceId": null,
+          "zoneId": "playground",
+          "gameTime": 39.43333333333366,
+          "resolutionReason": "棒球練習結束"
+        },
+        {
+          "incidentId": "life:3",
+          "eventType": "theft",
+          "sourceActorId": "system",
+          "targetActorId": null,
+          "itemInstanceId": null,
+          "zoneId": "staff_room",
+          "gameTime": 0,
+          "resolutionReason": "預約完成"
+        },
+        {
+          "incidentId": "life:3",
+          "eventType": "theft",
+          "sourceActorId": "student:1",
+          "targetActorId": "student:0",
+          "itemInstanceId": "life:3:top",
+          "zoneId": "classroom",
+          "gameTime": 3.599999999999997,
+          "resolutionReason": "朋友取走可見的同一顆陀螺"
+        },
+        {
+          "incidentId": "life:3",
+          "eventType": "theft",
+          "sourceActorId": "player_music_teacher",
+          "targetActorId": "student:0",
+          "itemInstanceId": null,
+          "zoneId": "classroom",
+          "gameTime": 13.933333333333294,
+          "resolutionReason": "普通受擊"
+        },
+        {
+          "incidentId": "life:3",
+          "eventType": "theft",
+          "sourceActorId": "player_music_teacher",
+          "targetActorId": "student:1",
+          "itemInstanceId": "life:3:top",
+          "zoneId": "classroom",
+          "gameTime": 13.933333333333294,
+          "resolutionReason": "recoveryHit"
+        },
+        {
+          "incidentId": "life:3",
+          "eventType": "theft",
+          "sourceActorId": "player_music_teacher",
+          "targetActorId": "student:0",
+          "itemInstanceId": "life:3:top",
+          "zoneId": "classroom",
+          "gameTime": 14.766666666666625,
+          "resolutionReason": "同一物品交還"
+        },
+        {
+          "incidentId": "life:3",
+          "eventType": "theft",
+          "sourceActorId": "system",
+          "targetActorId": null,
+          "itemInstanceId": null,
+          "zoneId": "classroom",
+          "gameTime": 14.766666666666625,
+          "resolutionReason": "失物已交還"
+        }
+      ]
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 96,
+        "blocked": false,
+        "player": {
+          "x": 9.030970513206755,
+          "z": -17.84246082048772
+        }
+      }
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 90,
+        "blocked": false,
+        "player": {
+          "x": 3.0078872468311006,
+          "z": -11.095336182397112
+        }
+      }
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 145,
+        "blocked": false,
+        "player": {
+          "x": 3.007632859413412,
+          "z": -11.094660578810313
+        }
+      }
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 180,
+        "blocked": false,
+        "player": {
+          "x": -19.339125493259132,
+          "z": -17.212877102824418
+        }
+      }
+    },
+    {
+      "walk": {
+        "ok": true,
+        "ticks": 248,
+        "blocked": false,
+        "player": {
+          "x": -0.04302051775748886,
+          "z": 5.061720913899529
+        }
+      }
+    }
+  ],
+  "performance": [
+    {
+      "scenario": "baseline",
+      "fps": 15.015015015015342,
+      "p50": 66.70000000000073,
+      "p95": 100,
+      "drawCalls": 9,
+      "triangles": 19886,
+      "geometry": 7,
+      "textures": 4,
+      "activeNPC": 5,
+      "aiMs": 0.10000002384185791,
+      "simulationMs": 0.10000002384185791,
+      "quality": "low",
+      "samples": 56,
+      "reservedStudents": 0,
+      "puddles": 0,
+      "smoke": 0
+    },
+    {
+      "scenario": "lunch-two-sides",
+      "fps": 11.990407673860702,
+      "p50": 66.69999999999709,
+      "p95": 100,
+      "drawCalls": 11,
+      "triangles": 21534,
+      "geometry": 7,
+      "textures": 8,
+      "activeNPC": 11,
+      "aiMs": 0,
+      "simulationMs": 0,
+      "quality": "low",
+      "samples": 60,
+      "reservedStudents": 2,
+      "puddles": 2,
+      "smoke": 0
+    },
+    {
+      "scenario": "theft-chase",
+      "fps": 12.004801920767887,
+      "p50": 66.70000000000073,
+      "p95": 100,
+      "drawCalls": 12,
+      "triangles": 23252,
+      "geometry": 7,
+      "textures": 9,
+      "activeNPC": 13,
+      "aiMs": 0.10000002384185791,
+      "simulationMs": 0.10000002384185791,
+      "quality": "low",
+      "samples": 59,
+      "reservedStudents": 2,
+      "puddles": 0,
+      "smoke": 0
+    },
+    {
+      "scenario": "patrol",
+      "fps": 15.015015015015342,
+      "p50": 66.60000000000218,
+      "p95": 83.40000000000146,
+      "drawCalls": 11,
+      "triangles": 21850,
+      "geometry": 7,
+      "textures": 5,
+      "activeNPC": 7,
+      "aiMs": 0.09999996423721313,
+      "simulationMs": 0.09999996423721313,
+      "quality": "low",
+      "samples": 64,
+      "reservedStudents": 2,
+      "puddles": 0,
+      "smoke": 2
+    }
+  ]
+}

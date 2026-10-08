@@ -1,6 +1,8 @@
 import {Game,Event} from './game';
 export type MusicTheme='explore'|'chase'|'choir';
 export const SOUND_EFFECTS=[
+ {id:'lifeCrack',label:'掃把折斷原創短音',event:'lifeCrack',frequency:95,instrument:''},
+ {id:'lifePhone',label:'抽象遊戲提示原創短音',event:'lifePhone',frequency:740,instrument:''},
  {id:'dogPet',label:'柔和校狗回應',event:'dogPet',frequency:420,instrument:''},
  {id:'dogHeart',label:'校狗愛心提示',event:'dogHeart',frequency:780,instrument:''},
  {id:'dogFetch',label:'撿球完成',event:'dogFetch',frequency:640,instrument:''},

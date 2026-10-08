@@ -98,3 +98,14 @@ Windows桌機（Intel i7-10700@2.90GHz）、Chromium 141.0.7390.37 headless、Sw
 | 狗旁聽加列印表決 | 178 | 16.7 | 33.4 | 8 | 3608 | 5 |
 
 共享幾何7；狗不新增燈或毛髮。兩狗與理化老師計入原Low16／Standard20名額；會議最多4人＋1狗。普通校園與餵狗的軟體渲染frame中位皆66.7ms，旁聽16.7ms；不得宣稱手機60FPS。原始JSON：artifacts/dogs-browser-qa.json。
+
+## v1.3 生活事件實測
+
+| 場景 | p50 / p95 ms | draw calls | 幾何 | 活躍人物 | 牛奶漬 / 煙霧 |
+| --- | --- | --- | --- | --- | --- |
+| baseline | 66.7 / 100.0 | 9 | 7 | 5 | 0 / 0 |
+| lunch-two-sides | 66.7 / 100.0 | 11 | 7 | 11 | 2 / 0 |
+| theft-chase | 66.7 / 100.0 | 12 | 7 | 13 | 0 / 0 |
+| patrol | 66.6 / 83.4 | 11 | 7 | 7 | 0 / 2 |
+
+桌面 Windows/i7-10700、Chromium 141、SwiftShader、1280×800、Low；每場景約四秒。這不是實體手機 FPS。詳見 LIFE_EVENTS_QA_REPORT.md 與 artifacts/life-browser-qa.json。

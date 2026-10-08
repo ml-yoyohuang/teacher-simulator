@@ -22,5 +22,5 @@ export function validateMeeting(v:any):MeetingProgress{
   for(const i of pending.origin.items){if(!i||typeof i.id!=='string'||i.id.length>180||ids.has(i.id)||!itemDefs[i.type]||!['held','worn'].includes(i.state)||!i.home||!Number.isFinite(i.home.x)||!Number.isFinite(i.home.z)||!Array.isArray(i.hit)||i.hit.length>60||!Array.isArray(i.pins)||i.pins.length>20)throw Error('會議原物品移交無效');ids.add(i.id);}
   for(const slot of ['item','wig','glasses'])if(pending.origin[slot]&&!ids.has(pending.origin[slot]))throw Error('會議原物品身分不一致');
  }
- return {...structuredClone(v),serial:Number.isSafeInteger(v.serial)&&v.serial>=0?v.serial:0,campusClock:Number.isFinite(v.campusClock)&&v.campusClock>=0?v.campusClock:0};
+ return {...structuredClone(v),cooldown:Math.min(60,v.cooldown),serial:Number.isSafeInteger(v.serial)&&v.serial>=0?v.serial:0,campusClock:Number.isFinite(v.campusClock)&&v.campusClock>=0?v.campusClock:0};
 }

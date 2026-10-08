@@ -7,6 +7,9 @@ export function furnitureModel(f:Furniture):ScenePart[]{const {w,d,h,type}=f;
  const chair=(color=C.blue)=>[box([0,.46,0],[w,.1,d],color),box([0,h*.75,-d*.45],[w,h*.5,.08],color),...[-1,1].flatMap(x=>[-1,1].map(z=>box([x*w*.36,.23,z*d*.36],[.065,.46,.065],C.dark)))];
  const shelf=(color=C.wood)=>[box([-w/2+.06,h/2,0],[.12,h,d],color),box([w/2-.06,h/2,0],[.12,h,d],color),box([0,h/2,-d*.44],[w,h,.08],color),...Array.from({length:3},(_,i)=>box([0,.12+i*(h-.18)/2,0],[w,.08,d],color))];
  switch(type){
+ case 'life_wall':return [box([0,.5,0],[w,1,d],C.white),box([0,1,0],[w+.02,.06,d],C.blue)];
+ case 'life_partition':return [box([0,.55,0],[w,1.1,d],C.blue),box([w*.3,.5,d*.6],[.08,.05,.04],C.dark)];
+ case 'flag_pole':return [cyl([0,2,0],[.08,4,.08],C.white),box([.45,3.6,0],[.85,.5,.04],C.brick),box([.12,3.72,.03],[.25,.25,.02],C.blue)];
  case 'student_desk':case 'work_desk':case 'principal_desk':case 'nurse_desk':return [...desk(),...(type==='principal_desk'?[box([0,h*.5,-d*.25],[w*.9,h*.85,.12],C.wood)]:[])];
  case 'student_chair':case 'visitor_chair':case 'office_seat':case 'high_chair':return chair(type==='high_chair'?C.dark:type==='visitor_chair'?C.wood:C.blue);
  case 'piano_bench':return [box([0,.46,0],[w,.12,d],C.dark),box([-w*.35,.23,0],[.09,.46,d*.8],C.dark),box([w*.35,.23,0],[.09,.46,d*.8],C.dark)];
