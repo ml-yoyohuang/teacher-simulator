@@ -8,7 +8,7 @@
 | item | 27 | 每種portable/pushable/fixed/wearable操作實測狀態 |
 | student | 12 | 性格反應FSM測試、部分真實NPC互動 |
 | parent | 19 | 有效入場／預算／ability測試及逐型3D生成 |
-| staff | 7 | 場景角色與各服務/查詢/巡查路徑 |
+| staff | 8 | 場景角色與各服務/查詢/巡查路徑 |
 | normal mission | 24 | 完成鏈、第一獎勵ledger、取消與重試 |
 | chapter | 4 | 固定順序、自由選與清場 |
 | event mission | 16 | 獨立完成鏈，代表活動實際操作 |
@@ -24,7 +24,7 @@
 |固定斜俯視／屏幕方向／室內牆切低|pass|桌機W方向及真實室內截圖；render.ts固定正交相機|
 |10區連續地圖／三種路線|pass (規則)|World格網各區可達與動態障礙；非人工逐區長時間調查|
 |27道具全部允許操作|pass (規則＋代表輸入)|全操作test；掃把/球/假髮/椅/三角鐵/咖啡真實輸入|
-|十二性格／十九家長／七教職員|pass (機制)|FSM與逐型生成測試；尚無19型各自人工完整交戰|
+|十二性格／十九家長／八教職員|pass (機制)|FSM與逐型生成測試；尚無19型各自人工完整交戰|
 |通知因果／警戒池／預告／3家長2教師|pass|聯絡中斷與完成測試、預算測試、真實壓力場景|
 |警戒／視線／搜尋／藏點|pass (規則＋代表輸入)|未目擊/目擊藏入測試、拍攝打斷、自然降級|
 |持有／頭槽／投擲／暈眩|pass|ID不變／拾投佩戴／實際球命中／救援|
@@ -109,13 +109,14 @@
 |parent|armored|護具|pass|
 |parent|drama|戲劇社|pass|
 |parent|duo|雙人默契|pass|
-|staff|patrol_teacher|巡堂老師|pass|
+|staff|patrol_teacher|校安老師|pass|
 |staff|pe_teacher|體育老師|pass|
 |staff|dean|教務主任|pass|
 |staff|principal|校長|pass|
 |staff|nurse|校護|pass|
 |staff|shop_aunt|合作社阿姨|pass|
 |staff|guard_uncle|警衛伯伯|pass|
+|staff|science_teacher|理化老師|pass|
 |chapter|parent_day|親師日|pass|
 |chapter|anniversary|校慶|pass|
 |chapter|choir_contest|合唱團比賽|pass|
@@ -193,3 +194,9 @@
 ## 校事會議新增規格
 
 SCHOOL_MEETING_SPEC.md完整15種橋段全部接入；正式每場2／3種、兩組互斥、四名可擊打NPC、家長來源觸發、四散場原因、300秒冷卻、物品唯一移交、事件與紀錄冊、八稱號、活動文案及安全讀檔均已實作。對照表在MEETING_GUIDE.md，驗證層級與限制在MEETING_QA_REPORT.md；實際畫面在MEETING_SCREENSHOTS.md。手機實機與Safari不列為通過。
+
+## v1.2增補覆蓋
+
+第16橋段dog_observer、兩個免傷狗角色、理化老師、獨立關係／收益冷卻、唯一軟球及任務物品、六任務、一次夥伴／一次協助、共享20秒、六趣味收藏及100好感評語，均已接入既有存檔和操作。85項測試零失敗。兩狗12狀態×全部道具揮打及全部portable投擲驗證；理化老師實際5狀態×3方式、旁聽4委員×3方式，原六種委員16狀態規則矩陣仍通過。六校狗任務全部沿原桌椅／牆體導航完成；16橋段實際操作與清理通過。
+
+介面七項：可讀名牌含HUD／其他名牌避讓；按鈕小字margin-top:0；手機收合172px；箭頭上下中心誤差0px；三圖鑑附真實模型PNG縮圖；顯示全面校安老師；歡迎頁v1.2與友善介紹。實際畫面与各驗收層級見DOGS_QA_REPORT.md。手機實機、Safari及音效人工聽感未驗證。

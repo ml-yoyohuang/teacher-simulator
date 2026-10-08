@@ -1,0 +1,156 @@
+{
+  "method": "Original furniture/walls and navigation. Player walks every waypoint via fixed-step movement input, takes original quest item through E interaction, E marker placement and teacher delivery. Task-only dog follows actual courtyard-to-goal path. No player teleport or direct quest awards.",
+  "results": [
+    {
+      "id": "lion_bowl",
+      "progress": {
+        "affinity": 8,
+        "completed": [
+          "lion_bowl"
+        ],
+        "cooldowns": {
+          "pet": 0,
+          "treat": 0,
+          "ball": 0,
+          "walk": 0
+        },
+        "collected": false
+      },
+      "treats": 6,
+      "items": [
+        "dog_soft_ball:unique",
+        "lion_bowl:unique",
+        "lion_mat:unique",
+        "mani_toy:unique",
+        "mani_water:unique"
+      ]
+    },
+    {
+      "id": "lion_mat",
+      "progress": {
+        "affinity": 18,
+        "completed": [
+          "lion_bowl",
+          "lion_mat"
+        ],
+        "cooldowns": {
+          "pet": 0,
+          "treat": 0,
+          "ball": 0,
+          "walk": 0
+        },
+        "collected": false
+      },
+      "treats": 8,
+      "items": [
+        "dog_soft_ball:unique",
+        "lion_bowl:unique",
+        "lion_mat:unique",
+        "mani_toy:unique",
+        "mani_water:unique"
+      ]
+    },
+    {
+      "id": "lion_patrol",
+      "progress": {
+        "affinity": 35,
+        "completed": [
+          "lion_bowl",
+          "lion_mat",
+          "lion_patrol"
+        ],
+        "cooldowns": {
+          "pet": 0,
+          "treat": 0,
+          "ball": 0,
+          "walk": 158.30000000000123
+        },
+        "collected": false
+      },
+      "treats": 8,
+      "items": [
+        "dog_soft_ball:unique",
+        "lion_bowl:unique",
+        "lion_mat:unique",
+        "mani_toy:unique",
+        "mani_water:unique"
+      ]
+    },
+    {
+      "id": "mani_toy",
+      "progress": {
+        "affinity": 8,
+        "completed": [
+          "mani_toy"
+        ],
+        "cooldowns": {
+          "pet": 0,
+          "treat": 0,
+          "ball": 0,
+          "walk": 0
+        },
+        "collected": false
+      },
+      "treats": 10,
+      "items": [
+        "dog_soft_ball:unique",
+        "lion_bowl:unique",
+        "lion_mat:unique",
+        "mani_toy:unique",
+        "mani_water:unique"
+      ]
+    },
+    {
+      "id": "mani_water",
+      "progress": {
+        "affinity": 18,
+        "completed": [
+          "mani_toy",
+          "mani_water"
+        ],
+        "cooldowns": {
+          "pet": 0,
+          "treat": 0,
+          "ball": 0,
+          "walk": 0
+        },
+        "collected": false
+      },
+      "treats": 12,
+      "items": [
+        "dog_soft_ball:unique",
+        "lion_bowl:unique",
+        "lion_mat:unique",
+        "mani_toy:unique",
+        "mani_water:unique"
+      ]
+    },
+    {
+      "id": "mani_music_walk",
+      "progress": {
+        "affinity": 35,
+        "completed": [
+          "mani_toy",
+          "mani_water",
+          "mani_music_walk"
+        ],
+        "cooldowns": {
+          "pet": 0,
+          "treat": 0,
+          "ball": 0,
+          "walk": 161.2333333333344
+        },
+        "collected": false
+      },
+      "treats": 12,
+      "items": [
+        "dog_soft_ball:unique",
+        "lion_bowl:unique",
+        "lion_mat:unique",
+        "mani_toy:unique",
+        "mani_water:unique"
+      ]
+    }
+  ],
+  "errors": []
+}

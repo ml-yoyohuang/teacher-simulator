@@ -1,11 +1,11 @@
 export class Input{
- keys=new Set<string>();stick={x:0,z:0};pointer:number|null=null;actionPointers=new Set<number>();enabled=false;onAction:(s:string)=>void=()=>{};onPause=()=>{};onAim:(x:number,y:number)=>void=()=>{};
+ keys=new Set<string>();stick={x:0,z:0};pointer:number|null=null;actionPointers=new Set<number>();enabled=false;onAction:(s:string)=>void=()=>{};onPause=()=>{};onAim:(x:number,y:number)=>void=()=>{};onSelect:(x:number,y:number)=>void=()=>{};
  knob:HTMLElement;
  constructor(canvas:HTMLCanvasElement,joy:HTMLElement,knob:HTMLElement){
  this.knob=knob;
  window.addEventListener('keydown',e=>{if(e.code==='Escape'){this.clear();this.onPause();return}if(!this.enabled||e.target instanceof HTMLInputElement||e.target instanceof HTMLSelectElement||e.target instanceof HTMLTextAreaElement)return;if(['Space','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.code))e.preventDefault();if(e.repeat)return;this.keys.add(e.code);let action={KeyJ:'attack',KeyK:'dodge',Space:'dodge',KeyE:'interact',KeyQ:'throw',KeyR:'drop',KeyF:'roll',Enter:'conduct'}[e.code];if(action){e.preventDefault();this.onAction(action)}});
  window.addEventListener('keyup',e=>this.keys.delete(e.code));window.addEventListener('blur',()=>this.clear());
- canvas.addEventListener('pointermove',e=>{if(this.enabled&&e.pointerType==='mouse')this.onAim(e.clientX,e.clientY)});canvas.addEventListener('pointerdown',e=>{if(this.enabled&&e.pointerType==='mouse'&&e.button===0){this.onAim(e.clientX,e.clientY);this.onAction('attack')}});
+ canvas.addEventListener('pointermove',e=>{if(this.enabled&&e.pointerType==='mouse')this.onAim(e.clientX,e.clientY)});canvas.addEventListener('pointerdown',e=>{if(this.enabled)this.onSelect(e.clientX,e.clientY);if(this.enabled&&e.pointerType==='mouse'&&e.button===0){this.onAim(e.clientX,e.clientY);this.onAction('attack')}});
  const update=(e:PointerEvent)=>{let r=joy.getBoundingClientRect(),radius=43;let x=(e.clientX-r.left-r.width/2)/radius,z=(e.clientY-r.top-r.height/2)/radius;let m=Math.max(1,Math.hypot(x,z));this.stick={x:x/m,z:z/m};knob.style.transform=`translate(${x/m*30}px,${z/m*30}px)`;};
  joy.addEventListener('pointerdown',e=>{if(!this.enabled||this.pointer!==null||this.actionPointers.size>1)return;e.preventDefault();this.pointer=e.pointerId;joy.setPointerCapture(e.pointerId);update(e)});joy.addEventListener('pointermove',e=>{if(e.pointerId===this.pointer)update(e)});
  const release=(e:PointerEvent)=>{if(e.pointerId!==this.pointer)return;this.pointer=null;this.stick={x:0,z:0};knob.style.transform='';};joy.addEventListener('pointerup',release);joy.addEventListener('pointercancel',release);joy.addEventListener('lostpointercapture',release);

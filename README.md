@@ -1,4 +1,4 @@
-# 東山校園大騷動
+# 東山校園大騷動 · v1.2
 
 原創 low-poly 3D、固定斜俯視、單人離線進度的虛構校園沙盒。主角是棕色鮑伯頭、黃色有領小腿長洋裝的成年「開心導師」。無後端、帳號、廣告或 CDN。音樂與音效均為程式合成，並非真人演奏／合唱。
 
@@ -14,7 +14,7 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 
 亦可執行 `node scripts/serve.mjs` 啟動相同靜態成品。macOS 可雙擊 `start-local.command`（第一次可能需由終端機執行）。
 
-完整試聽頁為 `soundtest.html`（本地預覽：http://127.0.0.1:4173/soundtest.html），可逐一播放 32 種事件／樂器音效與 5 段背景音樂。共用遊戲音訊引擎，含音量調整、停止播放；不讀寫遊戲存檔。遊戲設定頁也提供入口。
+完整試聽頁為 `soundtest.html`（本地預覽：http://127.0.0.1:4173/soundtest.html），可逐一播放 36 種事件／樂器音效與 5 段背景音樂。共用遊戲音訊引擎，含音量調整、停止播放；不讀寫遊戲存檔。遊戲設定頁也提供入口。
 
 分享圖位於 `public/og-image.png`，build 後複製到 `dist/og-image.png`，尺寸 1200×630。以真實中庭截圖經 imagegen 內建工具移除 HUD、重排標題製作，生成提示與來源記錄於 `artifacts/og-image-generation.json`。本地預覽使用相對圖片路徑；正式發布時請用 `SITE_URL=https://你的網域/遊戲子路徑/ pnpm build`，自動將 OG／Twitter 圖片網址改為完整網址供分享爬蟲讀取。
 
@@ -118,3 +118,11 @@ pnpm coverage
 散場後回原校園，保留物品身份、穿戴、任務與校園場景；300 秒可操作校園時間冷卻。會議中重載採安全散場，保留永久進度與原物品。暫停選單可開「會議紀錄冊」，八個稱號純收藏。
 
 完整橋段、架構、存檔與擴充方法見 [MEETING_GUIDE.md](MEETING_GUIDE.md)，驗收與限制見 [MEETING_QA_REPORT.md](MEETING_QA_REPORT.md)，實際畫面見 [MEETING_SCREENSHOTS.md](MEETING_SCREENSHOTS.md)。最終 66 項測試與建置通過；瀏覽器 288 組受擊與 15 種橋段操作通過。手機實機／Safari／音訊聽感尚未實機驗證。
+
+## v1.2 校狗、理化老師與介面改善
+
+只有LION（棕色柴犬）與馬尼（白色狐狸狗），完全免傷但可摸摸、零食、玩球、六個一次性任務、跟隨及咬褲管協助。理化老師光頭戴眼鏡、日常餵狗，仍正常受擊；原會議人類仍可擊打。新增有資格才抽選的第16橋段「校狗旁聽」，保持每場2／3種、4人最多1狗。
+
+右上「校狗」查看關係、任務及指令。地點名牌可讀且避讓HUD；手機收合提示172px、箭頭置中、圓按鈕文字margin-top:0。人物、道具、擊倒圖鑑有真實模型縮圖；校安老師保留舊ID。歡迎頁顯示v1.2及友善更新介紹。
+
+操作、數值、存檔與擴充見 [DOGS_GUIDE.md](DOGS_GUIDE.md)，85項完整測試、實際遊戲圖片、六任務原地圖通關和效能見 [DOGS_QA_REPORT.md](DOGS_QA_REPORT.md)。驗收腳本：`tsx scripts/dogs-qa.ts`、`tsx scripts/dogs-route-qa.ts`、`tsx scripts/meeting-modules-qa.ts`、`tsx scripts/dogs-production-qa.ts`。測試入口的本地Vite URL預設5174；`QA_URL`可指定校狗及正式版驗收網址。手機實機未驗證。

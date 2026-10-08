@@ -85,3 +85,16 @@ Low目標≤90 draw calls／70k三角形，實際桌機場景低於預算。Stan
 i7-10700／Windows、Chromium141 headless、1280×800、低畫質，允許SwiftShader，每情境五秒rAF。正常校園 frame p50/p95 66.7/83.4ms、17 calls、24342 triangles；固定會議 16.7/33.4ms、7 calls、3156 triangles；三橋段忙碌 16.7/33.3ms、8 calls、3744 triangles。會議四NPC，geometry7／textures2。
 
 15場逐橋段返回後geometry均7、textures均8，臨時物與timers均0，原校園物件引用恢复，未見逐場增長。未進行JS heap或手機實機剖析。原始資料artifacts/meeting-browser-qa.json、meeting-modules-qa.json；完整測量條件、樣本及限制見MEETING_QA_REPORT.md。
+
+## v1.2校狗四場景測量
+
+Windows桌機（Intel i7-10700@2.90GHz）、Chromium 141.0.7390.37 headless、SwiftShader、1280×800、Low，每場4秒。不是手機實機或硬體GPU測量。主迴圈與renderer.info實測，沒有推估FPS。
+
+| 場景 | 樣本 | frame p50 ms | p95 ms | calls | triangles | 活躍人＋狗 |
+|---|---:|---:|---:|---:|---:|---:|
+| 普通校園 | 56 | 66.7 | 99.9 | 11 | 21382 | 13 |
+| 老師餵兩狗 | 58 | 66.7 | 100.0 | 11 | 21382 | 13 |
+| 追逐中協助 | 58 | 66.7 | 100.0 | 11 | 21478 | 13 |
+| 狗旁聽加列印表決 | 178 | 16.7 | 33.4 | 8 | 3608 | 5 |
+
+共享幾何7；狗不新增燈或毛髮。兩狗與理化老師計入原Low16／Standard20名額；會議最多4人＋1狗。普通校園與餵狗的軟體渲染frame中位皆66.7ms，旁聽16.7ms；不得宣稱手機60FPS。原始JSON：artifacts/dogs-browser-qa.json。

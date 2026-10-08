@@ -1,4 +1,4 @@
-# 校事會議實際截圖
+# v1.1原會議驗收紀錄：校事會議實際截圖
 
 全部由本地遊戲 WebGL 畫面產生；沒有使用生成圖。完整方法與逐組結果見 artifacts/meeting-browser-qa.json、meeting-modules-qa.json。角色／狀態為開發情境準備，攻擊由實際 J／Q 事件與原 30Hz 戰鬥處理。手機圖為觸控模擬，並非實機。
 
@@ -29,3 +29,7 @@
 ![離席後紀錄冊](artifacts/meeting-records.png)
 
 ![390×844 觸控模擬](artifacts/meeting-mobile.png)
+
+## v1.2增補驗收
+
+目前橋段16種；重新跑原15＋校狗旁聽的實際J/Q/F/E互動、受擊／恢復與逐場清理，全部通過。artifacts/meeting-modules-qa.json及meeting-module-*.png已更新為v1.2證據。當前85項完整測試與校狗免傷、理化老師、旁聽委員受擊、截圖見DOGS_QA_REPORT.md；上文的66測試／288瀏覽器矩陣是v1.1歷史結果。

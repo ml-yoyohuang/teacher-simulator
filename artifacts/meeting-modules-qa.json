@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-08T07:42:57.117Z",
+  "date": "2026-10-08T08:30:00.137Z",
   "browser": "141.0.7390.37",
   "method": "Dev preparation selects each module and legal starting positions/states. Real keyboard J/Q/F dispatches gameplay methods; simulation steps run 30Hz. Printer tests actual take. No direct characteristic award calls. Rendering screenshots and sequential cleanup check use real renderer.",
   "results": [
@@ -446,6 +446,36 @@
         "chaos": 8,
         "states": [
           "Seated",
+          "Seated",
+          "Seated",
+          "Seated"
+        ],
+        "objects": 10,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 7,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "dog_observer",
+      "label": "校狗旁聽",
+      "prep": {
+        "objects": 10,
+        "npcs": 4
+      },
+      "result": {
+        "feature": true,
+        "chaos": 8,
+        "states": [
+          "Speaking",
           "Seated",
           "Seated",
           "Seated"

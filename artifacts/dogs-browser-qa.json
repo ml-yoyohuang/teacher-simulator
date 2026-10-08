@@ -1,0 +1,340 @@
+{
+  "date": "2026-10-08T08:35:13.182Z",
+  "browser": "141.0.7390.37",
+  "viewport": "1280x800 / 390x844",
+  "renderer": "Chromium headless SwiftShader",
+  "mobileHardware": "未實機驗證",
+  "teacherMatrix": [
+    {
+      "initialState": "Idle",
+      "method": "bare",
+      "hp": 50,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 1
+    },
+    {
+      "initialState": "Idle",
+      "method": "held",
+      "hp": 52,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 2
+    },
+    {
+      "initialState": "Idle",
+      "method": "throw",
+      "hp": 50,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 3
+    },
+    {
+      "initialState": "ScienceWalk",
+      "method": "bare",
+      "hp": 50,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 4
+    },
+    {
+      "initialState": "ScienceWalk",
+      "method": "held",
+      "hp": 52,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 5
+    },
+    {
+      "initialState": "ScienceWalk",
+      "method": "throw",
+      "hp": 50,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 6
+    },
+    {
+      "initialState": "ScienceFeed",
+      "method": "bare",
+      "hp": 50,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 7
+    },
+    {
+      "initialState": "ScienceFeed",
+      "method": "held",
+      "hp": 52,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 8
+    },
+    {
+      "initialState": "ScienceFeed",
+      "method": "throw",
+      "hp": 50,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 9
+    },
+    {
+      "initialState": "Walk",
+      "method": "bare",
+      "hp": 50,
+      "state": "ScienceHit",
+      "x": 8.092672032102701,
+      "z": 11.541497297416948,
+      "events": 10
+    },
+    {
+      "initialState": "Walk",
+      "method": "held",
+      "hp": 52,
+      "state": "ScienceHit",
+      "x": 8.092672032102701,
+      "z": 11.541497297416948,
+      "events": 11
+    },
+    {
+      "initialState": "Walk",
+      "method": "throw",
+      "hp": 50,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 12
+    },
+    {
+      "initialState": "Investigate",
+      "method": "bare",
+      "hp": 50,
+      "state": "ScienceHit",
+      "x": 8.142577843447995,
+      "z": 11.486031813298617,
+      "events": 13
+    },
+    {
+      "initialState": "Investigate",
+      "method": "held",
+      "hp": 52,
+      "state": "ScienceHit",
+      "x": 8.142577843447995,
+      "z": 11.486031813298617,
+      "events": 14
+    },
+    {
+      "initialState": "Investigate",
+      "method": "throw",
+      "hp": 50,
+      "state": "ScienceHit",
+      "x": 8,
+      "z": 11.650000000000004,
+      "events": 15
+    }
+  ],
+  "humanMatrix": [
+    {
+      "index": 0,
+      "method": "bare",
+      "hp": 2,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 0,
+      "method": "held",
+      "hp": 2,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 0,
+      "method": "throw",
+      "hp": 1,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 1,
+      "method": "bare",
+      "hp": 2,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 1,
+      "method": "held",
+      "hp": 2,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 1,
+      "method": "throw",
+      "hp": 1,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 2,
+      "method": "bare",
+      "hp": 2,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 2,
+      "method": "held",
+      "hp": 2,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 2,
+      "method": "throw",
+      "hp": 1,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 3,
+      "method": "bare",
+      "hp": 2,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 3,
+      "method": "held",
+      "hp": 2,
+      "state": "hit",
+      "dogs": 1
+    },
+    {
+      "index": 3,
+      "method": "throw",
+      "hp": 1,
+      "state": "hit",
+      "dogs": 1
+    }
+  ],
+  "checks": [
+    {
+      "id": "dog_lion",
+      "states": [
+        "AssistContact",
+        "Rest"
+      ],
+      "cooldown": 20,
+      "hp": 60
+    },
+    {
+      "id": "dog_mani",
+      "states": [
+        "Rest",
+        "AssistContact"
+      ],
+      "cooldown": 20,
+      "hp": 60
+    }
+  ],
+  "centered": 0,
+  "shots": [
+    "artifacts/dogs-two-friends.png",
+    "artifacts/dogs-cards.png",
+    "artifacts/dogs-pet-lion.png",
+    "artifacts/dogs-teacher-feeding.png",
+    "artifacts/dogs-teacher-hit-bare.png",
+    "artifacts/dogs-teacher-hit-held.png",
+    "artifacts/dogs-teacher-hit-throw.png",
+    "artifacts/dogs-assist-dog_lion.png",
+    "artifacts/dogs-assist-dog_mani.png",
+    "artifacts/dogs-observer.png",
+    "artifacts/dogs-observer-pet.png",
+    "artifacts/dogs-codex.png",
+    "artifacts/dogs-readable-labels.png",
+    "artifacts/dogs-mobile.png",
+    "artifacts/dogs-mobile-cards.png"
+  ],
+  "performance": [
+    {
+      "name": "普通校園",
+      "fps": 15.015015015014523,
+      "p50": 66.70000000000073,
+      "p95": 99.89999999999782,
+      "drawCalls": 11,
+      "triangles": 21382,
+      "geometry": 7,
+      "textures": 5,
+      "activeNPC": 11,
+      "aiMs": 0.10000002384185791,
+      "simulationMs": 0.19999998807907104,
+      "quality": "low",
+      "samples": 56,
+      "dogAI": 2,
+      "totalAI": 13
+    },
+    {
+      "name": "老師餵兩狗",
+      "fps": 20,
+      "p50": 66.70000000000073,
+      "p95": 100,
+      "drawCalls": 11,
+      "triangles": 21382,
+      "geometry": 7,
+      "textures": 5,
+      "activeNPC": 11,
+      "aiMs": 0,
+      "simulationMs": 0.10000002384185791,
+      "quality": "low",
+      "samples": 58,
+      "dogAI": 2,
+      "totalAI": 13
+    },
+    {
+      "name": "追逐中協助",
+      "fps": 15.015015015015342,
+      "p50": 66.69999999999709,
+      "p95": 100,
+      "drawCalls": 11,
+      "triangles": 21478,
+      "geometry": 7,
+      "textures": 5,
+      "activeNPC": 11,
+      "aiMs": 0.19999998807907104,
+      "simulationMs": 0.19999998807907104,
+      "quality": "low",
+      "samples": 58,
+      "dogAI": 2,
+      "totalAI": 13
+    },
+    {
+      "name": "狗旁聽加列印表決",
+      "fps": 30.030030030027405,
+      "p50": 16.700000000004366,
+      "p95": 33.400000000001455,
+      "drawCalls": 8,
+      "triangles": 3608,
+      "geometry": 7,
+      "textures": 2,
+      "activeNPC": 4,
+      "aiMs": 0.19999998807907104,
+      "simulationMs": 0.09999996423721313,
+      "quality": "low",
+      "samples": 178,
+      "dogAI": 1,
+      "totalAI": 5
+    }
+  ],
+  "errors": [],
+  "failed": []
+}
