@@ -48,4 +48,4 @@ Windows i7-10700@2.90GHz、Chromium 141.0.7390.37、headless SwiftShader、Low�
 
 幾何固定7，會議上限5活躍角色，原AI Low16／Standard20含兩狗與老師。桌面SwiftShader屬軟體繪圖，校園中位66.7ms，不能把這些數字宣称手機60FPS。未驗證實體手機GPU、Safari、長時間熱降頻、音訊人工聽感與人工15–25分鐘養成節奏。Vite主bundle>500kB提示保留，非建置失敗。讀檔採安全解除暫態工作，保留永久數值與已消耗冷卻。
 
-完整操作／配置與擴充：DOGS_GUIDE.md。發布透過既有main→GitHub Actions→Pages流程，正式網址：https://ml-yoyohuang.github.io/teacher-simulator/；線上驗收會另存artifacts/dogs-live-qa.json與DOGS_RELEASE.md。
+完整操作／配置與擴充：DOGS_GUIDE.md。既有main→GitHub Actions→Pages流程已成功發布2714078；正式網址：https://ml-yoyohuang.github.io/teacher-simulator/。公開網站v1.2操作、圖鑑圖片與手機介面驗收通過，無404／pageerror；結果與線上截圖見artifacts/dogs-live-qa.json、DOGS_RELEASE.md。

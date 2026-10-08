@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-08",
+  "version": "1.2.0",
+  "commit": "2714078fc58851b83f0fc076451dd2b981ce16e7",
+  "run": "https://github.com/ml-yoyohuang/teacher-simulator/actions/runs/37752414366",
+  "build": "success",
+  "deploy": "success",
+  "publicQA": "pass",
+  "url": "https://ml-yoyohuang.github.io/teacher-simulator/",
+  "bundle": "assets/game-DXF5Hrmq.js",
+  "tests": 85,
+  "mobileHardware": "未實機驗證"
+}
