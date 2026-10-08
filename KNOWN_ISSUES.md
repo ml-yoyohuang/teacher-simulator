@@ -9,3 +9,9 @@
 - 已透過 GitHub Actions 發布 GitHub Pages；公開網站的遊戲、試聽頁、素材與 OG URL 已驗證。社群平台實際分享預覽／爬蟲快取仍未測試。
 
 這些限制不隱藏為已完成測試。測試失敗若出現，查看artifacts原始JSON及QA_REPORT，不以此清單覆蓋失敗結果。
+
+## 校事會議驗證界線
+
+手機實機、Safari、音訊實際聽感與長時間熱降頻尚未驗證。390×844 為桌面 Chromium 觸控模擬。五秒 headless 效能短測不能代表手機穩定 60fps；會議 p95 約 33ms，校園在此環境較慢。
+
+會議中重新載入採允許的安全散場，不恢復暫態物理／當次戰鬥。動畫為簡化模型，無完整 ragdoll 或真實液體。正式 build 主 bundle 有 500kB 提示但建置成功。完整結果見 MEETING_QA_REPORT.md。

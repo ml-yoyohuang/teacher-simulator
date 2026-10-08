@@ -1,0 +1,469 @@
+{
+  "date": "2026-10-08T07:42:57.117Z",
+  "browser": "141.0.7390.37",
+  "method": "Dev preparation selects each module and legal starting positions/states. Real keyboard J/Q/F dispatches gameplay methods; simulation steps run 30Hz. Printer tests actual take. No direct characteristic award calls. Rendering screenshots and sequential cleanup check use real renderer.",
+  "results": [
+    {
+      "id": "projector",
+      "label": "荒謬事蹟簡報",
+      "prep": {
+        "objects": 10,
+        "npcs": 4,
+        "item": "meeting_remote"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 10,
+        "states": [
+          "Speaking",
+          "Speaking",
+          "Speaking",
+          "Speaking"
+        ],
+        "objects": 10,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "reenactment",
+      "label": "請現場重演",
+      "prep": {
+        "objects": 11,
+        "npcs": 4,
+        "item": "folder"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 19,
+        "states": [
+          "Seated",
+          "Seated",
+          "Seated",
+          "Seated"
+        ],
+        "objects": 11,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "bell",
+      "label": "議事鈴與三角鐵",
+      "prep": {
+        "objects": 11,
+        "npcs": 4,
+        "item": "meeting_bell"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 13,
+        "states": [
+          "Seated",
+          "Seated",
+          "Seated",
+          "Seated"
+        ],
+        "objects": 11,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "voting",
+      "label": "荒謬表決",
+      "prep": {
+        "objects": 14,
+        "npcs": 4,
+        "item": "meeting_vote"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 10,
+        "states": [
+          "Voting",
+          "Voting",
+          "Voting",
+          "Voting"
+        ],
+        "objects": 14,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "printer",
+      "label": "追不上事件的紀錄",
+      "prep": {
+        "objects": 11,
+        "npcs": 4,
+        "item": "meeting_paper"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 10,
+        "states": [
+          "Speaking",
+          "Seated",
+          "Seated",
+          "Seated"
+        ],
+        "objects": 11,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "cross_talk",
+      "label": "委員互相打斷",
+      "prep": {
+        "objects": 10,
+        "npcs": 4
+      },
+      "result": {
+        "feature": true,
+        "chaos": 19,
+        "states": [
+          "Seated",
+          "Speaking",
+          "Speaking",
+          "Speaking"
+        ],
+        "objects": 10,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "tea_spill",
+      "label": "茶水連鎖小災難",
+      "prep": {
+        "objects": 13,
+        "npcs": 4,
+        "item": "coffee_cup"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 19,
+        "states": [
+          "Protecting",
+          "Protecting",
+          "Protecting",
+          "Protecting"
+        ],
+        "objects": 13,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "guest_mediator",
+      "label": "熟人來協調",
+      "prep": {
+        "objects": 10,
+        "npcs": 4
+      },
+      "result": {
+        "feature": true,
+        "chaos": 17,
+        "states": [
+          "Speaking",
+          "Seated",
+          "Seated",
+          "Seated"
+        ],
+        "objects": 10,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "conducting",
+      "label": "女導師開始指揮",
+      "prep": {
+        "objects": 11,
+        "npcs": 4,
+        "item": "drumstick"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 10,
+        "states": [
+          "Following",
+          "Following",
+          "Following",
+          "Seated"
+        ],
+        "objects": 11,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "musical_chairs",
+      "label": "開會變音樂椅",
+      "prep": {
+        "objects": 11,
+        "npcs": 4,
+        "item": "meeting_music"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 10,
+        "states": [
+          "FindingChair",
+          "Seated",
+          "Seated",
+          "Seated"
+        ],
+        "objects": 11,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "stamps",
+      "label": "委員也有評語",
+      "prep": {
+        "objects": 13,
+        "npcs": 4,
+        "item": "meeting_stamp"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 10,
+        "states": [
+          "Seated",
+          "Seated",
+          "Seated",
+          "Seated"
+        ],
+        "objects": 13,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "aircon",
+      "label": "冷氣遙控器爭奪",
+      "prep": {
+        "objects": 11,
+        "npcs": 4,
+        "item": "meeting_aircon"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 10,
+        "states": [
+          "Cold",
+          "Cold",
+          "Cold",
+          "Cold"
+        ],
+        "objects": 11,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "sleepy_member",
+      "label": "一位委員在睡覺",
+      "prep": {
+        "objects": 11,
+        "npcs": 4,
+        "item": "castanets"
+      },
+      "result": {
+        "feature": true,
+        "chaos": 16,
+        "states": [
+          "Speaking",
+          "Seated",
+          "Seated",
+          "Seated"
+        ],
+        "objects": 11,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "paper_planes",
+      "label": "報告變紙飛機",
+      "prep": {
+        "objects": 10,
+        "npcs": 4
+      },
+      "result": {
+        "feature": true,
+        "chaos": 16,
+        "states": [
+          "Seated",
+          "Watching",
+          "Watching",
+          "Watching"
+        ],
+        "objects": 10,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    },
+    {
+      "id": "whiteboard",
+      "label": "議程變音樂課",
+      "prep": {
+        "objects": 10,
+        "npcs": 4
+      },
+      "result": {
+        "feature": true,
+        "chaos": 8,
+        "states": [
+          "Seated",
+          "Seated",
+          "Seated",
+          "Seated"
+        ],
+        "objects": 10,
+        "npcs": 4
+      },
+      "cleanup": {
+        "recovered": true,
+        "phase": "CAMPUS",
+        "originalObjects": true,
+        "originalNPCs": true,
+        "temp": 0,
+        "timers": 0,
+        "textures": 8,
+        "geometries": 7
+      }
+    }
+  ],
+  "errors": []
+}

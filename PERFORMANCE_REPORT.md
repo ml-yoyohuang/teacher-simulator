@@ -79,3 +79,9 @@ Low目標≤90 draw calls／70k三角形，實際桌機場景低於預算。Stan
 三角形增加約47%，仍低於原Low 70k／90 calls預算。新增紋理是本地房牌／指示canvas，沒有網路素材。六種共用模型幾何加Sprite幾何維持7；沒有新燈或shadow map。靜態instance於重建一次寫入，後續只更新動態部分；collider清單快取避免每個尋路格反覆建立合併陣列。未見這些短窗口的明顯幀時間退化，不據此推論真機發熱／省電或持續60FPS。
 
 另做20次真正WebGL模式切換：已上傳texture為2–4、geometry維持7，佈局與碰撞等各模式數量一致，沒有逐次累積；原始值見artifacts/scene-resource-switches.json。這是清理／穩定數量檢查，非手機十分鐘熱測。
+
+## 校事會議效能（2026-10-08）
+
+i7-10700／Windows、Chromium141 headless、1280×800、低畫質，允許SwiftShader，每情境五秒rAF。正常校園 frame p50/p95 66.7/83.4ms、17 calls、24342 triangles；固定會議 16.7/33.4ms、7 calls、3156 triangles；三橋段忙碌 16.7/33.3ms、8 calls、3744 triangles。會議四NPC，geometry7／textures2。
+
+15場逐橋段返回後geometry均7、textures均8，臨時物與timers均0，原校園物件引用恢复，未見逐場增長。未進行JS heap或手機實機剖析。原始資料artifacts/meeting-browser-qa.json、meeting-modules-qa.json；完整測量條件、樣本及限制見MEETING_QA_REPORT.md。

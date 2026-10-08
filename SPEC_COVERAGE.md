@@ -189,3 +189,7 @@
 - pass: WebGL context lost pauses and restores, no background combat catchup
 
 人工從出生點逐項完整通關、實體手機GPU、Safari、音訊聽感均為not tested。詳見QA_REPORT.md及原始JSON，不能把這些當成pass。
+
+## 校事會議新增規格
+
+SCHOOL_MEETING_SPEC.md完整15種橋段全部接入；正式每場2／3種、兩組互斥、四名可擊打NPC、家長來源觸發、四散場原因、300秒冷卻、物品唯一移交、事件與紀錄冊、八稱號、活動文案及安全讀檔均已實作。對照表在MEETING_GUIDE.md，驗證層級與限制在MEETING_QA_REPORT.md；實際畫面在MEETING_SCREENSHOTS.md。手機實機與Safari不列為通過。

@@ -140,3 +140,9 @@ Chromium觸控模擬驗收：390×844與844×390人物1.75m投影高度分別75.
 桌面NPC整合另外以真實模擬tick回歸：撿道具學生可在桌邊取得同一課本並放回支撐高度，集合／入座等抵達狀態使用已解析的可達桌邊目標，避免停在桌邊卻永遠未判定到達。已納入48組核心測試。
 
 場景新版公開部署完成：[Actions 37717393100](https://github.com/ml-yoyohuang/teacher-simulator/actions/runs/37717393100)，功能提交2a3b503。公開Chromium載入game-Ct0nF8qt.js與本地測試成品一致；真正从出生點走到桌旁、手機拿考卷、行事曆切親師日保留手持物及4活動任務通過。原手機圖鑑／TODAY／旋轉、27道具說明、24一般任務、32音效／5音樂與OG亦通過，pageerror與HTTP錯誤均0。證據：artifacts/scene-pages-release-qa.json、mobile-pages-release-qa.json、pages-live-qa.json。
+
+## 校事會議驗收（2026-10-08）
+
+最終 66 項核心／回歸測試通過，型別與正式建置通過。六角色 ×16狀態 ×3攻擊方法 =288 組，在合法無碰撞站位按 J／Q、執行原30Hz戰鬥與渲染，命中、白閃與位移全數通過。另測15橋段特色互動、恢復與清理、真實鍵盤繞桌、觸控模擬離席與正式成品不暴露開發入口。
+
+原始結果：artifacts/meeting-core-tests.tap、meeting-browser-qa.json、meeting-modules-qa.json、meeting-production-qa.json。截圖索引 MEETING_SCREENSHOTS.md；完整逐角色／逐狀態、驗證方法與未驗證界線在 MEETING_QA_REPORT.md。沒有宣稱手機實機通過。

@@ -1,0 +1,5060 @@
+{
+  "date": "2026-10-08T07:49:15.360Z",
+  "browser": "141.0.7390.37",
+  "platform": "Windows desktop, headless Chromium / SwiftShader allowed",
+  "viewport": [
+    1280,
+    800
+  ],
+  "method": "Real keyboard J/Q events with dev-prepared roles and states. The matrix steps the original 30Hz combat while real-time simulation is frozen, then renders and checks hit events and visible displacement. Live keyboard navigation and touch leave use real-time simulation. Screenshot evidence samples every role/method and every state on the chair.",
+  "matrix": [
+    {
+      "role": "主席",
+      "state": "Seated",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Seated",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Seated",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Standing",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Standing",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Standing",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Speaking",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Speaking",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Speaking",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Voting",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Voting",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Voting",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Sleeping",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Sleeping",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Sleeping",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Recording",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Recording",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Recording",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Collect",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Collect",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Collect",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Drinking",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Drinking",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Drinking",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Protecting",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Protecting",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Protecting",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Following",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Following",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Following",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "FindingChair",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "FindingChair",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "FindingChair",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Coordinating",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Coordinating",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Coordinating",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Watching",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Watching",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Watching",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Cold",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Cold",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Cold",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Hot",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Hot",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Hot",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.65,
+        "z": 1.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Recover",
+      "method": "bare",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.18,
+        "z": 1.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Recover",
+      "method": "held",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.18,
+        "z": 1.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "主席",
+      "state": "Recover",
+      "method": "throw",
+      "before": {
+        "x": 0,
+        "z": 1.3
+      },
+      "result": {
+        "x": 0.18,
+        "z": 1.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Seated",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Seated",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Seated",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Standing",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Standing",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Standing",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Speaking",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Speaking",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Speaking",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Voting",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Voting",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Voting",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Sleeping",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Sleeping",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Sleeping",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Recording",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Recording",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Recording",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Collect",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Collect",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Collect",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Drinking",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Drinking",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Drinking",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Protecting",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Protecting",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Protecting",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Following",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Following",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Following",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "FindingChair",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "FindingChair",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "FindingChair",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Coordinating",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Coordinating",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Coordinating",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Watching",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Watching",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Watching",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Cold",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Cold",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Cold",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Hot",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Hot",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Hot",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Recover",
+      "method": "bare",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.8199999999999998,
+        "z": 3.1,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Recover",
+      "method": "held",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.8199999999999998,
+        "z": 3.1,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "家長代表",
+      "state": "Recover",
+      "method": "throw",
+      "before": {
+        "x": -2,
+        "z": 3.1
+      },
+      "result": {
+        "x": -1.8199999999999998,
+        "z": 3.1,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Seated",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Seated",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Seated",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Standing",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Standing",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Standing",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Speaking",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Speaking",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Speaking",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Voting",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Voting",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Voting",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Sleeping",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Sleeping",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Sleeping",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Recording",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Recording",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Recording",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Collect",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Collect",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Collect",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Drinking",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Drinking",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Drinking",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Protecting",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Protecting",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Protecting",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Following",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Following",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Following",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "FindingChair",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "FindingChair",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "FindingChair",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Coordinating",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Coordinating",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Coordinating",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Watching",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Watching",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Watching",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Cold",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Cold",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Cold",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Hot",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Hot",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Hot",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 3.1,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Recover",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 3.1,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Recover",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 3.1,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "紀錄委員",
+      "state": "Recover",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 3.1
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 3.1,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Seated",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Seated",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Seated",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Standing",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Standing",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Standing",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Speaking",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Speaking",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Speaking",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Voting",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Voting",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Voting",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Sleeping",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Sleeping",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Sleeping",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Recording",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Recording",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Recording",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Collect",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Collect",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Collect",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Drinking",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Drinking",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Drinking",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Protecting",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Protecting",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Protecting",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Following",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Following",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Following",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "FindingChair",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "FindingChair",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "FindingChair",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Coordinating",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Coordinating",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Coordinating",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Watching",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Watching",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Watching",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Cold",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Cold",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Cold",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Hot",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Hot",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Hot",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Recover",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 6.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Recover",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 6.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "秩序委員",
+      "state": "Recover",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 6.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Seated",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Seated",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Seated",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Standing",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Standing",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Standing",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Speaking",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Speaking",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Speaking",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Voting",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Voting",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Voting",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Sleeping",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Sleeping",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Sleeping",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Recording",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Recording",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Recording",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Collect",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Collect",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Collect",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Drinking",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Drinking",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Drinking",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Protecting",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Protecting",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Protecting",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Following",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Following",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Following",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "FindingChair",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "FindingChair",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "FindingChair",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Coordinating",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Coordinating",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Coordinating",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Watching",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Watching",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Watching",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Cold",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Cold",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Cold",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Hot",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Hot",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Hot",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Recover",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 6.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Recover",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 6.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "合作社阿姨",
+      "state": "Recover",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 6.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Seated",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Seated",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Seated",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Standing",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Standing",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Standing",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Speaking",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Speaking",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Speaking",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Voting",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Voting",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Voting",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Sleeping",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Sleeping",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Sleeping",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Recording",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Recording",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Recording",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Collect",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Collect",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Collect",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Drinking",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Drinking",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Drinking",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Protecting",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Protecting",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Protecting",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Following",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Following",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Following",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "FindingChair",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "FindingChair",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "FindingChair",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Coordinating",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Coordinating",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Coordinating",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Watching",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Watching",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Watching",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Cold",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Cold",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Cold",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Hot",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Hot",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 2,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Hot",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.4800000000000004,
+        "z": 6.3,
+        "state": "hit",
+        "hp": 1,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Recover",
+      "method": "bare",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 6.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Recover",
+      "method": "held",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 6.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.35333333333333333,
+        "hits": 1
+      }
+    },
+    {
+      "role": "警衛伯伯",
+      "state": "Recover",
+      "method": "throw",
+      "before": {
+        "x": 2,
+        "z": 6.3
+      },
+      "result": {
+        "x": 1.8199999999999998,
+        "z": 6.3,
+        "state": "Recover",
+        "hp": 0,
+        "flash": 0.25333333333333335,
+        "hits": 1
+      }
+    }
+  ],
+  "shots": [
+    "room",
+    "three-busy",
+    "three-music",
+    "three-voting",
+    "hit-0-shop_aunt-Seated-bare",
+    "hit-0-shop_aunt-Seated-held",
+    "hit-0-shop_aunt-Seated-throw",
+    "hit-0-shop_aunt-Standing-bare",
+    "hit-0-shop_aunt-Speaking-bare",
+    "hit-0-shop_aunt-Voting-bare",
+    "hit-0-shop_aunt-Sleeping-bare",
+    "hit-0-shop_aunt-Recording-bare",
+    "hit-0-shop_aunt-Collect-bare",
+    "hit-0-shop_aunt-Drinking-bare",
+    "hit-0-shop_aunt-Protecting-bare",
+    "hit-0-shop_aunt-Following-bare",
+    "hit-0-shop_aunt-FindingChair-bare",
+    "hit-0-shop_aunt-Coordinating-bare",
+    "hit-0-shop_aunt-Watching-bare",
+    "hit-0-shop_aunt-Cold-bare",
+    "hit-0-shop_aunt-Hot-bare",
+    "hit-0-shop_aunt-Recover-bare",
+    "hit-1-shop_aunt-Seated-bare",
+    "hit-1-shop_aunt-Seated-held",
+    "hit-1-shop_aunt-Seated-throw",
+    "hit-2-shop_aunt-Seated-bare",
+    "hit-2-shop_aunt-Seated-held",
+    "hit-2-shop_aunt-Seated-throw",
+    "hit-3-none-Seated-bare",
+    "hit-3-none-Seated-held",
+    "hit-3-none-Seated-throw",
+    "hit-3-shop_aunt-Seated-bare",
+    "hit-3-shop_aunt-Seated-held",
+    "hit-3-shop_aunt-Seated-throw",
+    "hit-3-guard_uncle-Seated-bare",
+    "hit-3-guard_uncle-Seated-held",
+    "hit-3-guard_uncle-Seated-throw",
+    "route",
+    "records"
+  ],
+  "route": [
+    {
+      "x": 0,
+      "z": 7.5
+    },
+    {
+      "x": -0.75,
+      "z": 7.5
+    },
+    {
+      "x": -1.5,
+      "z": 7.5
+    },
+    {
+      "x": -1.5,
+      "z": 6.75
+    },
+    {
+      "x": -1.5,
+      "z": 6
+    },
+    {
+      "x": -1.5,
+      "z": 5.25
+    },
+    {
+      "x": -2.25,
+      "z": 5.25
+    },
+    {
+      "x": -3,
+      "z": 5.25
+    },
+    {
+      "x": -3,
+      "z": 4.5
+    },
+    {
+      "x": -3,
+      "z": 3.75
+    },
+    {
+      "x": -3,
+      "z": 3
+    },
+    {
+      "x": -2.8,
+      "z": 2.8
+    }
+  ],
+  "performance": [
+    {
+      "label": "正常校園",
+      "fps": 14.992503748125978,
+      "p50": 66.69999999999982,
+      "p95": 83.40000000000055,
+      "drawCalls": 17,
+      "triangles": 24342,
+      "geometry": 7,
+      "textures": 11,
+      "activeNPC": 17,
+      "aiMs": 0.09999996423721313,
+      "simulationMs": 0.09999996423721313,
+      "quality": "low",
+      "samples": 74,
+      "objects": 32,
+      "water": 0,
+      "papers": 0,
+      "renderer": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    {
+      "label": "會議基礎（開發測試零橋段）",
+      "fps": 60.24096385542036,
+      "p50": 16.700000000000728,
+      "p95": 33.399999999999636,
+      "drawCalls": 7,
+      "triangles": 3156,
+      "geometry": 7,
+      "textures": 2,
+      "activeNPC": 4,
+      "aiMs": 0.30000001192092896,
+      "simulationMs": 0.09999996423721313,
+      "quality": "low",
+      "samples": 258,
+      "objects": 9,
+      "water": 0,
+      "papers": 0,
+      "renderer": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    {
+      "label": "三橋段忙碌：茶水／列印／插話",
+      "fps": 60.24096385542696,
+      "p50": 16.69999999999891,
+      "p95": 33.30000000000291,
+      "drawCalls": 8,
+      "triangles": 3744,
+      "geometry": 7,
+      "textures": 2,
+      "activeNPC": 4,
+      "aiMs": 0.30000001192092896,
+      "simulationMs": 0.10000002384185791,
+      "quality": "low",
+      "samples": 265,
+      "objects": 13,
+      "water": 1,
+      "papers": 1,
+      "renderer": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    }
+  ],
+  "mobile": "390x844 touch emulation; physical phone NOT tested",
+  "errors": []
+}
