@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-08T02:19:13.101Z",
+  "url": "http://127.0.0.1:4173/",
+  "status": "pass",
+  "expected": "assets/game-Ct0nF8qt.js",
+  "checks": [
+    "real keyboard movement from original spawn to teacher desk",
+    "real touch E takes tabletop exam paper",
+    "actual calendar switch preserves carried papers",
+    "four parent-day missions",
+    "production has no dev API",
+    "no horizontal overflow"
+  ],
+  "errors": [],
+  "failed": [],
+  "limitations": [
+    "Emulated mobile Chromium; physical phones and Safari not tested."
+  ]
+}

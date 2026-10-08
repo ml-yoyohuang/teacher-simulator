@@ -1,0 +1,48 @@
+import {Furniture} from './scene';
+export type ScenePart={shape:string,p:number[],s:number[],color:string,r?:number[]};
+const C={wood:'#ae9476',lightWood:'#c4ae8d',dark:'#3d4c4e',white:'#f4efdd',green:'#446e60',blue:'#7e969e',brick:'#b97059',yellow:'#e5bd4a',grass:'#71987a'};
+const box=(p:number[],s:number[],color:string,r=[0,0,0]):ScenePart=>({shape:'box',p,s,color,r});const cyl=(p:number[],s:number[],color:string,r=[0,0,0]):ScenePart=>({shape:'cyl',p,s,color,r});const sphere=(p:number[],s:number[],color:string):ScenePart=>({shape:'sphere',p,s,color});
+export function furnitureModel(f:Furniture):ScenePart[]{const {w,d,h,type}=f;
+ const desk=(color=C.lightWood)=>[box([0,h-.06,0],[w,.12,d],color),...[-1,1].flatMap(x=>[-1,1].map(z=>box([x*(w/2-.12),(h-.12)/2,z*(d/2-.1)],[.09,h-.12,.09],C.dark)))];
+ const chair=(color=C.blue)=>[box([0,.46,0],[w,.1,d],color),box([0,h*.75,-d*.45],[w,h*.5,.08],color),...[-1,1].flatMap(x=>[-1,1].map(z=>box([x*w*.36,.23,z*d*.36],[.065,.46,.065],C.dark)))];
+ const shelf=(color=C.wood)=>[box([-w/2+.06,h/2,0],[.12,h,d],color),box([w/2-.06,h/2,0],[.12,h,d],color),box([0,h/2,-d*.44],[w,h,.08],color),...Array.from({length:3},(_,i)=>box([0,.12+i*(h-.18)/2,0],[w,.08,d],color))];
+ switch(type){
+ case 'student_desk':case 'work_desk':case 'principal_desk':case 'nurse_desk':return [...desk(),...(type==='principal_desk'?[box([0,h*.5,-d*.25],[w*.9,h*.85,.12],C.wood)]:[])];
+ case 'student_chair':case 'visitor_chair':case 'office_seat':case 'high_chair':return chair(type==='high_chair'?C.dark:type==='visitor_chair'?C.wood:C.blue);
+ case 'piano_bench':return [box([0,.46,0],[w,.12,d],C.dark),box([-w*.35,.23,0],[.09,.46,d*.8],C.dark),box([w*.35,.23,0],[.09,.46,d*.8],C.dark)];
+ case 'short_bench':return [box([0,.45,0],[w,.12,d],C.wood),box([0,.72,-d*.45],[w,.45,.06],C.wood),box([-w*.35,.22,0],[.12,.44,d*.8],C.dark),box([w*.35,.22,0],[.12,.44,d*.8],C.dark)];
+ case 'counter':case 'shop_counter':return [box([0,h/2,0],[w,h,d],C.blue),box([0,h,0],[w+.08,.08,d+.08],C.lightWood),box([0,h*.5,d*.51],[w*.8,.09,.02],C.white)];
+ case 'low_shelf':case 'instrument_shelf':case 'equipment_rack':case 'lost_found':return [...shelf(),box([0,h,0],[w+.06,.08,d+.06],C.lightWood),...[-.3,.3].map(x=>box([x*w,h*.48,.05],[.07,h*.8,d*.8],C.wood))];
+ case 'file_cabinet':return [box([0,h/2,0],[w,h,d],C.blue),...Array.from({length:3},(_,i)=>box([0,.3+i*.45,d*.51],[w*.8,.34,.03],C.white)),...Array.from({length:3},(_,i)=>box([0,.35+i*.45,d*.55],[.2,.035,.04],C.dark))];
+ case 'trophy_shelf':return [...shelf(),...[-.55,.55].flatMap(x=>[cyl([x,.76,-.18],[.16,.2,.16],C.yellow),{shape:'cone',p:[x,1,-.18],s:[.35,.32,.35],color:C.yellow}])];
+ case 'stock_shelf':return [...shelf(),...[-.55,0,.55].flatMap((x,i)=>[box([x,.4,0],[.3,.35,.3],[C.brick,C.yellow,C.green][i]),box([x,1,0],[.26,.4,.26],[C.blue,C.white,C.brick][i])])];
+ case 'fridge':return [box([0,h/2,0],[w,h,d],C.white),box([0,h*.55,d*.51],[w*.8,h*.7,.04],C.blue),box([w*.32,h*.6,d*.55],[.05,.32,.05],C.dark),...[-.22,.22].map(x=>box([x,.4,d*.54],[.18,.28,.04],C.green))];
+ case 'blackboard':case 'music_board':return [box([0,1.55,0],[w,.95,.12],C.wood),box([0,1.55,.075],[w-.2,.8,.025],type==='music_board'?C.white:'#234c42'),box([0,1.04,.15],[w,.065,.18],C.wood),...Array.from({length:type==='music_board'?5:3},(_,i)=>box([-.5,1.35+i*.1,.096],[w*.45,.013,.012],type==='music_board'?C.dark:C.white)),...(type==='music_board'?[sphere([.8,1.45,.12],[.1,.07,.04],C.dark),box([.85,1.58,.12],[.02,.25,.015],C.dark)]:[])];
+ case 'notice':case 'poster':case 'honor':case 'visitor_board':return [box([0,1.5,0],[w,.9,.1],C.wood),...[-.3,0,.3].map((x,i)=>box([x*w,1.5,.07],[w*.23,.5,.025],[C.yellow,C.blue,C.white][i]))];
+ case 'books':return [box([0,.07,0],[.45,.1,.32],C.blue),box([-.2,.07,0],[.035,.1,.32],C.dark),box([.02,.11,0],[.38,.025,.28],C.white)];
+ case 'paper_tray':return [box([0,1,0],[w,.06,d],C.blue),box([0,1.07,0],[w*.9,.08,d*.9],C.white),box([0,1.13,0],[w*.65,.02,d*.6],C.yellow)];
+ case 'pencil_cup':return [cyl([0,1.03,0],[.18,.22,.18],C.blue),...[-.04,.04].map(x=>cyl([x,1.2,0],[.02,.3,.02],C.dark))];
+ case 'cleaning_rack':return [box([0,1.25,0],[w,.1,.2],C.wood),...[-.4,.4].map(x=>box([x,1.05,.1],[.05,.35,.05],C.dark))];
+ case 'wig_stand':return [cyl([0,1.04,0],[.1,.26,.1],C.dark),sphere([0,1.2,0],[.36,.4,.34],C.white)];
+ case 'triangle_rack':return [cyl([-.4,.75,0],[.06,1.5,.06],C.dark),cyl([.4,.75,0],[.06,1.5,.06],C.dark),box([0,1.5,0],[1,.06,.06],C.dark),box([0,.03,0],[1,.06,.5],C.dark)];
+ case 'drums':return [cyl([0,.46,0],[.7,.75,.7],C.brick),cyl([0,.85,0],[.72,.035,.72],C.white),cyl([-.5,.75,.3],[.38,.4,.38],C.blue),cyl([.55,1,0],[.62,.04,.62],C.yellow),cyl([.55,.5,0],[.04,1,.04],C.dark)];
+ case 'formal_rug':case 'rehearsal_mat':return [box([0,.06,0],[w,.025,d],type==='formal_rug'?'#9b7370':'#a8bdb0')];
+ case 'garden':return [box([0,.15,0],[w,.3,d],C.wood),box([0,.32,0],[w-.2,.05,d-.2],C.grass),...[-.6,.6].map(x=>sphere([x,.5,.3],[.7,.45,.7],C.green))];
+ case 'tree':return [cyl([0,1.1,0],[.25,2.2,.25],C.wood),sphere([0,2.35,0],[2.3,1.6,2.3],C.grass),sphere([.55,2.6,.25],[1.5,1.2,1.5],'#86a486')];
+ case 'plant':return [cyl([0,.22,0],[.45,.45,.45],C.brick),sphere([0,.65,0],[.65,.7,.65],C.grass)];
+ case 'direction_post':return [cyl([0,.9,0],[.08,1.8,.08],C.wood),box([0,1.5,0],[1.5,.32,.1],C.green),box([.2,1.12,0],[1.1,.26,.1],C.blue)];
+ case 'water_station':return [box([0,.7,0],[w,1.4,d],C.blue),box([0,1.08,d*.52],[w*.75,.33,.05],C.white),box([0,.8,d*.58],[.13,.04,.17],C.dark)];
+ case 'wastebasket':return [cyl([0,h/2,0],[w,h,d],C.blue),cyl([0,h,0],[w*.8,.025,d*.8],C.dark)];
+ case 'basketball_hoop':return [box([0,1.5,0],[.12,3,.12],C.dark),box([0,2.8,.3],[1.5,.85,.09],C.white),box([0,2.8,.36],[.45,.33,.015],C.blue),{shape:'torus',p:[0,2.45,.7],s:[.6,.6,.6],color:C.brick,r:[Math.PI/2,0,0]}];
+ case 'ball_crate':case 'crate':return [box([0,.1,0],[w,.2,d],C.wood),...[-1,1].map(x=>box([x*w*.48,.3,0],[.05,.4,d],C.wood)),box([0,.3,-d*.48],[w,.4,.05],C.wood)];
+ case 'guard_booth':return [box([0,.05,0],[w,.1,d],'#c8c6b0'),box([0,2,-d*.3],[w,.1,d*.45],C.blue),...[-1,1].map(x=>box([x*w*.45,1,-d*.3],[.12,2,.12],C.blue)),box([0,1.1,-d*.45],[w,.8,.08],C.white),box([0,1.6,-d*.4],[w*.75,.35,.04],C.blue)];
+ case 'awning':return [box([0,2.3,-.6],[w,.12,d*.4],C.brick),...[-1,1].map(x=>box([x*w*.48,1.15,-d*.45],[.08,2.3,.08],C.wood))];
+ case 'queue_mark':return [box([0,.035,0],[w,.015,d],C.yellow)];
+ case 'medical_bed':return [box([0,.38,0],[w,.55,d],C.white),box([0,.68,0],[w,.12,d],C.blue),box([0,.79,-d*.35],[w*.8,.15,.45],C.white),box([0,.76,d*.15],[w,.1,d*.55],'#a7bdb8'),...[-1,1].map(x=>box([x*w*.45,.3,0],[.07,.6,d*.8],C.dark))];
+ case 'medical_cabinet':return [box([0,h/2,0],[w,h,d],C.white),box([0,h*.65,d*.51],[.38,.3,.03],C.green),box([-.05,h*.68,d*.54],[.18,.03,.02],C.white),box([.1,h*.75,d*.54],[.025,.18,.02],C.white)];
+ case 'screen':return [box([0,.8,0],[.08,1.25,d],C.blue),box([0,.05,0],[.45,.1,d],C.dark)];
+ case 'stage':return [box([0,.12,0],[w,.24,d],C.wood)];case 'stage_steps':return [box([0,.06,0],[w,.12,d],C.wood)];case 'stage_backdrop':return [box([0,1,0],[w,1.6,.08],C.green)];
+ case 'bunting':return Array.from({length:8},(_,i)=>({shape:'cone',p:[-w/2+i*w/7,2.1,0],s:[.5,.55,.035],color:i%2?C.brick:C.yellow,r:[0,0,Math.PI]}));
+ default:return desk();
+ }
+}

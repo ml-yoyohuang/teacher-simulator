@@ -48,3 +48,7 @@ Y向上、XZ地面，單位公尺。物件pivot是底面中心；人體約1.7m�
 `itemModel('wireless_microphone')`：0.7m內的低分段深灰握柄、灰藍球形網罩／深色橫網線與黃色環帶，全部使用既有cylinder/sphere/box與共享材質，不新增貼圖或光源。一般手持沿原anchor，擴音點名時右手與麥克風抬到臉旁約1秒。地面可回收道具不是decor，拋物線與判定依game資料、碰撞不依網罩外形。聲波重用torus实例，正常至多2動態圈+1靜態圈，lowMotion仅靜態；一個DOM氣泡跟隨有效聲源，取消當下由runtime狀態清除。
 
 新增`microphoneBroadcast`（520Hz起音）與`microphonePulse`（740Hz短提示）；與普通點名共用650Hz提示。均在AudioEngine內合成，廣播source標籤供取消即stop，使用既有音量、mute、12聲部。soundtest.html逐項可試聽，目前32音效、5音樂。沒有任何裝置麥克風／錄音／語音辨識API。
+
+## 十區場景家具
+
+新增 `scene.ts` 宣告佈局、物件支撐高度及活動變體，`scene-models.ts` 組合共用幾何形成黑板、課桌椅、檔案櫃、樂器架、鼓組、護理床、商店等模型。固定家具／純裝飾不加入道具登錄，不增加持有身份；原家具與27種基本道具保持ID。細節無獨立碰撞、無新增光源，靜態instance只在模式重建時寫入。完整位置、模型與擴充步驟見SCENE_GUIDE.md。

@@ -1,11 +1,12 @@
 import fs from 'node:fs';import {items,zones,students,parents,staff,missions,chapters} from '../src/data';
 const read=(p:string)=>fs.existsSync(p)?JSON.parse(fs.readFileSync(p,'utf8')):null;
-const corePath=fs.existsSync('artifacts/microphone-core-tests.tap')?'artifacts/microphone-core-tests.tap':'artifacts/core-tests.tap';const core=fs.existsSync(corePath)?fs.readFileSync(corePath,'utf8'):'';
+const corePath=fs.existsSync('artifacts/scene-core-tests.tap')?'artifacts/scene-core-tests.tap':fs.existsSync('artifacts/microphone-core-tests.tap')?'artifacts/microphone-core-tests.tap':'artifacts/core-tests.tap';const core=fs.existsSync(corePath)?fs.readFileSync(corePath,'utf8'):'';
 const browser=read('artifacts/browser-qa.json'),extended=read('artifacts/extended-qa.json');const corePass=/fail 0/.test(core);
 let records=[];for(let [kind,list] of Object.entries({zone:zones,item:items,student:students,parent:parents,staff,chapter:chapters,mission:missions})){for(let entry of list){let m=entry as any;records.push({kind,id:m.id,label:m.label,registered:true,ruleTest:corePass?'pass':'not tested',operationEvidence:kind==='item'?(m.id==='wireless_microphone'?'tests/microphone.test.ts + artifacts/microphone-qa.json: call/decoy/ownership':'tests/core.test.ts: every declared action'):kind==='mission'?'tests/core.test.ts: 40 event/mechanic chains':kind==='parent'?'tests/core.test.ts + artifacts/parent-models.json':kind==='zone'?'tests/core.test.ts: grid reachability':'tests/core.test.ts: registry/state',fullHumanPlaythrough:'not tested'})}}
 fs.writeFileSync('artifacts/content-coverage.json',JSON.stringify({counts:{zones:10,items:items.length,students:12,parents:19,staff:7,normalMissions:24,chapters:4,eventMissions:16},records},null,2));
 let md=`# 規格覆蓋與驗證層級\n\n日期：2026-10-08。完整內容已登錄並接入共用機制；這份報告不把資料登錄當成實際通關。\n\n| registry | 數量 | 證據 |\n|---|---:|---|\n| zone | 10 | 格網通路／碰撞測試；真實3D模型 |\n| item | ${items.length} | 每種portable/pushable/fixed/wearable操作實測狀態 |\n| student | 12 | 性格反應FSM測試、部分真實NPC互動 |\n| parent | 19 | 有效入場／預算／ability測試及逐型3D生成 |\n| staff | 7 | 場景角色與各服務/查詢/巡查路徑 |\n| normal mission | 24 | 完成鏈、第一獎勵ledger、取消與重試 |\n| chapter | 4 | 固定順序、自由選與清場 |\n| event mission | 16 | 獨立完成鏈，代表活動實際操作 |\n\n`;
 const matrix=[
+ ['十區功能佈局／四活動／桌面拾取／合法導航','pass (規則＋實際輸入)','tests/scene.test.ts、artifacts/scene-browser-qa.json、十區與四活動真實截圖；實機未測'],
  ['手機2.2倍鏡頭／擊倒圖鑑／提示收合','pass (模擬)','tests/mobile-codex.test.ts、artifacts/mobile-codex-qa.json；保留本次更新前功能'],
  ['校園無線麥克風／擴音點名／落地誘餌','pass (規則＋實際輸入)','tests/microphone.test.ts、artifacts/microphone-qa.json與真實演示影片；真機及人工聽感未驗證'],
  ['真正3D／原創主角','pass','artifacts/courtyard.png、office.png；WebGLRenderer/角色幾何'],

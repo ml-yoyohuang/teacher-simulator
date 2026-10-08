@@ -17,6 +17,7 @@
 
 | 項目 | 狀態 | 證據／限制 |
 |---|---|---|
+|十區功能佈局／四活動／桌面拾取／合法導航|pass (規則＋實際輸入)|tests/scene.test.ts、artifacts/scene-browser-qa.json、十區與四活動真實截圖；實機未測|
 |手機2.2倍鏡頭／擊倒圖鑑／提示收合|pass (模擬)|tests/mobile-codex.test.ts、artifacts/mobile-codex-qa.json；保留本次更新前功能|
 |校園無線麥克風／擴音點名／落地誘餌|pass (規則＋實際輸入)|tests/microphone.test.ts、artifacts/microphone-qa.json與真實演示影片；真機及人工聽感未驗證|
 |真正3D／原創主角|pass|artifacts/courtyard.png、office.png；WebGLRenderer/角色幾何|

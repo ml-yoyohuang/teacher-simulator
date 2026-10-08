@@ -1,0 +1,401 @@
+{
+  "date": "2026-10-08T02:16:49.337Z",
+  "status": "pass",
+  "method": "Real game screenshots, keyboard E/J/Q/return and two planner-guided keyboard room routes, real AI chase ticks, mobile touch pickup/throw; dev API only sets starting scenes, positions and service targets. No synthetic mission completion. Physical phones/Safari not tested.",
+  "shots": [
+    "classroom",
+    "music_room",
+    "staff_room",
+    "principal_room",
+    "corridor",
+    "courtyard",
+    "playground",
+    "gate",
+    "co_op",
+    "infirmary",
+    "parent_day",
+    "anniversary",
+    "choir_contest",
+    "final_exam"
+  ],
+  "operations": [
+    {
+      "id": "textbook:0",
+      "before": {
+        "id": "textbook:0",
+        "y": 0.9,
+        "homeY": 0.9,
+        "size": 32,
+        "nearest": "textbook:0"
+      },
+      "after": {
+        "state": "home",
+        "y": 0.9,
+        "homeY": 0.9,
+        "size": 32,
+        "events": [
+          "reset",
+          "take",
+          "swing",
+          "throw",
+          "land",
+          "itemBroken",
+          "take",
+          "return"
+        ]
+      }
+    },
+    {
+      "id": "recorder:0",
+      "before": {
+        "id": "recorder:0",
+        "y": 0.92,
+        "homeY": 0.92,
+        "size": 32,
+        "nearest": "recorder:0"
+      },
+      "after": {
+        "state": "home",
+        "y": 0.92,
+        "homeY": 0.92,
+        "size": 32,
+        "events": [
+          "reset",
+          "take",
+          "swing",
+          "throw",
+          "land",
+          "itemBroken",
+          "take",
+          "return"
+        ]
+      }
+    },
+    {
+      "id": "laptop:0",
+      "before": {
+        "id": "laptop:0",
+        "y": 1.1,
+        "homeY": 1.1,
+        "size": 32,
+        "nearest": "laptop:0"
+      },
+      "after": {
+        "state": "home",
+        "y": 1.1,
+        "homeY": 1.1,
+        "size": 32,
+        "events": [
+          "reset",
+          "take",
+          "swing",
+          "throw",
+          "land",
+          "itemBroken",
+          "take",
+          "return"
+        ]
+      }
+    },
+    {
+      "id": "wireless_microphone:0",
+      "before": {
+        "id": "wireless_microphone:0",
+        "y": 0.92,
+        "homeY": 0.92,
+        "size": 32,
+        "nearest": "wireless_microphone:0"
+      },
+      "after": {
+        "state": "home",
+        "y": 0.92,
+        "homeY": 0.92,
+        "size": 32,
+        "events": [
+          "reset",
+          "take",
+          "swing",
+          "throw",
+          "land",
+          "microphoneBroadcast",
+          "microphoneBroadcastStop",
+          "take",
+          "return"
+        ]
+      }
+    },
+    {
+      "id": "piano:0",
+      "status": "pass"
+    },
+    {
+      "id": "coffee_machine:0",
+      "status": "pass"
+    },
+    {
+      "type": "shop_aunt",
+      "status": "pass"
+    },
+    {
+      "type": "guard_uncle",
+      "status": "pass"
+    },
+    {
+      "type": "nurse",
+      "status": "pass"
+    },
+    {
+      "id": "textbook:0",
+      "waypoints": 20,
+      "status": "pass"
+    },
+    {
+      "id": "recorder:0",
+      "waypoints": 22,
+      "status": "pass"
+    }
+  ],
+  "trace": [
+    {
+      "x": -13.466950163373017,
+      "z": -15.84239879901127,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -13.8641941755191,
+      "z": -15.795524554333788,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -14.163398885033528,
+      "z": -15.777286322120247,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -14.463239444750391,
+      "z": -15.767506815553993,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -14.763080004467254,
+      "z": -15.75772730898774,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -15.063070809208554,
+      "z": -15.755378464448961,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -15.363061613949855,
+      "z": -15.753029619910185,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -15.663058079435348,
+      "z": -15.751813346116137,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -16.063057140578803,
+      "z": -15.750946694887226,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -16.36305665762217,
+      "z": -15.750461353195625,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -16.663056617037082,
+      "z": -15.750305304964188,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -16.963056576451994,
+      "z": -15.75014925673275,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -17.263056573344222,
+      "z": -15.750106074994628,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -17.56305657023645,
+      "z": -15.750062893256507,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -17.863056568104895,
+      "z": -15.750030649768897,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -18.163056567925768,
+      "z": -15.750020282782309,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -18.46305656774664,
+      "z": -15.750009915795719,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -18.60599087184324,
+      "z": -16.123600312771366,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -18.68515559691573,
+      "z": -16.410098807942582,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -18.708248315988307,
+      "z": -16.709208697992764,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -18.826736753946193,
+      "z": -17.038312867803523,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -19.112923910602113,
+      "z": -17.12829570708525,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -19.40350334858057,
+      "z": -17.19479233963297,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -19.702867349204105,
+      "z": -17.21431655871266,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -20.00223134982764,
+      "z": -17.233840777792356,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -20.302192014114013,
+      "z": -17.238698748652553,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -20.602152678400387,
+      "z": -17.24355671951275,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -20.902137447192885,
+      "z": -17.246096758448672,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -21.302133208586966,
+      "z": -17.247938189080394,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -21.602131023900732,
+      "z": -17.24897325757886,
+      "state": "Chase",
+      "blocked": false
+    },
+    {
+      "x": -21.702130958517458,
+      "z": -17.249087610761467,
+      "state": "Attack",
+      "blocked": false
+    },
+    {
+      "x": -21.702130958517458,
+      "z": -17.249087610761467,
+      "state": "Attack",
+      "blocked": false
+    },
+    {
+      "x": -21.702130958517458,
+      "z": -17.249087610761467,
+      "state": "Attack",
+      "blocked": false
+    },
+    {
+      "x": -21.702130958517458,
+      "z": -17.249087610761467,
+      "state": "Attack",
+      "blocked": false
+    },
+    {
+      "x": -21.702130958517458,
+      "z": -17.249087610761467,
+      "state": "Attack",
+      "blocked": false
+    },
+    {
+      "x": -21.702130958517458,
+      "z": -17.249087610761467,
+      "state": "Attack",
+      "blocked": false
+    },
+    {
+      "x": -21.702130958517458,
+      "z": -17.249087610761467,
+      "state": "Attack",
+      "blocked": false
+    },
+    {
+      "x": -21.702130958517458,
+      "z": -17.249087610761467,
+      "state": "Attack",
+      "blocked": false
+    },
+    {
+      "x": -21.702130958517458,
+      "z": -17.249087610761467,
+      "state": "Attack",
+      "blocked": false
+    },
+    {
+      "x": -21.702130958517458,
+      "z": -17.249087610761467,
+      "state": "Attack",
+      "blocked": false
+    }
+  ],
+  "errors": []
+}

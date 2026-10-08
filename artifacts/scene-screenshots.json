@@ -1,0 +1,89 @@
+{
+  "method": "Actual WebGL game at 1280x800 with existing HUD; dev API only resets mode and places camera-following player at reachable scene view. No generated images or fake render.",
+  "captures": [
+    {
+      "id": "classroom",
+      "label": "一般教室",
+      "file": "artifacts/scene-classroom.png",
+      "mode": "normal"
+    },
+    {
+      "id": "music_room",
+      "label": "音樂教室",
+      "file": "artifacts/scene-music_room.png",
+      "mode": "normal"
+    },
+    {
+      "id": "staff_room",
+      "label": "導師辦公室",
+      "file": "artifacts/scene-staff_room.png",
+      "mode": "normal"
+    },
+    {
+      "id": "principal_room",
+      "label": "校長室",
+      "file": "artifacts/scene-principal_room.png",
+      "mode": "normal"
+    },
+    {
+      "id": "corridor",
+      "label": "共用走廊",
+      "file": "artifacts/scene-corridor.png",
+      "mode": "normal"
+    },
+    {
+      "id": "courtyard",
+      "label": "中庭",
+      "file": "artifacts/scene-courtyard.png",
+      "mode": "normal"
+    },
+    {
+      "id": "playground",
+      "label": "操場一角",
+      "file": "artifacts/scene-playground.png",
+      "mode": "normal"
+    },
+    {
+      "id": "gate",
+      "label": "校門與警衛室",
+      "file": "artifacts/scene-gate.png",
+      "mode": "normal"
+    },
+    {
+      "id": "co_op",
+      "label": "合作社",
+      "file": "artifacts/scene-co_op.png",
+      "mode": "normal"
+    },
+    {
+      "id": "infirmary",
+      "label": "保健室",
+      "file": "artifacts/scene-infirmary.png",
+      "mode": "normal"
+    },
+    {
+      "id": "parent_day",
+      "label": "親師日",
+      "file": "artifacts/scene-activity-parent_day.png",
+      "mode": "parent_day"
+    },
+    {
+      "id": "anniversary",
+      "label": "校慶",
+      "file": "artifacts/scene-activity-anniversary.png",
+      "mode": "anniversary"
+    },
+    {
+      "id": "choir_contest",
+      "label": "合唱團比賽",
+      "file": "artifacts/scene-activity-choir_contest.png",
+      "mode": "choir_contest"
+    },
+    {
+      "id": "final_exam",
+      "label": "期末考",
+      "file": "artifacts/scene-activity-final_exam.png",
+      "mode": "final_exam"
+    }
+  ]
+}

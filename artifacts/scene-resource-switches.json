@@ -1,0 +1,206 @@
+{
+  "status": "pass",
+  "method": "Actual mobile-emulated WebGL renderer over 20 mode switches, 350ms frame settling each; layout/collision/identity counts, GPU geometries and uploaded label textures. Not a thermal soak.",
+  "results": [
+    {
+      "mode": "normal",
+      "geometry": 7,
+      "textures": 4,
+      "furniture": 97,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 31,
+      "stalls": 0
+    },
+    {
+      "mode": "parent_day",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 46,
+      "stalls": 0
+    },
+    {
+      "mode": "anniversary",
+      "geometry": 7,
+      "textures": 4,
+      "furniture": 101,
+      "colliders": 100,
+      "objects": 32,
+      "npcs": 46,
+      "stalls": 2
+    },
+    {
+      "mode": "choir_contest",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 43,
+      "stalls": 0
+    },
+    {
+      "mode": "final_exam",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 43,
+      "stalls": 0
+    },
+    {
+      "mode": "normal",
+      "geometry": 7,
+      "textures": 2,
+      "furniture": 97,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 31,
+      "stalls": 0
+    },
+    {
+      "mode": "parent_day",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 46,
+      "stalls": 0
+    },
+    {
+      "mode": "anniversary",
+      "geometry": 7,
+      "textures": 4,
+      "furniture": 101,
+      "colliders": 100,
+      "objects": 32,
+      "npcs": 46,
+      "stalls": 2
+    },
+    {
+      "mode": "choir_contest",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 43,
+      "stalls": 0
+    },
+    {
+      "mode": "final_exam",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 43,
+      "stalls": 0
+    },
+    {
+      "mode": "normal",
+      "geometry": 7,
+      "textures": 2,
+      "furniture": 97,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 31,
+      "stalls": 0
+    },
+    {
+      "mode": "parent_day",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 46,
+      "stalls": 0
+    },
+    {
+      "mode": "anniversary",
+      "geometry": 7,
+      "textures": 4,
+      "furniture": 101,
+      "colliders": 100,
+      "objects": 32,
+      "npcs": 46,
+      "stalls": 2
+    },
+    {
+      "mode": "choir_contest",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 43,
+      "stalls": 0
+    },
+    {
+      "mode": "final_exam",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 43,
+      "stalls": 0
+    },
+    {
+      "mode": "normal",
+      "geometry": 7,
+      "textures": 2,
+      "furniture": 97,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 31,
+      "stalls": 0
+    },
+    {
+      "mode": "parent_day",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 46,
+      "stalls": 0
+    },
+    {
+      "mode": "anniversary",
+      "geometry": 7,
+      "textures": 4,
+      "furniture": 101,
+      "colliders": 100,
+      "objects": 32,
+      "npcs": 46,
+      "stalls": 2
+    },
+    {
+      "mode": "choir_contest",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 43,
+      "stalls": 0
+    },
+    {
+      "mode": "final_exam",
+      "geometry": 7,
+      "textures": 3,
+      "furniture": 100,
+      "colliders": 98,
+      "objects": 32,
+      "npcs": 43,
+      "stalls": 0
+    }
+  ]
+}

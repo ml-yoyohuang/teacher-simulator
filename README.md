@@ -104,3 +104,9 @@ pnpm coverage
 場景、角色、道具、音符序列、UI為本地原創程式生成。img1.jpeg/img2.jpeg僅作美術方向參考，不在遊戲載入、不複製圖中角色。第三方依賴保留在 LICENSES/，程式未另行宣告整包開放授權。
 
 製作核對：[Three.js官方文件](https://threejs.org/docs/)、[Pointer Events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)、[Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)。
+
+## 校園場景改版
+
+十區新增實際功能家具、收納區與通行路線：六組教室桌椅、音樂排練席、四個導師工作位、校長展示區、花圃环路、體育器材架、警衛亭、合作社窗口與兩張病床。課本／樂器／筆電等改放桌面或架子，拿放投擲、歸位與任務一併同步。活動切換保留手持／佩戴身份，四活動附加物不累積。
+
+佈局與擴充方法見 SCENE_GUIDE.md，十區及活動實際遊戲截圖見 SCENE_SCREENSHOTS.md；測試與效能比較見 QA_REPORT.md、PERFORMANCE_REPORT.md。

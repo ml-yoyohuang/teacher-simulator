@@ -3,7 +3,7 @@ import json,zipfile,hashlib
 root=Path(__file__).resolve().parent.parent
 out=root/'artifacts'/'dongshan-campus-complete.zip'
 include_dirs=['.github','src','tests','scripts','public','dist','LICENSES','dongshan_campus_spec']
-include_files=['README.md','ASSET_GUIDE.md','BALANCE.md','DECISIONS.md','SPEC_COVERAGE.md','QA_REPORT.md','PERFORMANCE_REPORT.md','KNOWN_ISSUES.md','PROGRESS.md','package.json','pnpm-lock.yaml','pnpm-workspace.yaml','tsconfig.json','vite.config.ts','index.html','soundtest.html','start-local.command','.gitignore']
+include_files=['SCENE_GUIDE.md','SCENE_SCREENSHOTS.md','README.md','ASSET_GUIDE.md','BALANCE.md','DECISIONS.md','SPEC_COVERAGE.md','QA_REPORT.md','PERFORMANCE_REPORT.md','KNOWN_ISSUES.md','PROGRESS.md','package.json','pnpm-lock.yaml','pnpm-workspace.yaml','tsconfig.json','vite.config.ts','index.html','soundtest.html','start-local.command','.gitignore']
 files=[]
 for directory in include_dirs:
  files.extend(p for p in (root/directory).rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name != '.DS_Store')
