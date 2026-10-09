@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-09",
+  "status": "pass",
+  "site": "https://ml-yoyohuang.github.io/teacher-simulator/",
+  "browser": "141.0.7390.37",
+  "assets": [
+    "game-CtQhpnac.js",
+    "game-m_FARN0v.css"
+  ],
+  "checks": [
+    {
+      "label": "390 HUD",
+      "count": 10,
+      "minGap": 8,
+      "overflow": false
+    },
+    {
+      "label": "390 pause",
+      "count": 16,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "390 settings",
+      "count": 3,
+      "minGap": 18,
+      "overflow": false
+    },
+    {
+      "label": "390 pause",
+      "count": 16,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "390 save",
+      "count": 6,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "390 pause",
+      "count": 16,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "390 calendar",
+      "count": 6,
+      "minGap": 66.796875,
+      "overflow": false
+    },
+    {
+      "label": "390 resetConfirm",
+      "count": 3,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "844 HUD",
+      "count": 10,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "844 pause",
+      "count": 16,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "844 settings",
+      "count": 3,
+      "minGap": 18,
+      "overflow": false
+    },
+    {
+      "label": "844 pause",
+      "count": 16,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "844 save",
+      "count": 6,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "844 pause",
+      "count": 16,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "844 calendar",
+      "count": 6,
+      "minGap": 84.390625,
+      "overflow": false
+    },
+    {
+      "label": "844 resetConfirm",
+      "count": 3,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "1280 HUD",
+      "count": 10,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "1280 pause",
+      "count": 16,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "1280 settings",
+      "count": 3,
+      "minGap": 18,
+      "overflow": false
+    },
+    {
+      "label": "1280 pause",
+      "count": 16,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "1280 save",
+      "count": 6,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "1280 pause",
+      "count": 16,
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "label": "1280 calendar",
+      "count": 6,
+      "minGap": 84.390625,
+      "overflow": false
+    },
+    {
+      "label": "1280 resetConfirm",
+      "count": 3,
+      "minGap": 12,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Public smoke test covers empty-hand HUD and non-destructive menus; held/choir and other states tested locally.",
+    "Physical phone and Safari not tested."
+  ]
+}

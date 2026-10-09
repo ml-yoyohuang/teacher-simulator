@@ -10,3 +10,5 @@
 ![手機商店](artifacts/button-spacing-shop.png)
 
 實體手機、Safari及所有玩家自訂字體／縮放組合尚未驗證。
+
+正式發布：功能提交9f2feff；GitHub Pages流程37918774237成功。公開站24組檢查通過，含三種尺寸的空手HUD、暫停／設定／存檔／行事曆／重開確認，以及實際觸控取消。公開JS/CSS的SHA-256與已測成品一致，沒有頁面例外。詳細手持／合唱及其他選單驗證仍以本地105組結果為準。見artifacts/button-spacing-production-qa.json及artifacts/button-spacing-production-mobile.png。
