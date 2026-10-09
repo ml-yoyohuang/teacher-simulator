@@ -24,3 +24,23 @@
 #drop{position:absolute;right:160px;bottom:91px;width:56px;height:56px}#meeting-ready{color:#466852;line-height:1.5}#toast.toast-dog{display:flex;align-items:center;gap:12px;padding:10px 16px;text-align:left}.toast-dog-face{display:block;width:52px;height:52px;flex:0 0 52px}.toast-dog-face svg{display:block;width:100%;height:100%}.toast-text{line-height:1.6}
 @media(max-width:600px){#drop{right:134px;bottom:90px;width:52px;height:52px}#toast.toast-dog{gap:9px;padding:9px 12px;max-width:88%}.toast-dog-face{width:48px;height:48px;flex-basis:48px}}
 @media(max-height:500px) and (min-width:601px){#drop{bottom:80px;width:52px;height:52px}}
+
+/* Measure real panel height, including parent tally, text wrapping and health warnings. */
+.side-nav{top:calc(var(--status-bottom,205px) + 12px)}
+@media(max-width:900px){.quest{top:calc(var(--status-bottom,190px) + 10px)}.side-nav{top:calc(var(--status-bottom,190px) + var(--quest-card-height,100px) + 20px)}}
+@media(max-height:500px) and (min-width:601px){.quest{top:14px}.side-nav{top:calc(var(--status-bottom,155px) + 10px)}}
+#health-vignette{position:absolute;inset:0;pointer-events:none;z-index:1;box-shadow:inset 0 0 min(13vw,90px) 12px #bb36365c;animation:health-breathe 2.2s ease-in-out infinite}
+#health-vignette[data-health=critical]{box-shadow:inset 0 0 min(15vw,100px) 18px #b82f2f85}
+.status-card[data-health=low],.status-card[data-health=critical]{border-color:#bb5252;box-shadow:0 0 0 2px #b94c4c35}
+.status-card[data-health=low] #hp-bar,.status-card[data-health=critical] #hp-bar{background:#bf4747}
+#health-warning{color:#a63434;font-weight:750;line-height:1.5}
+#hit-feedback{position:absolute;inset:0;pointer-events:none;z-index:4}
+.hit-label{position:absolute;transform:translate(-50%,-100%);white-space:nowrap;font-size:16px;font-weight:850;color:#fff4b4;text-shadow:0 2px 0 #67471e,1px 0 0 #67471e,-1px 0 0 #67471e;padding:4px 8px;background:#4b3b2bb8;border-radius:8px}
+@keyframes health-breathe{0%,100%{opacity:.55}50%{opacity:1}}
+.feedback-still #health-vignette{animation:none;opacity:.7}
+@media(prefers-reduced-motion:reduce){#health-vignette{animation:none;opacity:.7}}
+
+@media(max-height:500px) and (min-width:601px){.side-nav{left:203px}}
+
+@media(min-width:901px){.quest{top:calc(24px + var(--status-extra,0px))}}
+@media(max-height:500px) and (min-width:601px){.quest{top:calc(14px + var(--status-extra,0px))}}

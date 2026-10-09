@@ -1,0 +1,1054 @@
+{
+  "date": "2026-10-09",
+  "status": "pass",
+  "browser": "141.0.7390.37",
+  "environment": "macOS native Chromium, desktop and viewport/touch emulation",
+  "layouts": [
+    {
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "hp": 100,
+      "collapse": false,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 208.5,
+        "w": 224,
+        "h": 188.5
+      },
+      "quest": {
+        "x": 490,
+        "y": 47,
+        "right": 950,
+        "bottom": 175.6953125,
+        "w": 460,
+        "h": 128.6953125
+      },
+      "nav": {
+        "x": 24,
+        "y": 220.5,
+        "right": 183.65625,
+        "bottom": 268.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 40,
+        "y": 740,
+        "right": 162,
+        "bottom": 862,
+        "w": 122,
+        "h": 122
+      },
+      "health": "normal"
+    },
+    {
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "hp": 100,
+      "collapse": true,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 208.5,
+        "w": 224,
+        "h": 188.5
+      },
+      "quest": {
+        "x": 490,
+        "y": 47,
+        "right": 950,
+        "bottom": 103,
+        "w": 460,
+        "h": 56
+      },
+      "nav": {
+        "x": 24,
+        "y": 220.5,
+        "right": 183.65625,
+        "bottom": 268.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 40,
+        "y": 740,
+        "right": 162,
+        "bottom": 862,
+        "w": 122,
+        "h": 122
+      },
+      "health": "normal"
+    },
+    {
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "hp": 25,
+      "collapse": false,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 231.5,
+        "w": 224,
+        "h": 211.5
+      },
+      "quest": {
+        "x": 490,
+        "y": 70,
+        "right": 950,
+        "bottom": 198.6953125,
+        "w": 460,
+        "h": 128.6953125
+      },
+      "nav": {
+        "x": 24,
+        "y": 243.5,
+        "right": 183.65625,
+        "bottom": 291.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 40,
+        "y": 740,
+        "right": 162,
+        "bottom": 862,
+        "w": 122,
+        "h": 122
+      },
+      "health": "low"
+    },
+    {
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "hp": 25,
+      "collapse": true,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 231.5,
+        "w": 224,
+        "h": 211.5
+      },
+      "quest": {
+        "x": 490,
+        "y": 70,
+        "right": 950,
+        "bottom": 126,
+        "w": 460,
+        "h": 56
+      },
+      "nav": {
+        "x": 24,
+        "y": 243.5,
+        "right": 183.65625,
+        "bottom": 291.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 40,
+        "y": 740,
+        "right": 162,
+        "bottom": 862,
+        "w": 122,
+        "h": 122
+      },
+      "health": "low"
+    },
+    {
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "hp": 10,
+      "collapse": false,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 231.5,
+        "w": 224,
+        "h": 211.5
+      },
+      "quest": {
+        "x": 490,
+        "y": 70,
+        "right": 950,
+        "bottom": 198.6953125,
+        "w": 460,
+        "h": 128.6953125
+      },
+      "nav": {
+        "x": 24,
+        "y": 243.5,
+        "right": 183.65625,
+        "bottom": 291.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 40,
+        "y": 740,
+        "right": 162,
+        "bottom": 862,
+        "w": 122,
+        "h": 122
+      },
+      "health": "critical"
+    },
+    {
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "hp": 10,
+      "collapse": true,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 231.5,
+        "w": 224,
+        "h": 211.5
+      },
+      "quest": {
+        "x": 490,
+        "y": 70,
+        "right": 950,
+        "bottom": 126,
+        "w": 460,
+        "h": 56
+      },
+      "nav": {
+        "x": 24,
+        "y": 243.5,
+        "right": 183.65625,
+        "bottom": 291.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 40,
+        "y": 740,
+        "right": 162,
+        "bottom": 862,
+        "w": 122,
+        "h": 122
+      },
+      "health": "critical"
+    },
+    {
+      "size": {
+        "width": 820,
+        "height": 1180
+      },
+      "hp": 100,
+      "collapse": false,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 208.5,
+        "w": 224,
+        "h": 188.5
+      },
+      "quest": {
+        "x": 24,
+        "y": 218.5,
+        "right": 264,
+        "bottom": 339.1953125,
+        "w": 240,
+        "h": 120.6953125
+      },
+      "nav": {
+        "x": 24,
+        "y": 349.1953125,
+        "right": 183.65625,
+        "bottom": 397.1953125,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 1020,
+        "right": 147,
+        "bottom": 1142,
+        "w": 122,
+        "h": 122
+      },
+      "health": "normal"
+    },
+    {
+      "size": {
+        "width": 820,
+        "height": 1180
+      },
+      "hp": 100,
+      "collapse": true,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 208.5,
+        "w": 224,
+        "h": 188.5
+      },
+      "quest": {
+        "x": 24,
+        "y": 218.5,
+        "right": 264,
+        "bottom": 274.5,
+        "w": 240,
+        "h": 56
+      },
+      "nav": {
+        "x": 24,
+        "y": 284.5,
+        "right": 183.65625,
+        "bottom": 332.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 1020,
+        "right": 147,
+        "bottom": 1142,
+        "w": 122,
+        "h": 122
+      },
+      "health": "normal"
+    },
+    {
+      "size": {
+        "width": 820,
+        "height": 1180
+      },
+      "hp": 25,
+      "collapse": false,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 231.5,
+        "w": 224,
+        "h": 211.5
+      },
+      "quest": {
+        "x": 24,
+        "y": 241.5,
+        "right": 264,
+        "bottom": 362.1953125,
+        "w": 240,
+        "h": 120.6953125
+      },
+      "nav": {
+        "x": 24,
+        "y": 372.1953125,
+        "right": 183.65625,
+        "bottom": 420.1953125,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 1020,
+        "right": 147,
+        "bottom": 1142,
+        "w": 122,
+        "h": 122
+      },
+      "health": "low"
+    },
+    {
+      "size": {
+        "width": 820,
+        "height": 1180
+      },
+      "hp": 25,
+      "collapse": true,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 231.5,
+        "w": 224,
+        "h": 211.5
+      },
+      "quest": {
+        "x": 24,
+        "y": 241.5,
+        "right": 264,
+        "bottom": 297.5,
+        "w": 240,
+        "h": 56
+      },
+      "nav": {
+        "x": 24,
+        "y": 307.5,
+        "right": 183.65625,
+        "bottom": 355.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 1020,
+        "right": 147,
+        "bottom": 1142,
+        "w": 122,
+        "h": 122
+      },
+      "health": "low"
+    },
+    {
+      "size": {
+        "width": 820,
+        "height": 1180
+      },
+      "hp": 10,
+      "collapse": false,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 231.5,
+        "w": 224,
+        "h": 211.5
+      },
+      "quest": {
+        "x": 24,
+        "y": 241.5,
+        "right": 264,
+        "bottom": 362.1953125,
+        "w": 240,
+        "h": 120.6953125
+      },
+      "nav": {
+        "x": 24,
+        "y": 372.1953125,
+        "right": 183.65625,
+        "bottom": 420.1953125,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 1020,
+        "right": 147,
+        "bottom": 1142,
+        "w": 122,
+        "h": 122
+      },
+      "health": "critical"
+    },
+    {
+      "size": {
+        "width": 820,
+        "height": 1180
+      },
+      "hp": 10,
+      "collapse": true,
+      "status": {
+        "x": 24,
+        "y": 20,
+        "right": 248,
+        "bottom": 231.5,
+        "w": 224,
+        "h": 211.5
+      },
+      "quest": {
+        "x": 24,
+        "y": 241.5,
+        "right": 264,
+        "bottom": 297.5,
+        "w": 240,
+        "h": 56
+      },
+      "nav": {
+        "x": 24,
+        "y": 307.5,
+        "right": 183.65625,
+        "bottom": 355.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 1020,
+        "right": 147,
+        "bottom": 1142,
+        "w": 122,
+        "h": 122
+      },
+      "health": "critical"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "hp": 100,
+      "collapse": false,
+      "status": {
+        "x": 12,
+        "y": 12,
+        "right": 188,
+        "bottom": 188,
+        "w": 176,
+        "h": 176
+      },
+      "quest": {
+        "x": 12,
+        "y": 198,
+        "right": 378,
+        "bottom": 309.5,
+        "w": 366,
+        "h": 111.5
+      },
+      "nav": {
+        "x": 12,
+        "y": 319.5,
+        "right": 165.65625,
+        "bottom": 367.5,
+        "w": 153.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 20,
+        "y": 678,
+        "right": 134,
+        "bottom": 792,
+        "w": 114,
+        "h": 114
+      },
+      "health": "normal"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "hp": 100,
+      "collapse": true,
+      "status": {
+        "x": 12,
+        "y": 12,
+        "right": 188,
+        "bottom": 188,
+        "w": 176,
+        "h": 176
+      },
+      "quest": {
+        "x": 12,
+        "y": 198,
+        "right": 184,
+        "bottom": 246,
+        "w": 172,
+        "h": 48
+      },
+      "nav": {
+        "x": 12,
+        "y": 256,
+        "right": 165.65625,
+        "bottom": 304,
+        "w": 153.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 20,
+        "y": 678,
+        "right": 134,
+        "bottom": 792,
+        "w": 114,
+        "h": 114
+      },
+      "health": "normal"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "hp": 25,
+      "collapse": false,
+      "status": {
+        "x": 12,
+        "y": 12,
+        "right": 188,
+        "bottom": 209.5,
+        "w": 176,
+        "h": 197.5
+      },
+      "quest": {
+        "x": 12,
+        "y": 219.5,
+        "right": 378,
+        "bottom": 331,
+        "w": 366,
+        "h": 111.5
+      },
+      "nav": {
+        "x": 12,
+        "y": 341,
+        "right": 165.65625,
+        "bottom": 389,
+        "w": 153.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 20,
+        "y": 678,
+        "right": 134,
+        "bottom": 792,
+        "w": 114,
+        "h": 114
+      },
+      "health": "low"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "hp": 25,
+      "collapse": true,
+      "status": {
+        "x": 12,
+        "y": 12,
+        "right": 188,
+        "bottom": 209.5,
+        "w": 176,
+        "h": 197.5
+      },
+      "quest": {
+        "x": 12,
+        "y": 219.5,
+        "right": 184,
+        "bottom": 267.5,
+        "w": 172,
+        "h": 48
+      },
+      "nav": {
+        "x": 12,
+        "y": 277.5,
+        "right": 165.65625,
+        "bottom": 325.5,
+        "w": 153.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 20,
+        "y": 678,
+        "right": 134,
+        "bottom": 792,
+        "w": 114,
+        "h": 114
+      },
+      "health": "low"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "hp": 10,
+      "collapse": false,
+      "status": {
+        "x": 12,
+        "y": 12,
+        "right": 188,
+        "bottom": 209.5,
+        "w": 176,
+        "h": 197.5
+      },
+      "quest": {
+        "x": 12,
+        "y": 219.5,
+        "right": 378,
+        "bottom": 331,
+        "w": 366,
+        "h": 111.5
+      },
+      "nav": {
+        "x": 12,
+        "y": 341,
+        "right": 165.65625,
+        "bottom": 389,
+        "w": 153.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 20,
+        "y": 678,
+        "right": 134,
+        "bottom": 792,
+        "w": 114,
+        "h": 114
+      },
+      "health": "critical"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "hp": 10,
+      "collapse": true,
+      "status": {
+        "x": 12,
+        "y": 12,
+        "right": 188,
+        "bottom": 209.5,
+        "w": 176,
+        "h": 197.5
+      },
+      "quest": {
+        "x": 12,
+        "y": 219.5,
+        "right": 184,
+        "bottom": 267.5,
+        "w": 172,
+        "h": 48
+      },
+      "nav": {
+        "x": 12,
+        "y": 277.5,
+        "right": 165.65625,
+        "bottom": 325.5,
+        "w": 153.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 20,
+        "y": 678,
+        "right": 134,
+        "bottom": 792,
+        "w": 114,
+        "h": 114
+      },
+      "health": "critical"
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "hp": 100,
+      "collapse": false,
+      "status": {
+        "x": 16,
+        "y": 12,
+        "right": 191,
+        "bottom": 174.5,
+        "w": 175,
+        "h": 162.5
+      },
+      "quest": {
+        "x": 274.30078125,
+        "y": 52,
+        "right": 569.69921875,
+        "bottom": 171,
+        "w": 295.3984375,
+        "h": 119
+      },
+      "nav": {
+        "x": 203,
+        "y": 184.5,
+        "right": 362.65625,
+        "bottom": 232.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 270,
+        "right": 125,
+        "bottom": 370,
+        "w": 100,
+        "h": 100
+      },
+      "health": "normal"
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "hp": 100,
+      "collapse": true,
+      "status": {
+        "x": 16,
+        "y": 12,
+        "right": 191,
+        "bottom": 174.5,
+        "w": 175,
+        "h": 162.5
+      },
+      "quest": {
+        "x": 274.30078125,
+        "y": 52,
+        "right": 569.69921875,
+        "bottom": 108,
+        "w": 295.3984375,
+        "h": 56
+      },
+      "nav": {
+        "x": 203,
+        "y": 184.5,
+        "right": 362.65625,
+        "bottom": 232.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 270,
+        "right": 125,
+        "bottom": 370,
+        "w": 100,
+        "h": 100
+      },
+      "health": "normal"
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "hp": 25,
+      "collapse": false,
+      "status": {
+        "x": 16,
+        "y": 12,
+        "right": 191,
+        "bottom": 197.5,
+        "w": 175,
+        "h": 185.5
+      },
+      "quest": {
+        "x": 274.30078125,
+        "y": 75,
+        "right": 569.69921875,
+        "bottom": 194,
+        "w": 295.3984375,
+        "h": 119
+      },
+      "nav": {
+        "x": 203,
+        "y": 207.5,
+        "right": 362.65625,
+        "bottom": 255.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 270,
+        "right": 125,
+        "bottom": 370,
+        "w": 100,
+        "h": 100
+      },
+      "health": "low"
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "hp": 25,
+      "collapse": true,
+      "status": {
+        "x": 16,
+        "y": 12,
+        "right": 191,
+        "bottom": 197.5,
+        "w": 175,
+        "h": 185.5
+      },
+      "quest": {
+        "x": 274.30078125,
+        "y": 75,
+        "right": 569.69921875,
+        "bottom": 131,
+        "w": 295.3984375,
+        "h": 56
+      },
+      "nav": {
+        "x": 203,
+        "y": 207.5,
+        "right": 362.65625,
+        "bottom": 255.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 270,
+        "right": 125,
+        "bottom": 370,
+        "w": 100,
+        "h": 100
+      },
+      "health": "low"
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "hp": 10,
+      "collapse": false,
+      "status": {
+        "x": 16,
+        "y": 12,
+        "right": 191,
+        "bottom": 197.5,
+        "w": 175,
+        "h": 185.5
+      },
+      "quest": {
+        "x": 274.30078125,
+        "y": 75,
+        "right": 569.69921875,
+        "bottom": 194,
+        "w": 295.3984375,
+        "h": 119
+      },
+      "nav": {
+        "x": 203,
+        "y": 207.5,
+        "right": 362.65625,
+        "bottom": 255.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 270,
+        "right": 125,
+        "bottom": 370,
+        "w": 100,
+        "h": 100
+      },
+      "health": "critical"
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "hp": 10,
+      "collapse": true,
+      "status": {
+        "x": 16,
+        "y": 12,
+        "right": 191,
+        "bottom": 197.5,
+        "w": 175,
+        "h": 185.5
+      },
+      "quest": {
+        "x": 274.30078125,
+        "y": 75,
+        "right": 569.69921875,
+        "bottom": 131,
+        "w": 295.3984375,
+        "h": 56
+      },
+      "nav": {
+        "x": 203,
+        "y": 207.5,
+        "right": 362.65625,
+        "bottom": 255.5,
+        "w": 159.65625,
+        "h": 48
+      },
+      "joystick": {
+        "x": 25,
+        "y": 270,
+        "right": 125,
+        "bottom": 370,
+        "w": 100,
+        "h": 100
+      },
+      "health": "critical"
+    }
+  ],
+  "goals": {
+    "goals": [
+      {
+        "x": -21,
+        "z": -19,
+        "label": "放下考卷"
+      }
+    ],
+    "meshes": [
+      {
+        "count": 1,
+        "depthTest": false,
+        "depthWrite": false,
+        "order": 80
+      },
+      {
+        "count": 1,
+        "depthTest": false,
+        "depthWrite": false,
+        "order": 81
+      },
+      {
+        "count": 1,
+        "depthTest": false,
+        "depthWrite": false,
+        "order": 82
+      }
+    ],
+    "point": {
+      "x": 708.9322416857761,
+      "y": 369.9112110772319
+    },
+    "nearest": "tutorial:podium",
+    "held": "exam_papers:0"
+  },
+  "delivered": {
+    "held": null,
+    "id": "exam_papers:0",
+    "x": -21,
+    "z": -19,
+    "y": 1.06,
+    "ownership": true
+  },
+  "hit": {
+    "events": 1,
+    "labels": "命中 −10",
+    "hp": 90
+  },
+  "checks": [
+    "24 layout combinations, expanded/collapsed, no panel/nav/joystick overlaps",
+    "skipped tutorial + held exam shows unobscured podium ring",
+    "real E places same paper instance on podium",
+    "real J successful hit gives actual damage text and short shake",
+    "empty swing has no hit text",
+    "lowMotion retains static critical health edge/warning and disables shake",
+    "recovery/reset removes warning and hit labels"
+  ],
+  "errors": [],
+  "limitations": [
+    "Physical phones, Safari/macOS Safari and human comfort review not tested.",
+    "NPC and paper initial positions prepared using existing dev interface; E/J are real keyboard input."
+  ]
+}

@@ -208,3 +208,7 @@ SCHOOL_MEETING_SPEC.md完整15種橋段全部接入；正式每場2／3種、兩
 ## 2026-10-09 音樂更新
 
 音樂登錄8項：4日常原曲、3場景變奏及1合成合唱，事件／樂器音效41項。来源见public/music/manifest.json。使用者最新要求取代05規格早期純合成背景曲與90/120 BPM設定，80 BPM合唱及原音量、聲部限制、背景暫停仍保留。驗證與限制见MUSIC_GUIDE.md、artifacts/music-browser-qa.json及artifacts/soundtest-qa.json。
+
+## 2026-10-09 介面、移動與回饋
+
+完成動態HUD排版、4/5.5m/s步行／跑步、家具前高亮任務標記與跳過教學的考卷提示、真實傷害浮字／短白閃／輕震動、25/10HP低血量提示與減少動態模式。114規則測試、24組版面與真實E／J輸入通過，詳見FEEDBACK_QA_REPORT.md及artifacts/feedback-browser-qa.json。實體手機、Safari及真人舒適度未測。

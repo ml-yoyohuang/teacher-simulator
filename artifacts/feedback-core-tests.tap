@@ -1,0 +1,694 @@
+TAP version 13
+# Subtest: exact content registries and reference validity
+ok 1 - exact content registries and reference validity
+  ---
+  duration_ms: 0.890542
+  type: 'test'
+  ...
+# Subtest: atomic item take / throw / NPC take / return / wear / rescue ownership
+ok 2 - atomic item take / throw / NPC take / return / wear / rescue ownership
+  ---
+  duration_ms: 15.5195
+  type: 'test'
+  ...
+# Subtest: one swing hits a target once, down event once, nurse protected
+ok 3 - one swing hits a target once, down event once, nurse protected
+  ---
+  duration_ms: 30.276125
+  type: 'test'
+  ...
+# Subtest: alert thresholds, cooldown, prank blame, hidden line of sight
+ok 4 - alert thresholds, cooldown, prank blame, hidden line of sight
+  ---
+  duration_ms: 6.145041
+  type: 'test'
+  ...
+# Subtest: family causal queue, delay, unique incident, global group slots
+ok 5 - family causal queue, delay, unique incident, global group slots
+  ---
+  duration_ms: 30.7695
+  type: 'test'
+  ...
+# Subtest: navigation all zones reachable, swept dodge cannot pass walls
+ok 6 - navigation all zones reachable, swept dodge cannot pass walls
+  ---
+  duration_ms: 10.279583
+  type: 'test'
+  ...
+# Subtest: quest pins and held items exclude restoration; same identity returns
+ok 7 - quest pins and held items exclude restoration; same identity returns
+  ---
+  duration_ms: 2.087959
+  type: 'test'
+  ...
+# Subtest: reward ledger, purchase bounds, complete save round trip and invalid import
+ok 8 - reward ledger, purchase bounds, complete save round trip and invalid import
+  ---
+  duration_ms: 0.757875
+  type: 'test'
+  ...
+# Subtest: cancel old attempts, mode reset queues and pending, chapter freely selectable
+ok 9 - cancel old attempts, mode reset queues and pending, chapter freely selectable
+  ---
+  duration_ms: 13.114333
+  type: 'test'
+  ...
+# Subtest: 24+16 mission mechanics have executable completion chains, no ledger duplication
+ok 10 - 24+16 mission mechanics have executable completion chains, no ledger duplication
+  ---
+  duration_ms: 137.657666
+  type: 'test'
+  ...
+# Subtest: choir silent 32 beats completes, fixed simulation pause preserves beat
+ok 11 - choir silent 32 beats completes, fixed simulation pause preserves beat
+  ---
+  duration_ms: 3.724167
+  type: 'test'
+  ...
+# Subtest: 20 mode switches resource counts remain bounded and item identity consistent
+ok 12 - 20 mode switches resource counts remain bounded and item identity consistent
+  ---
+  duration_ms: 45.390417
+  type: 'test'
+  ...
+# Subtest: every portable, pushable, fixed and wearable declared action has real state effects
+ok 13 - every portable, pushable, fixed and wearable declared action has real state effects
+  ---
+  duration_ms: 38.961541
+  type: 'test'
+  ...
+# Subtest: all 12 personalities choose specific observable reaction states
+ok 14 - all 12 personalities choose specific observable reaction states
+  ---
+  duration_ms: 16.220666
+  type: 'test'
+  ...
+# Subtest: all 19 parents use defined ability plus real gate entry and legal budgets
+ok 15 - all 19 parents use defined ability plus real gate entry and legal budgets
+  ---
+  duration_ms: 66.961375
+  type: 'test'
+  ...
+# Subtest: exam paper scatter keeps one bundle ID and requires three real pickups
+ok 16 - exam paper scatter keeps one bundle ID and requires three real pickups
+  ---
+  duration_ms: 20.99775
+  type: 'test'
+  ...
+# Subtest: contact interrupted before two seconds never schedules; completion does
+ok 17 - contact interrupted before two seconds never schedules; completion does
+  ---
+  duration_ms: 19.421583
+  type: 'test'
+  ...
+# Subtest: q09 completes through natural 65→0 simulation rather than a synthetic completion event
+ok 18 - q09 completes through natural 65→0 simulation rather than a synthetic completion event
+  ---
+  duration_ms: 108.034417
+  type: 'test'
+  ...
+# Subtest: airborne portable can be caught in hand range and flight identity clears
+ok 19 - airborne portable can be caught in hand range and flight identity clears
+  ---
+  duration_ms: 2.6585
+  type: 'test'
+  ...
+# Subtest: parent projectile derives position only and keeps its own valid item identity
+ok 20 - parent projectile derives position only and keeps its own valid item identity
+  ---
+  duration_ms: 37.3825
+  type: 'test'
+  ...
+# Subtest: repeated parent waves reuse bounded projectile pool and delete departed interpolation records
+ok 21 - repeated parent waves reuse bounded projectile pool and delete departed interpolation records
+  ---
+  duration_ms: 2.492417
+  type: 'test'
+  ...
+# Subtest: unreserved same-type auxiliary item cannot satisfy a pinned mission delivery
+ok 22 - unreserved same-type auxiliary item cannot satisfy a pinned mission delivery
+  ---
+  duration_ms: 5.837792
+  type: 'test'
+  ...
+# Subtest: tutorial papers require an explicit E interaction at podium and ignore nearby distractions
+ok 23 - tutorial papers require an explicit E interaction at podium and ignore nearby distractions
+  ---
+  duration_ms: 3.056792
+  type: 'test'
+  ...
+# Subtest: tutorial R drop only completes for the correct papers next to the podium
+ok 24 - tutorial R drop only completes for the correct papers next to the podium
+  ---
+  duration_ms: 2.370792
+  type: 'test'
+  ...
+# Subtest: podium E placement also works after skipping tutorial without granting task completion
+ok 25 - podium E placement also works after skipping tutorial without granting task completion
+  ---
+  duration_ms: 2.326458
+  type: 'test'
+  ...
+# Subtest: old saves add two dogs only, keep money quests outfits meeting and deny malformed relation data
+ok 26 - old saves add two dogs only, keep money quests outfits meeting and deny malformed relation data
+  ---
+  duration_ms: 16.913917
+  type: 'test'
+  ...
+# Subtest: dog_lion: every dog state excludes every player weapon, NPC and furniture damage, adjacent adult still hit
+ok 27 - dog_lion: every dog state excludes every player weapon, NPC and furniture damage, adjacent adult still hit
+  ---
+  duration_ms: 879.628459
+  type: 'test'
+  ...
+# Subtest: dog_mani: every dog state excludes every player weapon, NPC and furniture damage, adjacent adult still hit
+ok 28 - dog_mani: every dog state excludes every player weapon, NPC and furniture damage, adjacent adult still hit
+  ---
+  duration_ms: 1057.099375
+  type: 'test'
+  ...
+# Subtest: dedicated dog toys have zero melee and projectile damage; real normal projectile passes dog and hits adult
+ok 29 - dedicated dog toys have zero melee and projectile damage; real normal projectile passes dog and hits adult
+  ---
+  duration_ms: 3.691792
+  type: 'test'
+  ...
+# Subtest: all portable projectile types cross both dogs in every state without using the human hit slot
+ok 30 - all portable projectile types cross both dogs in every state without using the human hit slot
+  ---
+  duration_ms: 1835.034333
+  type: 'test'
+  ...
+# Subtest: small repeated circles do not earn walk affinity
+ok 31 - small repeated circles do not earn walk affinity
+  ---
+  duration_ms: 16.155833
+  type: 'test'
+  ...
+# Subtest: science teacher damage in walk, dialogue, feeding, quest before/after, visible stun then recovery; no affinity change
+ok 32 - science teacher damage in walk, dialogue, feeding, quest before/after, visible stun then recovery; no affinity change
+  ---
+  duration_ms: 10.250292
+  type: 'test'
+  ...
+# Subtest: pet finishes after .6, input/hit interrupts, cooldown independent and permanent across reload
+ok 33 - pet finishes after .6, input/hit interrupts, cooldown independent and permanent across reload
+  ---
+  duration_ms: 5.097333
+  type: 'test'
+  ...
+# Subtest: intro treats only once, failed treat consumes none and independent cooldowns cannot reload reset
+ok 34 - intro treats only once, failed treat consumes none and independent cooldowns cannot reload reset
+  ---
+  duration_ms: 4.61
+  type: 'test'
+  ...
+# Subtest: all six unique quests ordered, exact object ID delivery, rewards once, low affinity task walk available
+ok 35 - all six unique quests ordered, exact object ID delivery, rewards once, low affinity task walk available
+  ---
+  duration_ms: 4.272541
+  type: 'test'
+  ...
+# Subtest: fetch uses same original, settles only returned ball, take interrupts, inaccessible ball safely recovered without reward
+ok 36 - fetch uses same original, settles only returned ball, take interrupts, inaccessible ball safely recovered without reward
+  ---
+  duration_ms: 7.102084
+  type: 'test'
+  ...
+# Subtest: formal follow needs45, max one dog45seconds, existing nav and soft avoidance never block actor movement
+ok 37 - formal follow needs45, max one dog45seconds, existing nav and soft avoidance never block actor movement
+  ---
+  duration_ms: 15.149333
+  type: 'test'
+  ...
+# Subtest: dog_lion: legal assistance no HP loss, contact only cooldown20, short release, player hit overrides control
+ok 38 - dog_lion: legal assistance no HP loss, contact only cooldown20, short release, player hit overrides control
+  ---
+  duration_ms: 1.897666
+  type: 'test'
+  ...
+# Subtest: dog_mani: legal assistance no HP loss, contact only cooldown20, short release, player hit overrides control
+ok 39 - dog_mani: legal assistance no HP loss, contact only cooldown20, short release, player hit overrides control
+  ---
+  duration_ms: 1.796375
+  type: 'test'
+  ...
+# Subtest: assist invalid neutral/student/down/removed/wall/path targets never consume cooldown, lock prevents second dog
+ok 40 - assist invalid neutral/student/down/removed/wall/path targets never consume cooldown, lock prevents second dog
+  ---
+  duration_ms: 1.804417
+  type: 'test'
+  ...
+# Subtest: feeding180 playable seconds8s, attacks immediately interrupt but do not cancel assigned assistance
+ok 41 - feeding180 playable seconds8s, attacks immediately interrupt but do not cancel assigned assistance
+  ---
+  duration_ms: 1.803958
+  type: 'test'
+  ...
+# Subtest: M16 qualification pool16 retains original15, deterministic slots, same identity transfer and once8 points; humans hit during assistance
+ok 42 - M16 qualification pool16 retains original15, deterministic slots, same identity transfer and once8 points; humans hit during assistance
+  ---
+  duration_ms: 251.076542
+  type: 'test'
+  ...
+# Subtest: no M16 means no following dog sneaks in; reload and rescue clear controls, retain gains cooldown identities
+ok 43 - no M16 means no following dog sneaks in; reload and rescue clear controls, retain gains cooldown identities
+  ---
+  duration_ms: 9.981583
+  type: 'test'
+  ...
+# Subtest: all campus dog stops, quest objects destinations and teacher feeding route reachable in all original activities
+ok 44 - all campus dog stops, quest objects destinations and teacher feeding route reachable in all original activities
+  ---
+  duration_ms: 148.281792
+  type: 'test'
+  ...
+# Subtest: exam podium marker persists after skipping tutorial; active delivery uses actual task destination
+ok 45 - exam podium marker persists after skipping tutorial; active delivery uses actual task destination
+  ---
+  duration_ms: 11.589292
+  type: 'test'
+  ...
+# Subtest: low health tiers clear on recovery and faster walking preserves run advantage
+ok 46 - low health tiers clear on recovery and faster walking preserves run advantage
+  ---
+  duration_ms: 9.769042
+  type: 'test'
+  ...
+# Subtest: old saves migrate; lifecycle caps and actor reservations reject occupied main/side/student slots
+ok 47 - old saves migrate; lifecycle caps and actor reservations reject occupied main/side/student slots
+  ---
+  duration_ms: 22.885542
+  type: 'test'
+  ...
+# Subtest: meal heals once, abnormal slows without HP damage, movement interrupts and reserved result survives reload
+ok 48 - meal heals once, abnormal slows without HP damage, movement interrupts and reserved result survives reload
+  ---
+  duration_ms: 78.661833
+  type: 'test'
+  ...
+# Subtest: normal meal caps HP and does not grant abnormal achievement
+ok 49 - normal meal caps HP and does not grant abnormal achievement
+  ---
+  duration_ms: 4.009958
+  type: 'test'
+  ...
+# Subtest: milk passes three stages, nonstack slowdown, clean interrupted versus complete; dogs excluded
+ok 50 - milk passes three stages, nonstack slowdown, clean interrupted versus complete; dogs excluded
+  ---
+  duration_ms: 269.913917
+  type: 'test'
+  ...
+# Subtest: baseball seeded break restores same original broom; picked object interrupts without replacement
+ok 51 - baseball seeded break restores same original broom; picked object interrupts without replacement
+  ---
+  duration_ms: 389.393583
+  type: 'test'
+  ...
+# Subtest: baseball never consumes player-held or quest-pinned broom
+ok 52 - baseball never consumes player-held or quest-pinned broom
+  ---
+  duration_ms: 80.018917
+  type: 'test'
+  ...
+# Subtest: theft uses true friend, locked thief; wrong hit never drops top, real hit drops original once and own alert clears only
+ok 53 - theft uses true friend, locked thief; wrong hit never drops top, real hit drops original once and own alert clears only
+  ---
+  duration_ms: 7.181416
+  type: 'test'
+  ...
+# Subtest: newly attacked event parent retains hostile state after top return
+ok 54 - newly attacked event parent retains hostile state after top return
+  ---
+  duration_ms: 12.944959
+  type: 'test'
+  ...
+# Subtest: neutral parent authored recovery never fabricates player combat evidence or creates revenge family
+ok 55 - neutral parent authored recovery never fabricates player combat evidence or creates revenge family
+  ---
+  duration_ms: 197.172042
+  type: 'test'
+  ...
+# Subtest: theft parent slot refuses fourth parent and timeout preserves original player inventory
+ok 56 - theft parent slot refuses fourth parent and timeout preserves original player inventory
+  ---
+  duration_ms: 13.196916
+  type: 'test'
+  ...
+# Subtest: both compact areas have real paths and open approaches in all modes
+ok 57 - both compact areas have real paths and open approaches in all modes
+  ---
+  duration_ms: 31.5995
+  type: 'test'
+  ...
+# Subtest: patrol report and actual arrival/escort award, instrument only hides and does not resolve
+ok 58 - patrol report and actual arrival/escort award, instrument only hides and does not resolve
+  ---
+  duration_ms: 177.658584
+  type: 'test'
+  ...
+# Subtest: assembly actual classroom finding, five seeded answers, escort succeeds; phase expiry cancels
+ok 59 - assembly actual classroom finding, five seeded answers, escort succeeds; phase expiry cancels
+  ---
+  duration_ms: 511.625666
+  type: 'test'
+  ...
+# Subtest: meeting freezes campus events, meal and puddle clocks, same reservations resume; rescue cleans once
+ok 60 - meeting freezes campus events, meal and puddle clocks, same reservations resume; rescue cleans once
+  ---
+  duration_ms: 15.486959
+  type: 'test'
+  ...
+# Subtest: all life actor poses retain actual melee and projectile damage; dogs have no human HP
+ok 61 - all life actor poses retain actual melee and projectile damage; dogs have no human HP
+  ---
+  duration_ms: 390.479625
+  type: 'test'
+  ...
+# Subtest: actual reserved students and safety teacher lose HP before event cleanup; no callback resurrects cancelled work
+ok 62 - actual reserved students and safety teacher lose HP before event cleanup; no callback resurrects cancelled work
+  ---
+  duration_ms: 180.2735
+  type: 'test'
+  ...
+# Subtest: reload safely ends reservations and meeting-carried event objects; meal reservation and consumed serial stay fixed
+ok 63 - reload safely ends reservations and meeting-carried event objects; meal reservation and consumed serial stay fixed
+  ---
+  duration_ms: 10.770083
+  type: 'test'
+  ...
+# Subtest: alert source isolation holds at saturation and negative decay never consumes unrelated later contributions
+ok 64 - alert source isolation holds at saturation and negative decay never consumes unrelated later contributions
+  ---
+  duration_ms: 2.46325
+  type: 'test'
+  ...
+# Subtest: sour milk gives legal idle patrol detour without adding blocking colliders or stacked slowdown
+ok 65 - sour milk gives legal idle patrol detour without adding blocking colliders or stacked slowdown
+  ---
+  duration_ms: 2.146083
+  type: 'test'
+  ...
+# Subtest: starting a mission takes priority, safely retires event items and restores original broom reference
+ok 66 - starting a mission takes priority, safely retires event items and restores original broom reference
+  ---
+  duration_ms: 90.874417
+  type: 'test'
+  ...
+# Subtest: only actual trouble parent arrivals count: cap, failed spawn, neutral lost-property parent and visitors
+ok 67 - only actual trouble parent arrivals count: cap, failed spawn, neutral lost-property parent and visitors
+  ---
+  duration_ms: 13.61775
+  type: 'test'
+  ...
+# Subtest: successful bare or held swing rolls once after three arrivals; cooldown/repeat/hidden attempts do not draw
+ok 68 - successful bare or held swing rolls once after three arrivals; cooldown/repeat/hidden attempts do not draw
+  ---
+  duration_ms: 3.276542
+  type: 'test'
+  ...
+# Subtest: draw succeeds at 50%, starts after caption at positive HP and safely preserves carried original
+ok 69 - draw succeeds at 50%, starts after caption at positive HP and safely preserves carried original
+  ---
+  duration_ms: 8.716458
+  type: 'test'
+  ...
+# Subtest: gate RNG has stable 50% distribution and consumes no frame-dependent draws
+ok 70 - gate RNG has stable 50% distribution and consumes no frame-dependent draws
+  ---
+  duration_ms: 12.188875
+  type: 'test'
+  ...
+# Subtest: reset cancels summons; HP zero rescues normally; old 300-second cooldown migrates to 60
+ok 71 - reset cancels summons; HP zero rescues normally; old 300-second cooldown migrates to 60
+  ---
+  duration_ms: 23.058542
+  type: 'test'
+  ...
+# Subtest: departing old parents free the original three slots for the next round
+ok 72 - departing old parents free the original three slots for the next round
+  ---
+  duration_ms: 10.703541
+  type: 'test'
+  ...
+# Subtest: positive dog gains carry matching portrait metadata; capped and duplicate gains do not pop a smile
+ok 73 - positive dog gains carry matching portrait metadata; capped and duplicate gains do not pop a smile
+  ---
+  duration_ms: 6.905875
+  type: 'test'
+  ...
+# Subtest: selection: 10000 seeds, deterministic, 2/3 weighted slots, exclusions, complete library, no identical previous set
+ok 74 - selection: 10000 seeds, deterministic, 2/3 weighted slots, exclusions, complete library, no identical previous set
+  ---
+  duration_ms: 1430.785292
+  type: 'test'
+  ...
+# Subtest: 主席: every state receives bare, held and projectile attacks with visible displacement and recovery
+ok 75 - 主席: every state receives bare, held and projectile attacks with visible displacement and recovery
+  ---
+  duration_ms: 96.4635
+  type: 'test'
+  ...
+# Subtest: 家長代表: every state receives bare, held and projectile attacks with visible displacement and recovery
+ok 76 - 家長代表: every state receives bare, held and projectile attacks with visible displacement and recovery
+  ---
+  duration_ms: 69.210666
+  type: 'test'
+  ...
+# Subtest: 紀錄委員: every state receives bare, held and projectile attacks with visible displacement and recovery
+ok 77 - 紀錄委員: every state receives bare, held and projectile attacks with visible displacement and recovery
+  ---
+  duration_ms: 64.190958
+  type: 'test'
+  ...
+# Subtest: 秩序委員: every state receives bare, held and projectile attacks with visible displacement and recovery
+ok 78 - 秩序委員: every state receives bare, held and projectile attacks with visible displacement and recovery
+  ---
+  duration_ms: 62.138292
+  type: 'test'
+  ...
+# Subtest: 合作社阿姨: every state receives bare, held and projectile attacks with visible displacement and recovery
+ok 79 - 合作社阿姨: every state receives bare, held and projectile attacks with visible displacement and recovery
+  ---
+  duration_ms: 62.581459
+  type: 'test'
+  ...
+# Subtest: 警衛伯伯: every state receives bare, held and projectile attacks with visible displacement and recovery
+ok 80 - 警衛伯伯: every state receives bare, held and projectile attacks with visible displacement and recovery
+  ---
+  duration_ms: 61.675625
+  type: 'test'
+  ...
+# Subtest: same attack duplicate rejected; repeated distinct attacks react while downed, no permanent stun
+ok 81 - same attack duplicate rejected; repeated distinct attacks react while downed, no permanent stun
+  ---
+  duration_ms: 1.64075
+  type: 'test'
+  ...
+# Subtest: only real speaking interruptions score, all voting cards use existing instances and held card becomes absent
+ok 82 - only real speaking interruptions score, all voting cards use existing instances and held card becomes absent
+  ---
+  duration_ms: 1.749167
+  type: 'test'
+  ...
+# Subtest: meeting IDs stay unique across reload, rejected transfer data never reaches rendering
+ok 83 - meeting IDs stay unique across reload, rejected transfer data never reaches rendering
+  ---
+  duration_ms: 3.497792
+  type: 'test'
+  ...
+# Subtest: idle speech respects active musical movement, manual stop is available before ten second cooldown
+ok 84 - idle speech respects active musical movement, manual stop is available before ten second cooldown
+  ---
+  duration_ms: 5.454875
+  type: 'test'
+  ...
+# Subtest: summons transition lock and meeting defeat never recurse
+ok 85 - summons transition lock and meeting defeat never recurse
+  ---
+  duration_ms: 19.699417
+  type: 'test'
+  ...
+# Subtest: four exits settle once with defeat > leave > chaos > timeout
+ok 86 - four exits settle once with defeat > leave > chaos > timeout
+  ---
+  duration_ms: 12.958375
+  type: 'test'
+  ...
+# Subtest: campus snapshot and unique carried/worn/pinned identity survive throws and all cleanup
+ok 87 - campus snapshot and unique carried/worn/pinned identity survive throws and all cleanup
+  ---
+  duration_ms: 2.928583
+  type: 'test'
+  ...
+# Subtest: old save compatibility, reload safe return and cooldown preservation
+ok 88 - old save compatibility, reload safe return and cooldown preservation
+  ---
+  duration_ms: 5.365459
+  type: 'test'
+  ...
+# Subtest: five minute evidence uses persisted playable campus time; pause and meeting do not age campus clock
+ok 89 - five minute evidence uses persisted playable campus time; pause and meeting do not age campus clock
+  ---
+  duration_ms: 4.336333
+  type: 'test'
+  ...
+# Subtest: all seats and props accessible via original navigation, four target budget and substitute remains hittable
+ok 90 - all seats and props accessible via original navigation, four target budget and substitute remains hittable
+  ---
+  duration_ms: 2.479083
+  type: 'test'
+  ...
+# Subtest: every module initializes, characteristic interaction, damage interrupt, recovery and scene cleanup
+ok 91 - every module initializes, characteristic interaction, damage interrupt, recovery and scene cleanup
+  ---
+  duration_ms: 42.704167
+  type: 'test'
+  ...
+# Subtest: microphone registry, one original instance per mode, obtainable home and unique operations
+ok 92 - microphone registry, one original instance per mode, obtainable home and unique operations
+  ---
+  duration_ms: 41.951084
+  type: 'test'
+  ...
+# Subtest: amplified roll reaches ten meters, turns first, shares cooldown with ordinary roll, excludes hostile and parents
+ok 93 - amplified roll reaches ten meters, turns first, shares cooldown with ordinary roll, excludes hostile and parents
+  ---
+  duration_ms: 7.41175
+  type: 'test'
+  ...
+# Subtest: walls block amplified roll and broadcasts; no global commands
+ok 94 - walls block amplified roll and broadcasts; no global commands
+  ---
+  duration_ms: 8.309666
+  type: 'test'
+  ...
+# Subtest: actual throw lands once, never broadcasts from drop, catch before landing disarms, still recoverable
+ok 95 - actual throw lands once, never broadcasts from drop, catch before landing disarms, still recoverable
+  ---
+  duration_ms: 9.784208
+  type: 'test'
+  ...
+# Subtest: visible pursuer stays focused; loses view, searches and follows legal route to microphone
+ok 96 - visible pursuer stays focused; loses view, searches and follows legal route to microphone
+  ---
+  duration_ms: 4.853
+  type: 'test'
+  ...
+# Subtest: pursuer that witnesses this throw knows bait even after losing view
+ok 97 - pursuer that witnesses this throw knows bait even after losing view
+  ---
+  duration_ms: 8.30325
+  type: 'test'
+  ...
+# Subtest: search investigation cooldown per NPC and original microphone, no repeated tether, reacquisition preempts
+ok 98 - search investigation cooldown per NPC and original microphone, no repeated tether, reacquisition preempts
+  ---
+  duration_ms: 4.76125
+  type: 'test'
+  ...
+# Subtest: guarding, task states, protective parent and unreachable routes ignore sound without consuming cooldown
+ok 99 - guarding, task states, protective parent and unreachable routes ignore sound without consuming cooldown
+  ---
+  duration_ms: 29.288583
+  type: 'test'
+  ...
+# Subtest: pickup, removal, mode reset, rescue and restoration clear runtime broadcasts and sound references
+ok 100 - pickup, removal, mode reset, rescue and restoration clear runtime broadcasts and sound references
+  ---
+  duration_ms: 31.227375
+  type: 'test'
+  ...
+# Subtest: mute and low motion do not change attraction; frozen game time never repeats pulses
+ok 101 - mute and low motion do not change attraction; frozen game time never repeats pulses
+  ---
+  duration_ms: 4.08675
+  type: 'test'
+  ...
+# Subtest: phone camera enlarges portrait and landscape 2.2 times, desktop retains span
+ok 102 - phone camera enlarges portrait and landscape 2.2 times, desktop retains span
+  ---
+  duration_ms: 0.343291
+  type: 'test'
+  ...
+# Subtest: all student and parent types record actual knockdowns, deduplicate damage after zero HP, survive resets
+ok 103 - all student and parent types record actual knockdowns, deduplicate damage after zero HP, survive resets
+  ---
+  duration_ms: 26.325416
+  type: 'test'
+  ...
+# Subtest: actual player swings record furniture, repaired furniture counts again, NPC prank and setup excluded
+ok 104 - actual player swings record furniture, repaired furniture counts again, NPC prank and setup excluded
+  ---
+  duration_ms: 13.24325
+  type: 'test'
+  ...
+# Subtest: player thrown items record first broken transition, NPC projectiles excluded, trash and cones included
+ok 105 - player thrown items record first broken transition, NPC projectiles excluded, trash and cones included
+  ---
+  duration_ms: 14.596333
+  type: 'test'
+  ...
+# Subtest: codex save migration, roundtrip and invalid data validation
+ok 106 - codex save migration, roundtrip and invalid data validation
+  ---
+  duration_ms: 1.458333
+  type: 'test'
+  ...
+# Subtest: all ten scene entrances and important interaction approaches remain reachable in all modes
+ok 107 - all ten scene entrances and important interaction approaches remain reachable in all modes
+  ---
+  duration_ms: 192.604625
+  type: 'test'
+  ...
+# Subtest: furniture never overlaps initial player, NPC, rescue or parent entry positions
+ok 108 - furniture never overlaps initial player, NPC, rescue or parent entry positions
+  ---
+  duration_ms: 19.825667
+  type: 'test'
+  ...
+# Subtest: tabletop originals remain unique and preserve support height on pickup throw return and restoration
+ok 109 - tabletop originals remain unique and preserve support height on pickup throw return and restoration
+  ---
+  duration_ms: 17.890667
+  type: 'test'
+  ...
+# Subtest: drop and thrown landing use the actual tabletop support without cloning the original
+ok 110 - drop and thrown landing use the actual tabletop support without cloning the original
+  ---
+  duration_ms: 3.817333
+  type: 'test'
+  ...
+# Subtest: twenty activity switches rebuild bounded furniture, preserve held original and current mode homes
+ok 111 - twenty activity switches rebuild bounded furniture, preserve held original and current mode homes
+  ---
+  duration_ms: 65.7815
+  type: 'test'
+  ...
+# Subtest: old profile progress and codex survive scene revision; profile never stored live item replicas
+ok 112 - old profile progress and codex survive scene revision; profile never stored live item replicas
+  ---
+  duration_ms: 8.552416
+  type: 'test'
+  ...
+# Subtest: service and all existing mission destination approaches remain legal in their modes
+ok 113 - service and all existing mission destination approaches remain legal in their modes
+  ---
+  duration_ms: 175.410459
+  type: 'test'
+  ...
+# Subtest: teacher desk papers beat the nearer push-only office chair; chair mission keeps its intended target
+ok 114 - teacher desk papers beat the nearer push-only office chair; chair mission keeps its intended target
+  ---
+  duration_ms: 8.640459
+  type: 'test'
+  ...
+1..114
+# tests 114
+# suites 0
+# pass 114
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4475.565792

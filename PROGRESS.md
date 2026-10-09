@@ -45,3 +45,7 @@
 完成4原曲輪播＋3混音變奏、串流雙節點、1秒切換淡化、暫停續播與備援；合唱及音效保留。更新试聽頁、來源清單與重製程式。112規則、41音效／8音樂及13項串流瀏覽器檢查通過。人工聽感／真機／Safari仍待驗證。
 
 正式發布驗證：功能提交e643dac，GitHub Pages部署37909485781成功。公開站七首MP3的SHA-256與本地清單一致，七首實際解碼播放、390×844觸控试聽、遊戲開始／暫停／續播通過，無頁面例外；见artifacts/music-production-qa.json、artifacts/music-production-soundtest.png与scripts/music-production-qa.ts。這不代表人工聽感或實體手機測試。
+
+## 2026-10-09 介面、移動與回饋
+
+完成動態HUD排版、4/5.5m/s步行／跑步、家具前高亮任務標記與跳過教學的考卷提示、真實傷害浮字／短白閃／輕震動、25/10HP低血量提示與減少動態模式。114規則測試、24組版面與真實E／J輸入通過，詳見FEEDBACK_QA_REPORT.md及artifacts/feedback-browser-qa.json。實體手機、Safari及真人舒適度未測。

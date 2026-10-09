@@ -1,5 +1,5 @@
 export type Vec = {x:number,z:number};
-export const balance={hp:100,walk:3.2,run:4.6,dodge:2.2,dodgeTime:.25,dodgeCooldown:1.4,invulnerability:.65,fixedStep:1/30,maxCatchup:4,studentBudget:12,npcBudget:20,parentBudget:3,teacherBudget:2};
+export const balance={hp:100,walk:4,run:5.5,dodge:2.2,dodgeTime:.25,dodgeCooldown:1.4,invulnerability:.65,fixedStep:1/30,maxCatchup:4,studentBudget:12,npcBudget:20,parentBudget:3,teacherBudget:2};
 export const zones=[
  ['toilet_corner','洗手區與廁所',-11.4,-6.6,-22.5,-16],['storage_corner','工具儲藏間',6.6,11.4,-22.5,-16],['courtyard','中庭',-12,12,-2,12],['classroom','一般教室',-28,-14,-22,-10],['music_room','音樂教室',-28,-14,-7,5],['staff_room','導師辦公室',14,28,-22,-10],['principal_room','校長室',14,28,-7,5],['corridor','共用走廊',-14,14,-14,-8],['playground','操場一角',-29,-13,10,24],['gate','校門與警衛室',-5,5,19,26],['co_op','合作社',15,26,9,15],['infirmary','保健室',-6,6,-24,-14]
 ].map(([id,label,x1,x2,z1,z2])=>({id:id as string,label:label as string,x1:+x1,x2:+x2,z1:+z1,z2:+z2}));

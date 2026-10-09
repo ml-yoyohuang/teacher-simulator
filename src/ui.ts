@@ -7,20 +7,22 @@ import {codexEntries,CodexGroup} from './knockdowns';
 import {Game} from './game';
 import {Renderer} from './render';
 import {Input} from './input';
+import {healthState} from './feedback';
 import {AudioEngine} from './audio';
 import {SaveStore,validateSave,fresh} from './save';
 import {missions,chapters,students,parents,zones,cosmetics,items,itemDefs,destination,center,locations,zoneAt} from './data';
 const $=(s:string)=>document.querySelector(s) as HTMLElement;
 const esc=(s:any)=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export class UI{
+ hitLabels:{x:number,z:number,start:number,damage:number}[]=[];
  questCollapsed=false;questContent='';codexTab:CodexGroup='students';paused=true;started=false;modal='';lastFocus:HTMLElement|null=null;hudClock=0;debug=false;toastUntil=0;onPause=(v:boolean)=>{};
  constructor(public game:Game,public render:Renderer,public input:Input,public audio:AudioEngine,public store:SaveStore){
- game.onToast=(s,dog)=>this.toast(s,dog);game.onSave=()=>store.save(game.profile);game.listeners.push(e=>{if(e.type==='reset'){this.toastUntil=0;$('#speech').hidden=true;$('#toast').classList.remove('visible');}if(e.type==='rescue')setTimeout(()=>this.open('report'),0)});
+ game.onToast=(s,dog)=>this.toast(s,dog);game.onSave=()=>store.save(game.profile);game.listeners.push(e=>{if(e.type==='CombatResolved'&&e.actorId===game.player.id){const n=game.npcs.find(n=>n.id===e.targetId||n.id===e.data.npc);if(n){this.hitLabels.push({x:n.x,z:n.z,start:game.time,damage:e.data.damage});this.hitLabels=this.hitLabels.slice(-8)}}if(e.type==='reset'){this.hitLabels=[];this.toastUntil=0;$('#speech').hidden=true;$('#toast').classList.remove('visible');}if(e.type==='rescue')setTimeout(()=>this.open('report'),0)});
  this.input.onAction=a=>this.action(a);this.input.onPause=()=>this.paused?this.close():this.open('pause');this.input.onAim=(x,y)=>render.aim(x,y);this.input.onSelect=(x,y)=>render.aim(x,y,true);
  $('#quest-toggle').addEventListener('click',()=>this.setQuestCollapsed(!this.questCollapsed));
  $('#quest-toggle').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')e.stopPropagation()});
  $('.quest').addEventListener('click',e=>{if(!(e.target as HTMLElement).closest('button'))this.setQuestCollapsed(!this.questCollapsed)});
- new ResizeObserver(()=>$('.hud').style.setProperty('--quest-card-height',$('.quest').getBoundingClientRect().height+'px')).observe($('.quest'));
+ const layout=()=>{const hud=$('.hud'),r=hud.getBoundingClientRect();const extra=['#meeting-ready','#health-warning'].map(s=>{const e=$(s);return e.hidden?0:e.getBoundingClientRect().height+parseFloat(getComputedStyle(e).marginTop)}).reduce((a,b)=>a+b,0);hud.style.setProperty('--status-extra',extra+'px');hud.style.setProperty('--status-bottom',($('.top-left').getBoundingClientRect().bottom-r.top)+'px');hud.style.setProperty('--quest-card-height',$('.quest').getBoundingClientRect().height+'px')};const observer=new ResizeObserver(layout);observer.observe($('.top-left'));observer.observe($('.quest'));window.addEventListener('resize',layout);layout();
  $('#dogs-entry').addEventListener('click',()=>this.open('dogs'));$('#menu').addEventListener('click',()=>this.open('pause'));$('#tasks').addEventListener('click',()=>this.open('missions'));$('#calendar').addEventListener('click',()=>this.open('calendar'));$('#map').addEventListener('click',()=>this.open('map'));$('#actions').addEventListener('click',()=>this.open('actions',false));
  input.bindButton($('#attack'),'attack');input.bindButton($('#dodge'),'dodge');input.bindButton($('#throw'),'throw');input.bindButton($('#drop'),'drop');input.bindButton($('#conduct'),'conduct');input.bindButton($('#interact'),'interact',()=>this.open('actions',false));
  $('#modal').addEventListener('click',e=>{let b=(e.target as HTMLElement).closest('[data-action]') as HTMLElement;if(b)this.click(b.dataset.action,b.dataset.id,b.dataset.value)});
@@ -76,6 +78,14 @@ export class UI{
  this.questCollapsed=collapsed;$('.quest').classList.toggle('is-collapsed',collapsed);$('#quest-body').hidden=collapsed;
  $('#quest-toggle').setAttribute('aria-expanded',String(!collapsed));$('#quest-toggle').setAttribute('aria-label',collapsed?'展開今日提示':'收合今日提示');$('#quest-chevron').textContent=collapsed?'▽':'△';
  }
+ updateFeedback(){
+  const g=this.game,state=healthState(g.player.hp),low=state!=='normal',still=g.profile.settings.lowMotion||matchMedia("(prefers-reduced-motion: reduce)").matches||this.paused;
+  $('.status-card').dataset.health=state;$('.hud').classList.toggle('feedback-still',still);
+  $('#health-vignette').hidden=!low||!this.started;$('#health-vignette').dataset.health=state;
+  const warning=$('#health-warning');warning.hidden=!low;const text=state==='critical'?'危急！先拉開距離':'血量偏低 · 先找掩護';if(warning.textContent!==text)warning.textContent=text;
+  this.hitLabels=this.hitLabels.filter(h=>g.time-h.start<.65&&g.time>=h.start);
+  $('#hit-feedback').innerHTML=this.hitLabels.map(h=>{const age=g.time-h.start,pos=this.render.project(h,1.9);return `<span class="hit-label" style="left:${pos.x}px;top:${pos.y-(still?0:age*35)}px;opacity:${Math.min(1,(.65-age)/.2)}">命中 −${h.damage}</span>`}).join('');
+ }
  updateQuest(){
  const g=this.game,title=g.tutorial>=0?'日常差事教學':g.attempt?missionName(g):'今天，想做點什麼？';
  const detail=g.tutorial>=0?g.tutorialText():g.step?`${g.step.text}　${g.attempt.count}/${g.step.count||1}`:'探索校園，或從今日待辦選一件差事。';
@@ -85,6 +95,7 @@ export class UI{
  }
  update(dt:number){let g=this.game,p=g.player;this.hudClock+=dt;if(this.hudClock<.1)return;this.hudClock=0;$('#hp-text').textContent=Math.ceil(p.hp)+' / 100';($('#hp-bar') as HTMLElement).style.width=p.hp+'%';$('#alert-text').textContent='警戒 '+g.level;$('#alert-circles').innerHTML=Array.from({length:4},(_,i)=>`<i class="${i<g.level?'lit':''}"></i>`).join('');$('#alert-reason').textContent=g.reason;$('#held').textContent=g.held?itemDefs[g.held.type].label:'空手・從容';$('#zone').textContent=zones.find(z=>z.id===zoneAt(p))?.label||'共用走廊';$('#points').textContent=g.profile.points+' 點';this.updateQuest();if(g.meeting.running){$('#zone').textContent='校事會議';$('#quest-title').textContent=`失控 ${g.meeting.chaos}/100 · 剩餘 ${Math.max(0,Math.ceil(75-g.meeting.elapsed))}秒`;$('#quest-detail').textContent=g.meeting.context()||'可以搗亂，也可以隨時離席';$('#alert-text').textContent=`失控 ${g.meeting.chaos}/100`;$('#alert-reason').textContent=`剩餘 ${Math.max(0,Math.ceil(75-g.meeting.elapsed))}秒 · `+`${g.meeting.selected.length} 種橋段`;$('#quest-detail').textContent=g.meeting.context()||g.meeting.selected.map(id=>modules.find(m=>m.id===id)?.label).join('／');}$('#world').style.opacity=g.meeting.phase==='ENTERING'?'0.15':'1';$('#meeting-controls').hidden=!g.meeting.running;$('.side-nav').hidden=g.meeting.running;$('#meeting-use').textContent=g.meeting.context()||'靠近特殊道具';($('#meeting-use') as HTMLButtonElement).disabled=!g.meeting.context();$('#meeting-display').hidden=!g.meeting.running;$('#meeting-display').textContent=g.meeting.selected.includes('projector')?'投影：'+g.meeting.cards[g.meeting.projectorPage]:g.meeting.selected.includes('whiteboard')?'白板：'+(g.meeting.boardMusic?'♩ ♪ ♫ 四分音符':['說明／討論／決議','決議／說明／討論','討論／決議／說明'][g.meeting.agenda]):'';$('#throw').hidden=!g.held;$('#drop').hidden=!g.held;$('#meeting-ready').textContent=g.meeting.triggerStatus();$('#meeting-ready').hidden=g.meeting.running;$('#conduct').hidden=!g.choir;$('#actions').textContent=p.hidden?'離開藏點':'動作';let n=g.nearest();$('#context').textContent=p.hidden?'互動：離開藏點':n?'互動 · '+n.label:'靠近物品或人物';$('#arrival').textContent=g.familyQueue.length?`${parentDefsLabel(g.familyQueue[0].type)}到校 · ${Math.max(0,Math.ceil(g.familyQueue[0].at-g.time))}s`:'';$('#arrival').hidden=!g.familyQueue.length;if(!g.meeting.running){$('#zone').textContent+=' · '+g.life.phase;if(!g.attempt&&g.tutorial<0)$('#quest-detail').textContent=g.life.context();$('#alert-reason').textContent=g.reason+(g.life.p.stomach>0?' · 肚子提出異議 '+Math.ceil(g.life.p.stomach)+'秒':'');}
  if(g.choir){let song=g.time-g.choir.start,beat=song/.75;let next=[3,7,11,15,19,23,27,31].find(b=>b>=beat-.35);$('#beat').hidden=false;$('#beat').innerHTML=`<span>第 ${Math.min(32,Math.floor(beat)+1)} / 32 拍　${g.choir.hits}/8命中</span><div class="beat-ring" style="transform:scale(${next===undefined?1:Math.min(2,Math.max(.6,1+(next-beat)*.35))})"></div><b>${next!==undefined&&Math.abs(next-beat)<.35?'現在！':'跟著收圈'}</b>`}else $('#beat').hidden=true;
+ this.updateFeedback();
  const signals=g.microphoneSignals().filter(s=>this.render.inView(s)&&Math.hypot(s.x-p.x,s.z-p.z)<12),signal=signals.find(s=>s.kind==='call')||signals[0],micSpeech=$('#microphone-speech');micSpeech.hidden=!signal;if(signal){const pos=this.render.project(signal,signal.kind==='call'?2.6:1);micSpeech.textContent=signal.text;micSpeech.style.left=Math.min(innerWidth-110,Math.max(110,pos.x))+'px';micSpeech.style.top=Math.min(innerHeight-40,Math.max(30,pos.y))+'px'}
  if(performance.now()>this.toastUntil){$('#toast').classList.remove('visible');$('#speech').hidden=true}else if(!$('#speech').hidden){let pos=this.render.project(p);$('#speech').style.left=Math.min(innerWidth-115,Math.max(115,pos.x))+'px';$('#speech').style.top=Math.max(24,pos.y)+'px';}$('#debug-hud').hidden=!this.debug;if(this.debug)$('#debug-hud').textContent=JSON.stringify({...this.render.measure(),voices:this.audio.voices.size,musicVoices:this.audio.musicVoices.size,save:this.store.error},null,2);if(this.store.error)$('#save-warning').textContent=this.store.error;}
 }
