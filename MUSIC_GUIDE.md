@@ -46,3 +46,5 @@ node scripts/check-music.mjs
 詳見 `artifacts/music-browser-qa.json`、`artifacts/soundtest-qa.json`、`artifacts/music-core-tests.tap`。驗收區分原生Chromium實際播放與手機觸控模擬；原曲曲尾以實際media element定位到尾段加速測試，追逐NPC起始狀態用既有開發入口準備。
 
 人工聽感、原曲拍點精確性、實體iOS／Android、Safari、弱網中斷續傳以及長時間熱效能未驗證。遊戲中的幀率實測不能推論所有手機均順暢。
+
+正式發布驗證：功能提交e643dac，GitHub Pages部署37909485781成功。公開站七首MP3的SHA-256與本地清單一致，七首實際解碼播放、390×844觸控试聽、遊戲開始／暫停／續播通過，無頁面例外；见artifacts/music-production-qa.json、artifacts/music-production-soundtest.png与scripts/music-production-qa.ts。這不代表人工聽感或實體手機測試。

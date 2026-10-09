@@ -158,3 +158,5 @@ Chromium觸控模擬驗收：390×844與844×390人物1.75m投影高度分別75.
 ## 2026-10-09 配樂驗收
 
 112項既有規則測試通過（artifacts/music-core-tests.tap）；41音效與8音樂實際瀏覽器试聽觸發、32拍合唱、停止及不寫存檔通過（artifacts/soundtest-qa.json）。原生Chromium手機觸控模擬13項音樂检查通過：四首依序輪播、共享混音器有非零PCM、靜音、音量、暫停續播、一般／校慶追逐變奏、20次模式切換仍僅兩個串流節點、合唱優先、原生背景暂停等待觸控繼續、音檔404跳過／備援。見artifacts/music-browser-qa.json。曲尾測試以實際media element定位到尾段加速，追逐人物起始狀態由開發入口準備，不宣稱人工從出生點完整遊玩。人工聽感、實體手機、Safari、弱網及長時間熱效能未驗證。
+
+正式發布驗證：功能提交e643dac，GitHub Pages部署37909485781成功。公開站七首MP3的SHA-256與本地清單一致，七首實際解碼播放、390×844觸控试聽、遊戲開始／暫停／續播通過，無頁面例外；见artifacts/music-production-qa.json、artifacts/music-production-soundtest.png与scripts/music-production-qa.ts。這不代表人工聽感或實體手機測試。
