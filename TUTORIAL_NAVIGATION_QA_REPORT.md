@@ -11,3 +11,5 @@
 ![手機說明書](artifacts/tutorial-navigation-mobile.png)
 
 本輪上一頁返回均重新載入，即使開啟快取仍未命中BFcache；快取恢復分支尚未實際執行。實體手機及Safari未驗證。
+
+正式版06e22e2已發布，GitHub Pages流程37920790944成功。公開站四種尺寸重測同分頁往返、歷史返回、教學圖片／目錄、立即存檔、既有長期紀錄與遊戲內操作說明全部通過，無頁面例外與資源404。見artifacts/tutorial-navigation-production-qa.json及artifacts/tutorial-navigation-production-mobile.png。公開站歷史返回同樣未命中BFcache。
