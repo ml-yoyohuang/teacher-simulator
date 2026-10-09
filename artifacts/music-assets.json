@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-09",
+  "method": "FFmpeg atempo (pitch preserved), source excerpt + original procedural percussion, -20 LUFS / -2 dBTP target, MP3 96 kbps stereo 44.1 kHz",
+  "sources": [
+    {
+      "estimatedBpm": 130.25,
+      "estimatedBeatOffset": 0.1509,
+      "seconds": 144.77351473922903,
+      "file": "快板校歌 (1).mp3",
+      "sha256": "4b6433ec23d2a4ec00dfc8c166a4849d2764d3a8b7584f50746be243d3f71e6a"
+    },
+    {
+      "estimatedBpm": 130.25,
+      "estimatedBeatOffset": 0.4296,
+      "seconds": 149.73351473922904,
+      "file": "快板校歌 (2).mp3",
+      "sha256": "9cf07afc6ef84f01aee72f29f3f1c80bbfc19c32bdc8f03ccd680b97f171e719"
+    },
+    {
+      "estimatedBpm": 131.0,
+      "estimatedBeatOffset": 0.1277,
+      "seconds": 137.17351473922903,
+      "file": "快板校歌 (3).mp3",
+      "sha256": "420e784ceedb35ad5f1ed597277e529dacfcabc978b7953ec743c8a356cc15e0"
+    },
+    {
+      "estimatedBpm": 132.5,
+      "estimatedBeatOffset": 0.3599,
+      "seconds": 137.17351473922903,
+      "file": "快板校歌 (4).mp3",
+      "sha256": "dbdd102845579e7e5d4dcaf9a042513dbf0a4c11a226c286dfee99faa10ff3e3"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "explore-01",
+      "file": "explore-01.mp3",
+      "kind": "full original mix, loudness/encoding only",
+      "source": "快板校歌 (1).mp3",
+      "estimatedBpm": 130.25,
+      "seconds": 144.774,
+      "bytes": 1738231,
+      "sha256": "f18f331357c647f8bd15eed0d0229062455ffce2b48fb3adfca500ca49d15563",
+      "decodedPeakDbFS": -5.688,
+      "rmsDbFS": -22.737
+    },
+    {
+      "id": "explore-02",
+      "file": "explore-02.mp3",
+      "kind": "full original mix, loudness/encoding only",
+      "source": "快板校歌 (2).mp3",
+      "estimatedBpm": 130.25,
+      "seconds": 149.734,
+      "bytes": 1797477,
+      "sha256": "513f7603add1e018ed675f5a73ce614cb44d68d705ab6fe5822b936e5d9ef0a1",
+      "decodedPeakDbFS": -5.993,
+      "rmsDbFS": -22.381
+    },
+    {
+      "id": "explore-03",
+      "file": "explore-03.mp3",
+      "kind": "full original mix, loudness/encoding only",
+      "source": "快板校歌 (3).mp3",
+      "estimatedBpm": 131.0,
+      "seconds": 137.174,
+      "bytes": 1647012,
+      "sha256": "76ef7284acaf74c2893d79d80c1a18a6e255f6618c8f7de3ee834509c3e65971",
+      "decodedPeakDbFS": -4.66,
+      "rmsDbFS": -22.598
+    },
+    {
+      "id": "explore-04",
+      "file": "explore-04.mp3",
+      "kind": "full original mix, loudness/encoding only",
+      "source": "快板校歌 (4).mp3",
+      "estimatedBpm": 132.5,
+      "seconds": 137.174,
+      "bytes": 1647012,
+      "sha256": "b557b02eb5d18a8e56ad14d4d452cd9e73fd57f09a2efe8b8d7da5e8445d945b",
+      "decodedPeakDbFS": -5.819,
+      "rmsDbFS": -22.604
+    },
+    {
+      "id": "chase",
+      "file": "chase.mp3",
+      "source": "快板校歌 (1).mp3",
+      "sourceStartSeconds": 14.891782917466411,
+      "sourceExcerptSeconds": 58.963531669865645,
+      "targetBpm": 150,
+      "percussion": "chase",
+      "kind": "128 beat excerpt; pitch-preserving tempo edit + procedural percussion",
+      "seconds": 51.2,
+      "bytes": 615070,
+      "sha256": "027a5f162ec660261572b88d9a290a02fecba3ca15ab5c18821d3121a38bec4c",
+      "decodedPeakDbFS": -7.188,
+      "rmsDbFS": -23.01
+    },
+    {
+      "id": "anniversary-explore",
+      "file": "anniversary-explore.mp3",
+      "source": "快板校歌 (1).mp3",
+      "sourceStartSeconds": 14.891782917466411,
+      "sourceExcerptSeconds": 58.963531669865645,
+      "targetBpm": 140,
+      "percussion": "festival",
+      "kind": "128 beat excerpt; pitch-preserving tempo edit + procedural percussion",
+      "seconds": 54.857,
+      "bytes": 658956,
+      "sha256": "97d22039f65cd07c1d2dd0eb4462eea9533abc984f3eff8a8ee0985f0d410b03",
+      "decodedPeakDbFS": -7.026,
+      "rmsDbFS": -23.021
+    },
+    {
+      "id": "anniversary-chase",
+      "file": "anniversary-chase.mp3",
+      "source": "快板校歌 (1).mp3",
+      "sourceStartSeconds": 14.891782917466411,
+      "sourceExcerptSeconds": 58.963531669865645,
+      "targetBpm": 160,
+      "percussion": "festival-chase",
+      "kind": "128 beat excerpt; pitch-preserving tempo edit + procedural percussion",
+      "seconds": 48.0,
+      "bytes": 576827,
+      "sha256": "971d924c9181a12ed82614030391a3aca6b3e2c3bf00375795a3078f500f346d",
+      "decodedPeakDbFS": -6.819,
+      "rmsDbFS": -23.167
+    }
+  ],
+  "limitations": [
+    "Tempo/grid inferred by spectral flux, not manually verified. No stem separation, newly sung vocals or human listening validation."
+  ],
+  "totalBytes": 8680585
+}

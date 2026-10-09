@@ -109,3 +109,7 @@ Windows桌機（Intel i7-10700@2.90GHz）、Chromium 141.0.7390.37 headless、Sw
 | patrol | 66.6 / 83.4 | 11 | 7 | 7 | 0 / 2 |
 
 桌面 Windows/i7-10700、Chromium 141、SwiftShader、1280×800、Low；每場景約四秒。這不是實體手機 FPS。詳見 LIFE_EVENTS_QA_REPORT.md 與 artifacts/life-browser-qa.json。
+
+## 2026-10-09 串流配樂
+
+7 MP3共8,680,585 bytes，按需下載，不使用decodeAudioData解碼全曲；模式切換20次仍只有2媒體串流節點，過渡最多同播2首、穩定1首。macOS原生Chromium、390×844觸控模擬、DPR1，播放音樂180幀rAF短樣本p50 8.3ms、p95 9.2ms（artifacts/music-browser-qa.json），不推論實體手機／Safari／長時間熱效能。原場景與GPU工作量無變更。

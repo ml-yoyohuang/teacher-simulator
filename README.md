@@ -1,6 +1,6 @@
 # 東山校園大騷動 · v1.3.1
 
-原創 low-poly 3D、固定斜俯視、單人離線進度的虛構校園沙盒。主角是棕色鮑伯頭、黃色有領小腿長洋裝的成年「開心導師」。無後端、帳號、廣告或 CDN。音樂與音效均為程式合成，並非真人演奏／合唱。
+原創 low-poly 3D、固定斜俯視、單人離線進度的虛構校園沙盒。主角是棕色鮑伯頭、黃色有領小腿長洋裝的成年「開心導師」。無後端、帳號、廣告或 CDN。背景配樂使用使用者提供的四首快板校歌與三首混音變奏；事件音效與合唱任務仍為程式合成。
 
 ## 直接遊玩部署成品
 
@@ -14,7 +14,7 @@ python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 
 亦可執行 `node scripts/serve.mjs` 啟動相同靜態成品。macOS 可雙擊 `start-local.command`（第一次可能需由終端機執行）。
 
-完整試聽頁為 `soundtest.html`（本地預覽：http://127.0.0.1:4173/soundtest.html），可逐一播放 36 種事件／樂器音效與 5 段背景音樂。共用遊戲音訊引擎，含音量調整、停止播放；不讀寫遊戲存檔。遊戲設定頁也提供入口。
+完整試聽頁為 `soundtest.html`（本地預覽：http://127.0.0.1:4173/soundtest.html），可逐一播放 41 種事件／樂器音效與 8 段音樂（7 首音檔、1 段合成合唱）。共用遊戲音訊引擎，含音量調整、停止播放；不讀寫遊戲存檔。遊戲設定頁也提供入口。
 
 分享圖位於 `public/og-image.png`，build 後複製到 `dist/og-image.png`，尺寸 1200×630。以真實中庭截圖經 imagegen 內建工具移除 HUD、重排標題製作，生成提示與來源記錄於 `artifacts/og-image-generation.json`。本地預覽使用相對圖片路徑；正式發布時請用 `SITE_URL=https://你的網域/遊戲子路徑/ pnpm build`，自動將 OG／Twitter 圖片網址改為完整網址供分享爬蟲讀取。
 
@@ -95,13 +95,13 @@ pnpm coverage
 
 ## 架構
 
-`data.ts` 為全部內容與平衡資料；`game.ts` 是30Hz模擬、身份交易、事件、AI、任務與重置；`world.ts` 是牆、碰撞與格網導航；`render.ts` 是原創3D幾何、固定鏡頭、共用InstancedMesh與動畫；`input.ts` 是雙指／鍵鼠；`audio.ts` 是合成聲部與25ms音樂排程；`save.ts` 是驗證、ledger與分頁租約；`ui.ts` 是HUD、可鍵盤操作的選單與功能入口。
+`data.ts` 為全部內容與平衡資料；`game.ts` 是30Hz模擬、身份交易、事件、AI、任務與重置；`world.ts` 是牆、碰撞與格網導航；`render.ts` 是原創3D幾何、固定鏡頭、共用InstancedMesh與動畫；`input.ts` 是雙指／鍵鼠；`audio.ts` 是合成聲部與25ms音樂排程，`music.ts` 是本地配樂串流與輪播；`save.ts` 是驗證、ledger與分頁租約；`ui.ts` 是HUD、可鍵盤操作的選單與功能入口。
 
 可重現 seed：6477。開發暫停頁 → 驗證面板可查看型別、傳送、生成家長、警戒、效能與事件追蹤；不能直接標任務完成。
 
 ## 來源
 
-場景、角色、道具、音符序列、UI為本地原創程式生成。img1.jpeg/img2.jpeg僅作美術方向參考，不在遊戲載入、不複製圖中角色。第三方依賴保留在 LICENSES/，程式未另行宣告整包開放授權。
+場景、角色、道具、合成音符序列、UI為本地原創程式生成。背景歌曲由使用者提供，來源與處理條件見public/music/manifest.json。img1.jpeg/img2.jpeg僅作美術方向參考，不在遊戲載入、不複製圖中角色。第三方依賴保留在 LICENSES/，程式未另行宣告整包開放授權。
 
 製作核對：[Three.js官方文件](https://threejs.org/docs/)、[Pointer Events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)、[Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)。
 
@@ -134,3 +134,9 @@ pnpm coverage
 ## v1.3.1 會議與介面調整
 
 HUD 顯示家長累計及會議抽選條件；散場重新累計。校狗實際增加好感時，對應笑臉與訊息共同顯示約三秒。手持物品可直接按右下「放下 R」。一般教室黑板與音樂白板縮至原寬 70%，講桌置中，音樂海報移到左牆；收合提示使用 12px 三角符號，手機只隱藏標題 span。驗收與實際截圖見 [MEETING_UI_QA_REPORT.md](MEETING_UI_QA_REPORT.md)。
+
+## 使用者配樂與場景變奏（2026-10-09）
+
+日常探索依快板校歌1→2→3→4輪播；追逐使用150 BPM變奏、校慶日常140 BPM歡慶版、校慶追逐160 BPM版。三變奏取自第一首片段，保留原音軌及音高、增加原創打擊節奏。合唱仍為80 BPM／32拍合成曲段。
+
+七首音檔共8,680,585 bytes，按需串流、最多兩個串流節點；切換1秒淡化、暫停／背景停止、回來手動繼續。試聽頁可獨立完整播放四原曲與三变奏。來源、重製與驗證見 [MUSIC_GUIDE.md](MUSIC_GUIDE.md)。人工聽感、實體手機與Safari尚未驗證。

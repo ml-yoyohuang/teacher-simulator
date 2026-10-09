@@ -204,3 +204,7 @@ SCHOOL_MEETING_SPEC.md完整15種橋段全部接入；正式每場2／3種、兩
 ## v1.3 校園生活事件（2026-10-08）
 
 六種事件已實作並整合場景、會議、兩狗與理化老師；新增洗手區、儲藏間與六項一次性紀念。操作、排程、預約、警戒來源、讀檔安全清理與擴充方法見 [LIFE_EVENTS_GUIDE.md](LIFE_EVENTS_GUIDE.md)，实际六種事件畫面見 [LIFE_EVENTS_SCREENSHOTS.md](LIFE_EVENTS_SCREENSHOTS.md)，驗收見 [LIFE_EVENTS_QA_REPORT.md](LIFE_EVENTS_QA_REPORT.md)。本節是目前本地 v1.3 的紀錄，前文 v1.1/v1.2 為既有發布歷史。
+
+## 2026-10-09 音樂更新
+
+音樂登錄8項：4日常原曲、3場景變奏及1合成合唱，事件／樂器音效41項。来源见public/music/manifest.json。使用者最新要求取代05規格早期純合成背景曲與90/120 BPM設定，80 BPM合唱及原音量、聲部限制、背景暫停仍保留。驗證與限制见MUSIC_GUIDE.md、artifacts/music-browser-qa.json及artifacts/soundtest-qa.json。

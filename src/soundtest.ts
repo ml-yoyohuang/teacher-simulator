@@ -10,7 +10,7 @@ let selection=0;
 function stop(){selection++;clearTimeout(stopTimer);audio.stopPreview();document.querySelectorAll('[aria-pressed=true]').forEach(b=>b.setAttribute('aria-pressed','false'));status.textContent='已停止播放'}
 document.querySelector('#music-count')!.textContent=`${MUSIC_TRACKS.length} 段`;
 document.querySelector('#sfx-count')!.textContent=`${SOUND_EFFECTS.length} 種（含 5 種樂器）`;
-document.querySelector('#music-list')!.innerHTML=MUSIC_TRACKS.map(t=>`<button class="sound" data-music="${t.id}" aria-pressed="false"><span>▶ ${t.label}</span><small>${t.bpm} BPM · ${t.theme==='choir'?'24 秒':'循環播放'}</small></button>`).join('');
+document.querySelector('#music-list')!.innerHTML=MUSIC_TRACKS.map(t=>`<button class="sound" data-music="${t.id}" aria-pressed="false"><span>▶ ${t.label}</span><small>${t.file?(t.id.startsWith('explore-')?'原曲 · 節奏約':'變奏 · '):''}${t.bpm} BPM · ${t.theme==='choir'?'24 秒':'完整試聽／循環'}</small></button>`).join('');
 document.querySelector('#sfx-list')!.innerHTML=SOUND_EFFECTS.map(s=>`<button class="sound" data-sfx="${s.id}" aria-pressed="false"><span>▶ ${s.label}</span><small>${s.instrument?'樂器':'事件音效'} · ${s.id}</small></button>`).join('');
 document.querySelector('#stop')!.addEventListener('click',stop);
 for(const kind of ['music','sfx'] as const){
@@ -24,7 +24,7 @@ document.querySelectorAll<HTMLButtonElement>('.sound').forEach(button=>button.ad
  button.setAttribute('aria-pressed','true');
  if(button.dataset.music){
   const track=MUSIC_TRACKS.find(t=>t.id===button.dataset.music)!;
-  audio.previewMusic(track.theme,track.anniversary);status.textContent=`正在播放：${track.label}`;
+  audio.previewMusic(track.theme,track.anniversary,track.id);status.textContent=`正在播放：${track.label}`;
   if(track.theme==='choir')stopTimer=setTimeout(()=>{stop();status.textContent='合唱曲段播放完畢'},24050);
  }else{
   const sound=SOUND_EFFECTS.find(s=>s.id===button.dataset.sfx)!;
@@ -33,4 +33,6 @@ document.querySelectorAll<HTMLButtonElement>('.sound').forEach(button=>button.ad
  }
 }));
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
-window.addEventListener('pagehide',()=>{stop();clearInterval(audio.timer);void audio.ctx?.close()});
+window.addEventListener('pagehide',e=>{stop();if(!e.persisted)audio.dispose()});
+
+setInterval(()=>{if(audio.previewTheme&&audio.music?.error)status.textContent=audio.music.error},500);

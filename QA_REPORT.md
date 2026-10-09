@@ -154,3 +154,7 @@ Chromium觸控模擬驗收：390×844與844×390人物1.75m投影高度分別75.
 ## v1.3 校園生活事件（2026-10-08）
 
 六種事件已實作並整合場景、會議、兩狗與理化老師；新增洗手區、儲藏間與六項一次性紀念。操作、排程、預約、警戒來源、讀檔安全清理與擴充方法見 [LIFE_EVENTS_GUIDE.md](LIFE_EVENTS_GUIDE.md)，实际六種事件畫面見 [LIFE_EVENTS_SCREENSHOTS.md](LIFE_EVENTS_SCREENSHOTS.md)，驗收見 [LIFE_EVENTS_QA_REPORT.md](LIFE_EVENTS_QA_REPORT.md)。本節是目前本地 v1.3 的紀錄，前文 v1.1/v1.2 為既有發布歷史。
+
+## 2026-10-09 配樂驗收
+
+112項既有規則測試通過（artifacts/music-core-tests.tap）；41音效與8音樂實際瀏覽器试聽觸發、32拍合唱、停止及不寫存檔通過（artifacts/soundtest-qa.json）。原生Chromium手機觸控模擬13項音樂检查通過：四首依序輪播、共享混音器有非零PCM、靜音、音量、暫停續播、一般／校慶追逐變奏、20次模式切換仍僅兩個串流節點、合唱優先、原生背景暂停等待觸控繼續、音檔404跳過／備援。見artifacts/music-browser-qa.json。曲尾測試以實際media element定位到尾段加速，追逐人物起始狀態由開發入口準備，不宣稱人工從出生點完整遊玩。人工聽感、實體手機、Safari、弱網及長時間熱效能未驗證。

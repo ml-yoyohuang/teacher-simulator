@@ -2,7 +2,7 @@
 
 ## 來源與識別
 
-全部可執行資源由 `src/render.ts`、`src/audio.ts` 產生，不含圖像素材供應鏈或遠端字型。img1.jpeg/img2.jpeg只作低多邊形／色塊／固定斜俯視参考，未作紋理或模型重製。
+3D模型與合成聲音由本地程式產生，背景歌曲另使用使用者提供的配樂與混音變奏，不使用遠端字型。img1.jpeg/img2.jpeg只作低多邊形／色塊／固定斜俯視参考，未作紋理或模型重製。
 
 | stableId | 生成入口 | 用途 |
 |---|---|---|
@@ -14,7 +14,8 @@
 | prop:<zone>:<index> | propModel(type) | 家具、練習假人、講臺、工具間、活動攤位 |
 | zone:<id> | Renderer.rebuild / World.walls | 地面、門、分組牆、標示 |
 | sfx:<eventType> | AudioEngine.event | 拾取、落地、戰鬥、任務等合成聲音 |
-| music:<explore/chase/choir> | AudioEngine.schedule | 原創音符序列與活動變奏 |
+| music:<explore-01..04/chase/anniversary-explore/anniversary-chase> | src/music.ts + public/music | 使用者配樂與場景混音變奏，按需串流 |
+| music:choir | AudioEngine.schedule | 原創合成80 BPM／32拍 |
 
 ## 模型基準與掛點
 
@@ -39,7 +40,7 @@ Y向上、XZ地面，單位公尺。物件pivot是底面中心；人體約1.7m�
 
 ## 音訊替換／試聽
 
-遊戲 → 設定 → 試聽。首次開始由手勢建立AudioContext，失敗仍可靜音玩。音效頻率表與原創音符序列在audio.ts，不引用歌曲。需要替換時使用本地短音檔，保持事件映射、主音量壓縮、聲部限制（音效12／音樂6）、pause時停止未來聲音以及音量設定。
+遊戲 → 設定 → 試聽。首次開始由手勢建立AudioContext，失敗仍可靜音玩。音效頻率表與合唱序列在audio.ts，背景歌曲映射在music.ts、音檔在public/music。需要替換時使用本地短音檔，保持事件映射、主音量壓縮、聲部限制（音效12／音樂6）、pause時停止未來聲音以及音量設定。
 
 合唱為80BPM、32拍、8提示，聲畫都由同一simulation songTime對映到AudioContext排程，暫停不推进。不是真人合唱。人工聽感與手機音訊延遲尚待實測。
 
@@ -47,8 +48,12 @@ Y向上、XZ地面，單位公尺。物件pivot是底面中心；人體約1.7m�
 
 `itemModel('wireless_microphone')`：0.7m內的低分段深灰握柄、灰藍球形網罩／深色橫網線與黃色環帶，全部使用既有cylinder/sphere/box與共享材質，不新增貼圖或光源。一般手持沿原anchor，擴音點名時右手與麥克風抬到臉旁約1秒。地面可回收道具不是decor，拋物線與判定依game資料、碰撞不依網罩外形。聲波重用torus实例，正常至多2動態圈+1靜態圈，lowMotion仅靜態；一個DOM氣泡跟隨有效聲源，取消當下由runtime狀態清除。
 
-新增`microphoneBroadcast`（520Hz起音）與`microphonePulse`（740Hz短提示）；與普通點名共用650Hz提示。均在AudioEngine內合成，廣播source標籤供取消即stop，使用既有音量、mute、12聲部。soundtest.html逐項可試聽，目前32音效、5音樂。沒有任何裝置麥克風／錄音／語音辨識API。
+新增`microphoneBroadcast`（520Hz起音）與`microphonePulse`（740Hz短提示）；與普通點名共用650Hz提示。均在AudioEngine內合成，廣播source標籤供取消即stop，使用既有音量、mute、12聲部。soundtest.html逐項可試聽，目前41音效、8音樂（7音檔＋合成合唱）。沒有任何裝置麥克風／錄音／語音辨識API。
 
 ## 十區場景家具
 
 新增 `scene.ts` 宣告佈局、物件支撐高度及活動變體，`scene-models.ts` 組合共用幾何形成黑板、課桌椅、檔案櫃、樂器架、鼓組、護理床、商店等模型。固定家具／純裝飾不加入道具登錄，不增加持有身份；原家具與27種基本道具保持ID。細節無獨立碰撞、無新增光源，靜態instance只在模式重建時寫入。完整位置、模型與擴充步驟見SCENE_GUIDE.md。
+
+## 使用者背景配樂
+
+来源、處理、重製命令、播放規則及驗證範圍见MUSIC_GUIDE.md。原始檔保持不變；部署只需public/music，最多兩個HTMLAudioElement經MediaElementAudioSourceNode接入既有musicGain/master，不將所有長曲解碼入記憶體。

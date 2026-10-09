@@ -1,14 +1,122 @@
 {
-  "date": "2026-10-08",
+  "date": "2026-10-09",
   "status": "pass",
   "sounds": [
+    {
+      "id": "lifeCrack",
+      "notes": [
+        {
+          "frequency": 95,
+          "type": "sine",
+          "time": 0,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "lifePhone",
+      "notes": [
+        {
+          "frequency": 740,
+          "type": "sine",
+          "time": 0.032,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "dogPet",
+      "notes": [
+        {
+          "frequency": 420,
+          "type": "sine",
+          "time": 0.064,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "dogHeart",
+      "notes": [
+        {
+          "frequency": 780,
+          "type": "sine",
+          "time": 0.10133333333333333,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "dogFetch",
+      "notes": [
+        {
+          "frequency": 640,
+          "type": "sine",
+          "time": 0.13333333333333333,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "dogAssist",
+      "notes": [
+        {
+          "frequency": 300,
+          "type": "sine",
+          "time": 0.16533333333333333,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "meetingMusic",
+      "notes": [
+        {
+          "frequency": 261.63,
+          "type": "sine",
+          "time": 0.19733333333333333,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "meetingGavel",
+      "notes": [
+        {
+          "frequency": 180,
+          "type": "sine",
+          "time": 0.23466666666666666,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "id": "meetingPrint",
+      "notes": [
+        {
+          "frequency": 260,
+          "type": "sine",
+          "time": 0.26666666666666666,
+          "contextState": "running"
+        }
+      ],
+      "status": "pass"
+    },
     {
       "id": "move",
       "notes": [
         {
           "frequency": 120,
           "type": "sine",
-          "time": 0,
+          "time": 0.2986666666666667,
           "contextState": "running"
         }
       ],
@@ -20,7 +128,7 @@
         {
           "frequency": 240,
           "type": "triangle",
-          "time": 0.02666666666666667,
+          "time": 0.336,
           "contextState": "running"
         }
       ],
@@ -32,7 +140,7 @@
         {
           "frequency": 180,
           "type": "sine",
-          "time": 0.058666666666666666,
+          "time": 0.368,
           "contextState": "running"
         }
       ],
@@ -44,7 +152,7 @@
         {
           "frequency": 110,
           "type": "sine",
-          "time": 0.09066666666666667,
+          "time": 0.4,
           "contextState": "running"
         }
       ],
@@ -56,7 +164,7 @@
         {
           "frequency": 360,
           "type": "sine",
-          "time": 0.12266666666666666,
+          "time": 0.432,
           "contextState": "running"
         }
       ],
@@ -68,7 +176,7 @@
         {
           "frequency": 150,
           "type": "sine",
-          "time": 0.16,
+          "time": 0.464,
           "contextState": "running"
         }
       ],
@@ -80,7 +188,7 @@
         {
           "frequency": 580,
           "type": "sine",
-          "time": 0.192,
+          "time": 0.5013333333333333,
           "contextState": "running"
         }
       ],
@@ -92,7 +200,7 @@
         {
           "frequency": 300,
           "type": "sine",
-          "time": 0.224,
+          "time": 0.5333333333333333,
           "contextState": "running"
         }
       ],
@@ -104,7 +212,7 @@
         {
           "frequency": 90,
           "type": "triangle",
-          "time": 0.2613333333333333,
+          "time": 0.5653333333333334,
           "contextState": "running"
         }
       ],
@@ -116,7 +224,7 @@
         {
           "frequency": 440,
           "type": "sine",
-          "time": 0.29333333333333333,
+          "time": 0.5973333333333334,
           "contextState": "running"
         }
       ],
@@ -128,7 +236,7 @@
         {
           "frequency": 330,
           "type": "sine",
-          "time": 0.3253333333333333,
+          "time": 0.6346666666666667,
           "contextState": "running"
         }
       ],
@@ -140,7 +248,7 @@
         {
           "frequency": 680,
           "type": "sine",
-          "time": 0.35733333333333334,
+          "time": 0.6666666666666666,
           "contextState": "running"
         }
       ],
@@ -152,7 +260,7 @@
         {
           "frequency": 220,
           "type": "sine",
-          "time": 0.39466666666666667,
+          "time": 0.6986666666666667,
           "contextState": "running"
         }
       ],
@@ -164,7 +272,7 @@
         {
           "frequency": 160,
           "type": "sine",
-          "time": 0.4266666666666667,
+          "time": 0.736,
           "contextState": "running"
         }
       ],
@@ -176,7 +284,7 @@
         {
           "frequency": 520,
           "type": "sine",
-          "time": 0.45866666666666667,
+          "time": 0.768,
           "contextState": "running"
         }
       ],
@@ -188,7 +296,7 @@
         {
           "frequency": 520,
           "type": "sine",
-          "time": 0.49066666666666664,
+          "time": 0.8,
           "contextState": "running"
         }
       ],
@@ -200,19 +308,19 @@
         {
           "frequency": 784,
           "type": "sine",
-          "time": 0.5226666666666666,
+          "time": 0.832,
           "contextState": "running"
         },
         {
           "frequency": 980,
           "type": "sine",
-          "time": 0.6426666666666666,
+          "time": 0.952,
           "contextState": "running"
         },
         {
           "frequency": 1176,
           "type": "sine",
-          "time": 0.7626666666666666,
+          "time": 1.072,
           "contextState": "running"
         }
       ],
@@ -224,7 +332,7 @@
         {
           "frequency": 520,
           "type": "sine",
-          "time": 0.56,
+          "time": 0.864,
           "contextState": "running"
         }
       ],
@@ -236,7 +344,7 @@
         {
           "frequency": 740,
           "type": "sine",
-          "time": 0.592,
+          "time": 0.9013333333333333,
           "contextState": "running"
         }
       ],
@@ -248,7 +356,7 @@
         {
           "frequency": 650,
           "type": "sine",
-          "time": 0.624,
+          "time": 0.9333333333333333,
           "contextState": "running"
         }
       ],
@@ -260,7 +368,7 @@
         {
           "frequency": 420,
           "type": "sine",
-          "time": 0.6613333333333333,
+          "time": 0.9653333333333334,
           "contextState": "running"
         }
       ],
@@ -272,7 +380,7 @@
         {
           "frequency": 260,
           "type": "sine",
-          "time": 0.6933333333333334,
+          "time": 1.0026666666666666,
           "contextState": "running"
         }
       ],
@@ -284,7 +392,7 @@
         {
           "frequency": 800,
           "type": "sine",
-          "time": 0.7253333333333334,
+          "time": 1.0346666666666666,
           "contextState": "running"
         }
       ],
@@ -296,7 +404,7 @@
         {
           "frequency": 540,
           "type": "sine",
-          "time": 0.7626666666666667,
+          "time": 1.0666666666666667,
           "contextState": "running"
         }
       ],
@@ -308,7 +416,7 @@
         {
           "frequency": 900,
           "type": "sine",
-          "time": 0.7946666666666666,
+          "time": 1.0986666666666667,
           "contextState": "running"
         }
       ],
@@ -320,7 +428,7 @@
         {
           "frequency": 1200,
           "type": "sine",
-          "time": 0.8266666666666667,
+          "time": 1.1306666666666667,
           "contextState": "running"
         }
       ],
@@ -332,7 +440,7 @@
         {
           "frequency": 660,
           "type": "sine",
-          "time": 0.864,
+          "time": 1.168,
           "contextState": "running"
         }
       ],
@@ -344,7 +452,7 @@
         {
           "frequency": 440,
           "type": "sine",
-          "time": 0.8906666666666667,
+          "time": 1.2,
           "contextState": "running"
         }
       ],
@@ -356,7 +464,7 @@
         {
           "frequency": 587,
           "type": "sine",
-          "time": 0.928,
+          "time": 1.232,
           "contextState": "running"
         }
       ],
@@ -368,7 +476,7 @@
         {
           "frequency": 1320,
           "type": "sine",
-          "time": 0.96,
+          "time": 1.2693333333333334,
           "contextState": "running"
         }
       ],
@@ -380,7 +488,7 @@
         {
           "frequency": 320,
           "type": "sine",
-          "time": 0.992,
+          "time": 1.3013333333333332,
           "contextState": "running"
         }
       ],
@@ -392,7 +500,7 @@
         {
           "frequency": 180,
           "type": "sine",
-          "time": 1.024,
+          "time": 1.3333333333333333,
           "contextState": "running"
         }
       ],
@@ -401,23 +509,38 @@
   ],
   "music": [
     {
-      "id": "explore",
-      "notes": 3,
+      "id": "explore-01",
+      "notes": 0,
+      "status": "pass"
+    },
+    {
+      "id": "explore-02",
+      "notes": 0,
+      "status": "pass"
+    },
+    {
+      "id": "explore-03",
+      "notes": 0,
+      "status": "pass"
+    },
+    {
+      "id": "explore-04",
+      "notes": 0,
       "status": "pass"
     },
     {
       "id": "chase",
-      "notes": 3,
+      "notes": 0,
       "status": "pass"
     },
     {
       "id": "anniversary-explore",
-      "notes": 3,
+      "notes": 0,
       "status": "pass"
     },
     {
       "id": "anniversary-chase",
-      "notes": 3,
+      "notes": 0,
       "status": "pass"
     },
     {
@@ -433,5 +556,5 @@
   "noSaveWrites": true,
   "mobileLayout": true,
   "errors": [],
-  "note": "驗證實際 Web Audio 節點與排程；人工聽感仍待使用者試聽。"
+  "note": "驗證實際串流音檔解碼、Web Audio 節點與排程；人工聽感仍待使用者試聽。"
 }

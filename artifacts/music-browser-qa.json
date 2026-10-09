@@ -1,0 +1,531 @@
+{
+  "date": "2026-10-09",
+  "status": "pass",
+  "browser": "141.0.7390.37",
+  "environment": "macOS native Chromium, 390×844 touch emulation, DPR1; not physical phone",
+  "energy": 0.016386808051776704,
+  "muted": {
+    "gain": 0.0001897663896670565,
+    "rms": 0.000006775203467165646,
+    "playing": 1
+  },
+  "paused": {
+    "active": null,
+    "pending": null,
+    "paused": true,
+    "index": 0,
+    "error": "",
+    "positions": {
+      "explore-01": 1.950476,
+      "explore-02": 149.242222,
+      "explore-03": 136.686377,
+      "explore-04": 136.676994
+    },
+    "playing": 0,
+    "decks": [
+      {
+        "id": "explore-01",
+        "time": 1.950476,
+        "duration": 144.773515,
+        "paused": true,
+        "gain": 0,
+        "ready": 4
+      },
+      {
+        "id": "explore-04",
+        "time": 137.173515,
+        "duration": 137.173515,
+        "paused": true,
+        "gain": 0,
+        "ready": 4
+      }
+    ]
+  },
+  "resumed": {
+    "active": "explore-01",
+    "pending": null,
+    "paused": false,
+    "index": 0,
+    "error": "",
+    "positions": {
+      "explore-01": 1.950476,
+      "explore-02": 149.242222,
+      "explore-03": 136.686377,
+      "explore-04": 136.676994
+    },
+    "playing": 1,
+    "decks": [
+      {
+        "id": "explore-01",
+        "time": 3.11387,
+        "duration": 144.773515,
+        "paused": false,
+        "gain": 1,
+        "ready": 4
+      },
+      {
+        "id": "explore-04",
+        "time": 137.173515,
+        "duration": 137.173515,
+        "paused": true,
+        "gain": 0,
+        "ready": 4
+      }
+    ]
+  },
+  "hidden": {
+    "active": null,
+    "pending": null,
+    "paused": true,
+    "index": 0,
+    "error": "",
+    "positions": {
+      "explore-01": 3.077321
+    },
+    "playing": 0,
+    "decks": [
+      {
+        "id": "explore-01",
+        "time": 3.077342,
+        "duration": 144.773515,
+        "paused": true,
+        "gain": 0,
+        "ready": 4
+      },
+      {
+        "id": "anniversary-chase",
+        "time": 1.315044,
+        "duration": 48,
+        "paused": true,
+        "gain": 0,
+        "ready": 4
+      }
+    ]
+  },
+  "frames": {
+    "samples": 180,
+    "p50": 8.299999999999272,
+    "p95": 9.200000000000728
+  },
+  "evidence": [
+    {
+      "active": "explore-01",
+      "pending": null,
+      "paused": false,
+      "index": 0,
+      "error": "",
+      "positions": {},
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-01",
+          "time": 1.312976,
+          "duration": 144.773515,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        },
+        {
+          "time": 0,
+          "duration": null,
+          "paused": true,
+          "gain": 0,
+          "ready": 0
+        }
+      ]
+    },
+    {
+      "active": "explore-02",
+      "pending": null,
+      "paused": false,
+      "index": 1,
+      "error": "",
+      "positions": {
+        "explore-01": 144.282463
+      },
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-01",
+          "time": 144.773515,
+          "duration": 144.773515,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        },
+        {
+          "id": "explore-02",
+          "time": 1.311771,
+          "duration": 149.733515,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "explore-03",
+      "pending": null,
+      "paused": false,
+      "index": 2,
+      "error": "",
+      "positions": {
+        "explore-01": 144.282463,
+        "explore-02": 149.242222
+      },
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-03",
+          "time": 1.305393,
+          "duration": 137.173515,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        },
+        {
+          "id": "explore-02",
+          "time": 149.733515,
+          "duration": 149.733515,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "explore-04",
+      "pending": null,
+      "paused": false,
+      "index": 3,
+      "error": "",
+      "positions": {
+        "explore-01": 144.282463,
+        "explore-02": 149.242222,
+        "explore-03": 136.686377
+      },
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-03",
+          "time": 137.173515,
+          "duration": 137.173515,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        },
+        {
+          "id": "explore-04",
+          "time": 1.311927,
+          "duration": 137.173515,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "explore-01",
+      "pending": null,
+      "paused": false,
+      "index": 0,
+      "error": "",
+      "positions": {
+        "explore-01": 144.282463,
+        "explore-02": 149.242222,
+        "explore-03": 136.686377,
+        "explore-04": 136.676994
+      },
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-01",
+          "time": 1.311927,
+          "duration": 144.773515,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        },
+        {
+          "id": "explore-04",
+          "time": 137.173515,
+          "duration": 137.173515,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "explore-01",
+      "pending": null,
+      "paused": false,
+      "index": 0,
+      "error": "",
+      "positions": {
+        "explore-01": 1.950476,
+        "explore-02": 149.242222,
+        "explore-03": 136.686377,
+        "explore-04": 136.676994
+      },
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-01",
+          "time": 3.11387,
+          "duration": 144.773515,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        },
+        {
+          "id": "explore-04",
+          "time": 137.173515,
+          "duration": 137.173515,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "chase",
+      "pending": null,
+      "paused": false,
+      "index": 0,
+      "error": "",
+      "positions": {
+        "explore-01": 6.137678,
+        "explore-02": 149.242222,
+        "explore-03": 136.686377,
+        "explore-04": 136.676994
+      },
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-01",
+          "time": 7.151746,
+          "duration": 144.773515,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        },
+        {
+          "id": "chase",
+          "time": 1.307912,
+          "duration": 51.2,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "explore-01",
+      "pending": null,
+      "paused": false,
+      "index": 0,
+      "error": "",
+      "positions": {
+        "explore-01": 6.137678,
+        "explore-02": 149.242222,
+        "explore-03": 136.686377,
+        "explore-04": 136.676994,
+        "chase": 1.322074
+      },
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-01",
+          "time": 7.292871,
+          "duration": 144.773515,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        },
+        {
+          "id": "chase",
+          "time": 2.346629,
+          "duration": 51.2,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "anniversary-explore",
+      "pending": null,
+      "paused": false,
+      "index": 0,
+      "error": "",
+      "positions": {},
+      "playing": 1,
+      "decks": [
+        {
+          "id": "anniversary-explore",
+          "time": 1.309025,
+          "duration": 54.857143,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        },
+        {
+          "id": "chase",
+          "time": 2.346629,
+          "duration": 51.2,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "anniversary-chase",
+      "pending": null,
+      "paused": false,
+      "index": 0,
+      "error": "",
+      "positions": {
+        "anniversary-explore": 1.32136
+      },
+      "playing": 1,
+      "decks": [
+        {
+          "id": "anniversary-explore",
+          "time": 2.339635,
+          "duration": 54.857143,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        },
+        {
+          "id": "anniversary-chase",
+          "time": 1.306122,
+          "duration": 48,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "explore-01",
+      "pending": null,
+      "paused": false,
+      "index": 0,
+      "error": "",
+      "positions": {},
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-01",
+          "time": 1.306122,
+          "duration": 144.773515,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        },
+        {
+          "id": "anniversary-chase",
+          "time": 1.315044,
+          "duration": 48,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "explore-01",
+      "pending": null,
+      "paused": false,
+      "index": 0,
+      "error": "",
+      "positions": {
+        "explore-01": 1.323537
+      },
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-01",
+          "time": 2.481633,
+          "duration": 144.773515,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        },
+        {
+          "id": "anniversary-chase",
+          "time": 1.315044,
+          "duration": 48,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        }
+      ]
+    },
+    {
+      "active": "explore-01",
+      "pending": null,
+      "paused": false,
+      "index": 0,
+      "error": "",
+      "positions": {
+        "explore-01": 3.077321
+      },
+      "playing": 1,
+      "decks": [
+        {
+          "id": "explore-01",
+          "time": 4.235416,
+          "duration": 144.773515,
+          "paused": false,
+          "gain": 1,
+          "ready": 4
+        },
+        {
+          "id": "anniversary-chase",
+          "time": 1.315044,
+          "duration": 48,
+          "paused": true,
+          "gain": 0,
+          "ready": 4
+        }
+      ]
+    }
+  ],
+  "requests": [
+    "http://127.0.0.1:5173/music/explore-01.mp3",
+    "http://127.0.0.1:5173/music/explore-02.mp3",
+    "http://127.0.0.1:5173/music/explore-03.mp3",
+    "http://127.0.0.1:5173/music/explore-03.mp3",
+    "http://127.0.0.1:5173/music/explore-04.mp3",
+    "http://127.0.0.1:5173/music/explore-01.mp3",
+    "http://127.0.0.1:5173/music/chase.mp3",
+    "http://127.0.0.1:5173/music/anniversary-explore.mp3",
+    "http://127.0.0.1:5173/music/anniversary-chase.mp3",
+    "http://127.0.0.1:5173/music/explore-01.mp3"
+  ],
+  "streamSources": 2,
+  "errors": [],
+  "checks": [
+    "no music network before gesture",
+    "all four originals rotate in order",
+    "shared mixer produces nonzero PCM",
+    "mute suppresses output but continues playlist",
+    "independent music gain",
+    "pause keeps offset and resume continues",
+    "actual Chase state selects chase mix",
+    "anniversary explore/chase mixes",
+    "20 mode changes keep 2 stream sources",
+    "choir takes priority; pause stops game beat clock",
+    "native background pauses; return waits for touch resume",
+    "404 daily track skips to next available original",
+    "404 variant uses synthesized fallback without overlapping streams"
+  ],
+  "limitations": [
+    "No human listening review, real iOS/Android/Safari or long thermal performance test.",
+    "Track ending is accelerated by seeking actual HTMLMediaElement to its tail; chase NPC state is prepared through the existing development interface."
+  ]
+}
