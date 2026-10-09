@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-09",
+  "site": "https://ml-yoyohuang.github.io/teacher-simulator/",
+  "codeCommit": "09ae8e9",
+  "status": "pass",
+  "browser": "141.0.7390.37",
+  "assets": [
+    "game-DHBYBDRF.js",
+    "game-B3rnr5-K.css"
+  ],
+  "layouts": [
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "panel": {
+        "y": 12,
+        "bottom": 176.5
+      },
+      "quest": {
+        "y": 186.5,
+        "bottom": 234.5
+      },
+      "nav": {
+        "y": 244.5,
+        "bottom": 292.5
+      },
+      "collapsed": true
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "panel": {
+        "y": 12,
+        "bottom": 176.5
+      },
+      "quest": {
+        "y": 186.5,
+        "bottom": 298.5
+      },
+      "nav": {
+        "y": 308.5,
+        "bottom": 356.5
+      },
+      "collapsed": false
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "panel": {
+        "y": 12,
+        "bottom": 160
+      },
+      "quest": {
+        "y": 37,
+        "bottom": 93
+      },
+      "nav": {
+        "y": 170,
+        "bottom": 218
+      },
+      "collapsed": true
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "panel": {
+        "y": 12,
+        "bottom": 160
+      },
+      "quest": {
+        "y": 37,
+        "bottom": 156
+      },
+      "nav": {
+        "y": 170,
+        "bottom": 218
+      },
+      "collapsed": false
+    },
+    {
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "panel": {
+        "y": 20,
+        "bottom": 209
+      },
+      "quest": {
+        "y": 47,
+        "bottom": 103
+      },
+      "nav": {
+        "y": 221,
+        "bottom": 269
+      },
+      "collapsed": true
+    },
+    {
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "panel": {
+        "y": 20,
+        "bottom": 209
+      },
+      "quest": {
+        "y": 47,
+        "bottom": 175.6875
+      },
+      "nav": {
+        "y": 221,
+        "bottom": 269
+      },
+      "collapsed": false
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "public JS/CSS match tested deployment hashes",
+    "real touch expand/collapse reflows layout",
+    "real movement/attack/pause/resume inputs without errors",
+    "production debug interface excluded"
+  ],
+  "limitations": [
+    "Public smoke test does not reproduce combat/critical HP scenarios; detailed feature checks are in feedback-browser-qa.json.",
+    "Physical phone and Safari not tested."
+  ]
+}

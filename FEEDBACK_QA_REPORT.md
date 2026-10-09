@@ -30,3 +30,7 @@ macOS原生Chromium：1440×900桌機、820×1180平板、390×844手機直式�
 初始物品／人物位置、血量及家長累計由既有開發入口準備；E／J為真實鍵盤輸入，版面為實際DOM／瀏覽器截圖。macOS Chromium通過，不宣稱Safari已驗證。實體手機、Safari、長時間熱效能，以及真人對震動／警示舒適度尚未測試。
 
 只增加三個共用InstancedMesh標記圖層，最多24目標，不新增陰影、全屏後製或逐目標貼圖。既有裝飾粒子限制保留；浮字固定上限，不隨連續命中永久累積。
+
+## 正式發布
+
+功能提交09ae8e9，GitHub Pages部署37916116798成功。正式JS／CSS與已驗證本地產物SHA-256相同，手機直式、橫式及桌機共6組真實觸控展開／收合檢查、移動／揮打／暫停／恢復操作通過，無頁面例外。見artifacts/feedback-production-qa.json、feedback-production-mobile.png及scripts/feedback-production-qa.ts。公開站檢查為一般操作，命中／危急血量場景的詳細測試另見前述本地原生瀏覽器紀錄。
