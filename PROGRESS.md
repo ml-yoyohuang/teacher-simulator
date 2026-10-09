@@ -63,3 +63,7 @@
 首頁教學入口改為同分頁，修正聲音與電腦操作說明，並修正離頁背景事件重新占用存檔寫入權的問題。四種尺寸實際導航與存檔保留檢查、114項規則及正式建置通過，詳見[TUTORIAL_NAVIGATION_QA_REPORT.md](TUTORIAL_NAVIGATION_QA_REPORT.md)。真機與Safari未驗證。
 
 新手說明書修正06e22e2已部署，Pages 37920790944成功；公開站四種尺寸實際導航與存檔驗證通過，詳見TUTORIAL_NAVIGATION_QA_REPORT.md。
+
+## 2026-10-09 說明書截圖更新
+
+重新擷取目前手機手持課本、校事會議與校狗卡片三張真實遊戲畫面，同步修正會議操作鍵為12px間距。建置使用新圖片指紋檔名，檢查見[TUTORIAL_SCREENSHOTS_QA_REPORT.md](TUTORIAL_SCREENSHOTS_QA_REPORT.md)。

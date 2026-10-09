@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-09",
+  "status": "pass",
+  "site": "http://127.0.0.1:4173/",
+  "browser": "141.0.7390.37",
+  "checks": [
+    {
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "name": "hud-mobile",
+      "url": "http://127.0.0.1:4173/assets/hud-mobile-C7kcCCkt.png",
+      "width": 390,
+      "height": 844,
+      "displayWidth": 340,
+      "sha256": "22c433ee358b00dda4780e9e168550fd3d5bca31b853d0ea210e40a97ee276dd"
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "name": "meeting",
+      "url": "http://127.0.0.1:4173/assets/meeting-OkWDg4iA.png",
+      "width": 1280,
+      "height": 800,
+      "displayWidth": 848,
+      "sha256": "1dd10c2d0f32dbc64e722d297925bbfe00899e90f7ba76b9341db19797b397e2"
+    },
+    {
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "name": "dog-card",
+      "url": "http://127.0.0.1:4173/assets/dog-card-BjSrORl1.png",
+      "width": 1280,
+      "height": 800,
+      "displayWidth": 848,
+      "sha256": "2351ef5acb296f2a3c865c9d0e6c70c2d51fba7ec9c930b0e5de3178f7f3acc9"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "hud-mobile",
+      "url": "http://127.0.0.1:4173/assets/hud-mobile-C7kcCCkt.png",
+      "width": 390,
+      "height": 844,
+      "displayWidth": 340,
+      "sha256": "22c433ee358b00dda4780e9e168550fd3d5bca31b853d0ea210e40a97ee276dd"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "meeting",
+      "url": "http://127.0.0.1:4173/assets/meeting-OkWDg4iA.png",
+      "width": 1280,
+      "height": 800,
+      "displayWidth": 358,
+      "sha256": "1dd10c2d0f32dbc64e722d297925bbfe00899e90f7ba76b9341db19797b397e2"
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "name": "dog-card",
+      "url": "http://127.0.0.1:4173/assets/dog-card-BjSrORl1.png",
+      "width": 1280,
+      "height": 800,
+      "displayWidth": 358,
+      "sha256": "2351ef5acb296f2a3c865c9d0e6c70c2d51fba7ec9c930b0e5de3178f7f3acc9"
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 700
+      },
+      "name": "hud-mobile",
+      "url": "http://127.0.0.1:4173/assets/hud-mobile-C7kcCCkt.png",
+      "width": 390,
+      "height": 844,
+      "displayWidth": 288,
+      "sha256": "22c433ee358b00dda4780e9e168550fd3d5bca31b853d0ea210e40a97ee276dd"
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 700
+      },
+      "name": "meeting",
+      "url": "http://127.0.0.1:4173/assets/meeting-OkWDg4iA.png",
+      "width": 1280,
+      "height": 800,
+      "displayWidth": 288,
+      "sha256": "1dd10c2d0f32dbc64e722d297925bbfe00899e90f7ba76b9341db19797b397e2"
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 700
+      },
+      "name": "dog-card",
+      "url": "http://127.0.0.1:4173/assets/dog-card-BjSrORl1.png",
+      "width": 1280,
+      "height": 800,
+      "displayWidth": 288,
+      "sha256": "2351ef5acb296f2a3c865c9d0e6c70c2d51fba7ec9c930b0e5de3178f7f3acc9"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Chromium only; no physical phone or Safari."
+  ]
+}

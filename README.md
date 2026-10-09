@@ -154,3 +154,7 @@ HUD 顯示家長累計及會議抽選條件；散場重新累計。校狗實際�
 ## 2026-10-09 新手說明書往返
 
 首頁教學入口改為同分頁，修正聲音與電腦操作說明，並修正離頁背景事件重新占用存檔寫入權的問題。四種尺寸實際導航與存檔保留檢查、114項規則及正式建置通過，詳見[TUTORIAL_NAVIGATION_QA_REPORT.md](TUTORIAL_NAVIGATION_QA_REPORT.md)。真機與Safari未驗證。
+
+## 2026-10-09 說明書截圖更新
+
+重新擷取目前手機手持課本、校事會議與校狗卡片三張真實遊戲畫面，同步修正會議操作鍵為12px間距。建置使用新圖片指紋檔名，檢查見[TUTORIAL_SCREENSHOTS_QA_REPORT.md](TUTORIAL_SCREENSHOTS_QA_REPORT.md)。

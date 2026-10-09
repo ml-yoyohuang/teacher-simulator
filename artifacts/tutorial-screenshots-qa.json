@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-09",
+  "sourceCommit": "1aaa8bc",
+  "browser": "141.0.7390.37",
+  "status": "pass",
+  "shots": [
+    {
+      "name": "hud-mobile",
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "minGap": 8,
+      "overflow": false
+    },
+    {
+      "name": "dog-card",
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "minGap": 12,
+      "overflow": false
+    },
+    {
+      "name": "meeting",
+      "size": {
+        "width": 1280,
+        "height": 800
+      },
+      "minGap": 12,
+      "overflow": false
+    }
+  ],
+  "mobileLayout": {
+    "statusBottom": 176.5,
+    "questTop": 186.5,
+    "questBottom": 234.5,
+    "navTop": 244.5
+  },
+  "errors": [],
+  "method": "Actual current game rendering and UI; existing development scene API positions teacher/takes textbook and starts meeting. No screenshot compositing or CSS/DOM substitutions. Dog card opened with actual button.",
+  "limitations": [
+    "Prepared local scenes, not a manual playthrough of meeting trigger. Chromium only."
+  ]
+}
