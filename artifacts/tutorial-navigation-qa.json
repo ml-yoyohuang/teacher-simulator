@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-09",
+  "site": "http://127.0.0.1:4173/",
+  "status": "pass",
+  "browser": "141.0.7390.37",
+  "results": [
+    {
+      "size": {
+        "width": 1280,
+        "height": 900
+      },
+      "historyRestored": false,
+      "pages": 1,
+      "saveRevisionBefore": 2,
+      "saveRevisionAfter": 6,
+      "message": "本地存檔就緒 · revision 6",
+      "errors": [],
+      "failed": []
+    },
+    {
+      "size": {
+        "width": 844,
+        "height": 390
+      },
+      "historyRestored": false,
+      "pages": 1,
+      "saveRevisionBefore": 2,
+      "saveRevisionAfter": 6,
+      "message": "本地存檔就緒 · revision 6",
+      "errors": [],
+      "failed": []
+    },
+    {
+      "size": {
+        "width": 390,
+        "height": 844
+      },
+      "historyRestored": false,
+      "pages": 1,
+      "saveRevisionBefore": 2,
+      "saveRevisionAfter": 6,
+      "message": "本地存檔就緒 · revision 6",
+      "errors": [],
+      "failed": []
+    },
+    {
+      "size": {
+        "width": 320,
+        "height": 700
+      },
+      "historyRestored": false,
+      "pages": 1,
+      "saveRevisionBefore": 2,
+      "saveRevisionAfter": 6,
+      "message": "本地存檔就緒 · revision 6",
+      "errors": [],
+      "failed": []
+    }
+  ],
+  "method": "Real keyboard/touch navigation and save buttons; same tab, writer lease released, saved records preserved, guide images/layout/anchor and in-game help checked.",
+  "limitations": [
+    "Chromium viewport/touch emulation; physical phones and Safari not tested."
+  ]
+}

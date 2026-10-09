@@ -11,7 +11,8 @@ export function reward(p:Profile,id:string,points:number){if(p.rewardLedger.incl
 export function purchase(p:Profile,id:string){const item=cosmetics.find(c=>c.id===id);if(!item||p.points<item.price||p.ownedCosmetics.includes(id))return false;p.points-=item.price;p.ownedCosmetics.push(id);return true}
 export class SaveStore{
  key='dongshan-campus-v1';lease='dongshan-campus-writer';id=Math.random().toString(36).slice(2);readOnly=false;error='';timer:any;
- constructor(){this.claim();this.timer=setInterval(()=>this.claim(false),5000)}
+ constructor(){this.resume()}
+ resume(){clearInterval(this.timer);this.claim();this.timer=setInterval(()=>this.claim(false),5000)}
  claim(force=false){try{let old=JSON.parse(localStorage.getItem(this.lease)||'null');if(force||!old||old.id===this.id||old.expires<Date.now()){localStorage.setItem(this.lease,JSON.stringify({id:this.id,expires:Date.now()+12000}));this.readOnly=false}else this.readOnly=true}catch{this.error='儲存空間不可用，請匯出進度'}}
  load(){try{let raw=localStorage.getItem(this.key);return raw?validateSave(JSON.parse(raw)):fresh()}catch(e){this.error='未載入無效存檔：'+e.message;return fresh()}}
  save(p:Profile){this.claim(false);if(this.readOnly){this.error='另一分頁正在寫入；此頁暫不儲存，可接管';return false}try{p.revision++;localStorage.setItem(this.key,JSON.stringify(p));this.error='';return true}catch{this.error='存檔寫入失敗，遊戲可繼續，請匯出';return false}}

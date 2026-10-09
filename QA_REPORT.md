@@ -168,3 +168,7 @@ Chromium觸控模擬驗收：390×844與844×390人物1.75m投影高度分別75.
 ## 2026-10-09 按鈕間距
 
 相鄰選單按鈕統一12px間距與換行，手機操作鍵至少8px，修正手持合唱時指揮／投擲／動作鍵重疊。105組實際瀏覽器版面與觸控取消／鍵盤答題通過，見[BUTTON_SPACING_QA_REPORT.md](BUTTON_SPACING_QA_REPORT.md)。真機及Safari未驗證。
+
+## 2026-10-09 新手說明書往返
+
+首頁教學入口改為同分頁，修正聲音與電腦操作說明，並修正離頁背景事件重新占用存檔寫入權的問題。四種尺寸實際導航與存檔保留檢查、114項規則及正式建置通過，詳見[TUTORIAL_NAVIGATION_QA_REPORT.md](TUTORIAL_NAVIGATION_QA_REPORT.md)。真機與Safari未驗證。
