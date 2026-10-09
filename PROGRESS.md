@@ -51,3 +51,7 @@
 完成動態HUD排版、4/5.5m/s步行／跑步、家具前高亮任務標記與跳過教學的考卷提示、真實傷害浮字／短白閃／輕震動、25/10HP低血量提示與減少動態模式。114規則測試、24組版面與真實E／J輸入通過，詳見FEEDBACK_QA_REPORT.md及artifacts/feedback-browser-qa.json。實體手機、Safari及真人舒適度未測。
 
 介面與回饋正式版：09ae8e9已部署，Pages 37916116798成功，公開JS/CSS雜湊與已測成品一致；6組公開版收合與操作检查通過，詳見FEEDBACK_QA_REPORT。
+
+## 2026-10-09 按鈕間距
+
+相鄰選單按鈕統一12px間距與換行，手機操作鍵至少8px，修正手持合唱時指揮／投擲／動作鍵重疊。105組實際瀏覽器版面與觸控取消／鍵盤答題通過，見[BUTTON_SPACING_QA_REPORT.md](BUTTON_SPACING_QA_REPORT.md)。真機及Safari未驗證。

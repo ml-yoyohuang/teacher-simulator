@@ -7,6 +7,7 @@ import {codexEntries,CodexGroup} from './knockdowns';
 import {Game} from './game';
 import {Renderer} from './render';
 import {Input} from './input';
+import {spaceButtons} from './button-spacing';
 import {healthState} from './feedback';
 import {AudioEngine} from './audio';
 import {SaveStore,validateSave,fresh} from './save';
@@ -30,7 +31,7 @@ export class UI{
  }
  pause(v:boolean){this.paused=v;this.input.enabled=!v&&!this.modal;this.input.clear();if(v)this.audio.pause();else this.audio.resume();this.onPause(v)}
  close(){if(!this.started)return;$('#modal').hidden=true;this.modal='';this.pause(false);this.lastFocus?.focus()}
- open(name:string,pause=true){if(this.game.meeting.running&&!['pause','actions','settings','help','meetingRecords','save','dogs'].includes(name)){this.toast('請先離席，再操作校園選單。');return;}this.lastFocus=document.activeElement as HTMLElement;this.modal=name;this.input.enabled=false;this.input.clear();if(pause)this.pause(true);$('#modal').hidden=false;let content=this.content(name);$('#modal').innerHTML=`<section class="panel ${name==='start'?'welcome':''}" role="dialog" aria-modal="true" aria-label="${esc(name==='start'?'開始遊戲':'遊戲選單')}">${content}</section>`;setTimeout(()=>$('#modal').querySelector<HTMLElement>('button')?.focus(),0)}
+ open(name:string,pause=true){if(this.game.meeting.running&&!['pause','actions','settings','help','meetingRecords','save','dogs'].includes(name)){this.toast('請先離席，再操作校園選單。');return;}this.lastFocus=document.activeElement as HTMLElement;this.modal=name;this.input.enabled=false;this.input.clear();if(pause)this.pause(true);$('#modal').hidden=false;let content=this.content(name);$('#modal').innerHTML=`<section class="panel ${name==='start'?'welcome':''}" role="dialog" aria-modal="true" aria-label="${esc(name==='start'?'開始遊戲':'遊戲選單')}">${content}</section>`;spaceButtons($('#modal'));setTimeout(()=>$('#modal').querySelector<HTMLElement>('button')?.focus(),0)}
  header(eyebrow:string,title:string){return `<header class="panel-head"><div><span class="eyebrow">${eyebrow}</span><h2>${title}</h2></div>${this.started?'<button class="icon-btn" data-action="close" aria-label="關閉">✕</button>':''}</header>`}
  button(label:string,action:string,id='',cls=''){return `<button class="${cls}" data-action="${action}" data-id="${esc(id)}">${label}</button>`}
  content(name:string):string{let g=this.game,p=g.profile;if(name==='pause'&&g.meeting.running)return this.header('SCHOOL MEETING','會議暫停')+`<div class=menu-grid>${this.button('繼續遊玩','close')}${this.button('離席','meetingLeave')}${this.button('會議紀錄冊','open','meetingRecords')}${this.button('設定','open','settings')}${this.button('操作說明','open','help')}</div>`;

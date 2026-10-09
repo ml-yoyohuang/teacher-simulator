@@ -44,3 +44,14 @@
 
 @media(min-width:901px){.quest{top:calc(24px + var(--status-extra,0px))}}
 @media(max-height:500px) and (min-width:601px){.quest{top:calc(14px + var(--status-extra,0px))}}
+
+/* Uniform spaces without adding margins to individually positioned game controls. */
+.button-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-block:12px}
+.panel button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.button-row>button,.active-task .button-row>button{margin:0;min-width:0}
+.menu-grid,.codex-tabs,.welcome-actions{gap:12px}
+.task-card>div,.calendar-card>div,.panel-head>div{min-width:0}
+.top-right{gap:12px}.side-nav{gap:12px}.action-cluster{gap:12px}
+#conduct{right:90px;bottom:163px}
+@media(max-width:600px){.top-right{gap:8px}.side-nav{gap:10px}#throw{bottom:174px}#conduct{right:8px;bottom:246px}}
+@media(max-height:500px) and (min-width:601px){#conduct{bottom:152px}}

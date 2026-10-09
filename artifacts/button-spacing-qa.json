@@ -1,0 +1,750 @@
+{
+  "date": "2026-10-09",
+  "status": "pass",
+  "browser": "141.0.7390.37",
+  "method": "Actual button bounding rectangles; all pairs ≥8px target (0.5px rounding tolerance), panel width/overflow check. Modal/gameplay states prepared through existing dev UI, no destructive confirmation clicked.",
+  "checks": [
+    {
+      "label": "1280 start",
+      "count": 2,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 pause",
+      "count": 17,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 missions",
+      "count": 27,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 calendar",
+      "count": 6,
+      "minGap": 84.390625,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 settings",
+      "count": 3,
+      "minGap": 18,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 help",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 actions",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 shop",
+      "count": 10,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 map",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 knockdowns",
+      "count": 4,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 items",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 codex",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 life",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 collection",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 report",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 save",
+      "count": 6,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 dogs",
+      "count": 21,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 meetingRecords",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 timeQuestion",
+      "count": 4,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 resetConfirm",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 clearConfirm",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 mode:anniversary",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 debug",
+      "count": 39,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 HUD empty",
+      "count": 10,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 HUD held",
+      "count": 12,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "1280 HUD held-choir",
+      "count": 13,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 start",
+      "count": 2,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 pause",
+      "count": 17,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 missions",
+      "count": 27,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 calendar",
+      "count": 6,
+      "minGap": 84.390625,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 settings",
+      "count": 3,
+      "minGap": 18,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 help",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 actions",
+      "count": 5,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 shop",
+      "count": 10,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 map",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 knockdowns",
+      "count": 4,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 items",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 codex",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 life",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 collection",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 report",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 save",
+      "count": 6,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 dogs",
+      "count": 21,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 meetingRecords",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 timeQuestion",
+      "count": 4,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 resetConfirm",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 clearConfirm",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 mode:anniversary",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 debug",
+      "count": 39,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 HUD empty",
+      "count": 10,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 HUD held",
+      "count": 12,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "844 HUD held-choir",
+      "count": 13,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 start",
+      "count": 2,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 pause",
+      "count": 17,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 missions",
+      "count": 27,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 calendar",
+      "count": 6,
+      "minGap": 66.796875,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 settings",
+      "count": 3,
+      "minGap": 18,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 help",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 actions",
+      "count": 5,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 shop",
+      "count": 10,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 map",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 knockdowns",
+      "count": 4,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 items",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 codex",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 life",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 collection",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 report",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 save",
+      "count": 6,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 dogs",
+      "count": 21,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 meetingRecords",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 timeQuestion",
+      "count": 4,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 resetConfirm",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 clearConfirm",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 mode:anniversary",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 debug",
+      "count": 39,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 HUD empty",
+      "count": 10,
+      "minGap": 8,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 HUD held",
+      "count": 12,
+      "minGap": 8,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "390 HUD held-choir",
+      "count": 13,
+      "minGap": 8,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 start",
+      "count": 2,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 pause",
+      "count": 17,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 missions",
+      "count": 27,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 calendar",
+      "count": 6,
+      "minGap": 66.796875,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 settings",
+      "count": 3,
+      "minGap": 18,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 help",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 actions",
+      "count": 5,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 shop",
+      "count": 10,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 map",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 knockdowns",
+      "count": 4,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 items",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 codex",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 life",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 collection",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 report",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 save",
+      "count": 6,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 dogs",
+      "count": 21,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 meetingRecords",
+      "count": 1,
+      "minGap": null,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 timeQuestion",
+      "count": 4,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 resetConfirm",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 clearConfirm",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 mode:anniversary",
+      "count": 3,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 debug",
+      "count": 39,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 HUD empty",
+      "count": 10,
+      "minGap": 8,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 HUD held",
+      "count": 12,
+      "minGap": 8,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 HUD held-choir",
+      "count": 13,
+      "minGap": 8,
+      "bad": [],
+      "overflow": false
+    },
+    {
+      "label": "320 sound test",
+      "count": 50,
+      "minGap": 12,
+      "bad": [],
+      "overflow": false
+    }
+  ],
+  "violations": [],
+  "touchCancel": true,
+  "keyboardAnswer": true,
+  "errors": [],
+  "limitations": [
+    "Chromium desktop/touch viewport emulation, not physical phones or Safari."
+  ]
+}
