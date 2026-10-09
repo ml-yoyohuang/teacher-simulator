@@ -9,3 +9,5 @@
 ![手機介面](tutorial-assets/hud-mobile.png)
 ![校事會議](tutorial-assets/meeting.png)
 ![校狗卡片](tutorial-assets/dog-card.png)
+
+正式發布：b215143已部署，Pages流程37921896323成功（遊戲規則測試、建置、分享圖與音樂檢查通過）。公開站三種尺寸共9次圖片驗證通過，公開PNG的SHA-256與本次重拍原圖一致，無頁面例外；見artifacts/tutorial-images-production-qa.json。
