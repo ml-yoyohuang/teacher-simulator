@@ -26,8 +26,8 @@ for(const sound of SOUND_EFFECTS){
  await page.locator(`[data-sfx="${sound.id}"]`).click();
  await page.waitForFunction(n=>(window as any).__notes.length>n,before);
  const notes=await page.evaluate(n=>(window as any).__notes.slice(n),before);
- assert.equal(notes.length,sound.event==='missionComplete'?3:1,sound.id);
- assert.ok(Math.abs(notes[0].frequency-sound.frequency)<.02,sound.id);
+ assert.equal(notes.length,sound.event==='missionComplete'?3:sound.event==='CombatResolved'?2:1,sound.id);
+ assert.ok(Math.abs(notes[0].frequency-(sound.event==='CombatResolved'?210:sound.frequency))<.02,sound.id);
  assert.ok(notes.every(n=>n.contextState==='running'),sound.id);
  sounds.push({id:sound.id,notes,status:'pass'});
 }

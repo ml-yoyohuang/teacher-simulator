@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-23",
+  "status": "pass",
+  "browser": "141.0.7390.37",
+  "checks": [
+    "手機觸控揮打真正命中：傷害、浮字、光圈、鏡頭、合成命中音各觸發一次",
+    "空揮不產生命中回饋",
+    "減少動畫關閉鏡頭震動，但保留傷害文字和音效",
+    "場景重置清除暫存效果"
+  ],
+  "hit": {
+    "hp": 90,
+    "damage": 10,
+    "labels": "命中 −10",
+    "impacts": 1,
+    "shakeUntil": 0.59,
+    "impactUntil": 0.6,
+    "soundCount": 1,
+    "voiceCount": 2
+  },
+  "reduced": {
+    "shake": {
+      "x": 0,
+      "z": 0
+    },
+    "labels": "命中 −10",
+    "soundCount": 2
+  },
+  "errors": [],
+  "limitations": [
+    "Chromium 的手機觸控模擬；未在實體手機與 Safari 量測。",
+    "音效確認經遊戲 Web Audio 引擎排程，主觀聽感仍需人工試聽。"
+  ]
+}

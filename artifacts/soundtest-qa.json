@@ -20,7 +20,7 @@
         {
           "frequency": 740,
           "type": "sine",
-          "time": 0.032,
+          "time": 0.010666666666666666,
           "contextState": "running"
         }
       ],
@@ -32,7 +32,7 @@
         {
           "frequency": 420,
           "type": "sine",
-          "time": 0.064,
+          "time": 0.048,
           "contextState": "running"
         }
       ],
@@ -44,7 +44,7 @@
         {
           "frequency": 780,
           "type": "sine",
-          "time": 0.10133333333333333,
+          "time": 0.08,
           "contextState": "running"
         }
       ],
@@ -56,7 +56,7 @@
         {
           "frequency": 640,
           "type": "sine",
-          "time": 0.13333333333333333,
+          "time": 0.112,
           "contextState": "running"
         }
       ],
@@ -68,7 +68,7 @@
         {
           "frequency": 300,
           "type": "sine",
-          "time": 0.16533333333333333,
+          "time": 0.144,
           "contextState": "running"
         }
       ],
@@ -80,7 +80,7 @@
         {
           "frequency": 261.63,
           "type": "sine",
-          "time": 0.19733333333333333,
+          "time": 0.18133333333333335,
           "contextState": "running"
         }
       ],
@@ -92,7 +92,7 @@
         {
           "frequency": 180,
           "type": "sine",
-          "time": 0.23466666666666666,
+          "time": 0.21333333333333335,
           "contextState": "running"
         }
       ],
@@ -104,7 +104,7 @@
         {
           "frequency": 260,
           "type": "sine",
-          "time": 0.26666666666666666,
+          "time": 0.24533333333333332,
           "contextState": "running"
         }
       ],
@@ -116,7 +116,7 @@
         {
           "frequency": 120,
           "type": "sine",
-          "time": 0.2986666666666667,
+          "time": 0.2773333333333333,
           "contextState": "running"
         }
       ],
@@ -128,7 +128,7 @@
         {
           "frequency": 240,
           "type": "triangle",
-          "time": 0.336,
+          "time": 0.31466666666666665,
           "contextState": "running"
         }
       ],
@@ -138,9 +138,15 @@
       "id": "CombatResolved",
       "notes": [
         {
-          "frequency": 180,
-          "type": "sine",
-          "time": 0.368,
+          "frequency": 210,
+          "type": "triangle",
+          "time": 0.3466666666666667,
+          "contextState": "running"
+        },
+        {
+          "frequency": 850,
+          "type": "sawtooth",
+          "time": 0.3466666666666667,
           "contextState": "running"
         }
       ],
@@ -152,7 +158,7 @@
         {
           "frequency": 110,
           "type": "sine",
-          "time": 0.4,
+          "time": 0.37866666666666665,
           "contextState": "running"
         }
       ],
@@ -164,7 +170,7 @@
         {
           "frequency": 360,
           "type": "sine",
-          "time": 0.432,
+          "time": 0.4106666666666667,
           "contextState": "running"
         }
       ],
@@ -176,7 +182,7 @@
         {
           "frequency": 150,
           "type": "sine",
-          "time": 0.464,
+          "time": 0.448,
           "contextState": "running"
         }
       ],
@@ -188,7 +194,7 @@
         {
           "frequency": 580,
           "type": "sine",
-          "time": 0.5013333333333333,
+          "time": 0.48,
           "contextState": "running"
         }
       ],
@@ -200,7 +206,7 @@
         {
           "frequency": 300,
           "type": "sine",
-          "time": 0.5333333333333333,
+          "time": 0.512,
           "contextState": "running"
         }
       ],
@@ -212,7 +218,7 @@
         {
           "frequency": 90,
           "type": "triangle",
-          "time": 0.5653333333333334,
+          "time": 0.5493333333333333,
           "contextState": "running"
         }
       ],
@@ -224,7 +230,7 @@
         {
           "frequency": 440,
           "type": "sine",
-          "time": 0.5973333333333334,
+          "time": 0.5813333333333334,
           "contextState": "running"
         }
       ],
@@ -236,7 +242,7 @@
         {
           "frequency": 330,
           "type": "sine",
-          "time": 0.6346666666666667,
+          "time": 0.6133333333333333,
           "contextState": "running"
         }
       ],
@@ -248,7 +254,7 @@
         {
           "frequency": 680,
           "type": "sine",
-          "time": 0.6666666666666666,
+          "time": 0.6453333333333333,
           "contextState": "running"
         }
       ],
@@ -260,7 +266,7 @@
         {
           "frequency": 220,
           "type": "sine",
-          "time": 0.6986666666666667,
+          "time": 0.6773333333333333,
           "contextState": "running"
         }
       ],
@@ -272,7 +278,7 @@
         {
           "frequency": 160,
           "type": "sine",
-          "time": 0.736,
+          "time": 0.7146666666666667,
           "contextState": "running"
         }
       ],
@@ -284,7 +290,7 @@
         {
           "frequency": 520,
           "type": "sine",
-          "time": 0.768,
+          "time": 0.7466666666666667,
           "contextState": "running"
         }
       ],
@@ -296,7 +302,7 @@
         {
           "frequency": 520,
           "type": "sine",
-          "time": 0.8,
+          "time": 0.7786666666666666,
           "contextState": "running"
         }
       ],
@@ -308,19 +314,19 @@
         {
           "frequency": 784,
           "type": "sine",
-          "time": 0.832,
+          "time": 0.816,
           "contextState": "running"
         },
         {
           "frequency": 980,
           "type": "sine",
-          "time": 0.952,
+          "time": 0.9359999999999999,
           "contextState": "running"
         },
         {
           "frequency": 1176,
           "type": "sine",
-          "time": 1.072,
+          "time": 1.056,
           "contextState": "running"
         }
       ],
@@ -332,7 +338,7 @@
         {
           "frequency": 520,
           "type": "sine",
-          "time": 0.864,
+          "time": 0.848,
           "contextState": "running"
         }
       ],
@@ -344,7 +350,7 @@
         {
           "frequency": 740,
           "type": "sine",
-          "time": 0.9013333333333333,
+          "time": 0.88,
           "contextState": "running"
         }
       ],
@@ -356,7 +362,7 @@
         {
           "frequency": 650,
           "type": "sine",
-          "time": 0.9333333333333333,
+          "time": 0.912,
           "contextState": "running"
         }
       ],
@@ -368,7 +374,7 @@
         {
           "frequency": 420,
           "type": "sine",
-          "time": 0.9653333333333334,
+          "time": 0.9493333333333334,
           "contextState": "running"
         }
       ],
@@ -380,7 +386,7 @@
         {
           "frequency": 260,
           "type": "sine",
-          "time": 1.0026666666666666,
+          "time": 0.9813333333333333,
           "contextState": "running"
         }
       ],
@@ -392,7 +398,7 @@
         {
           "frequency": 800,
           "type": "sine",
-          "time": 1.0346666666666666,
+          "time": 1.0133333333333334,
           "contextState": "running"
         }
       ],
@@ -404,7 +410,7 @@
         {
           "frequency": 540,
           "type": "sine",
-          "time": 1.0666666666666667,
+          "time": 1.0453333333333332,
           "contextState": "running"
         }
       ],
@@ -416,7 +422,7 @@
         {
           "frequency": 900,
           "type": "sine",
-          "time": 1.0986666666666667,
+          "time": 1.0826666666666667,
           "contextState": "running"
         }
       ],
@@ -428,7 +434,7 @@
         {
           "frequency": 1200,
           "type": "sine",
-          "time": 1.1306666666666667,
+          "time": 1.1146666666666667,
           "contextState": "running"
         }
       ],
@@ -440,7 +446,7 @@
         {
           "frequency": 660,
           "type": "sine",
-          "time": 1.168,
+          "time": 1.152,
           "contextState": "running"
         }
       ],
@@ -452,7 +458,7 @@
         {
           "frequency": 440,
           "type": "sine",
-          "time": 1.2,
+          "time": 1.184,
           "contextState": "running"
         }
       ],
@@ -464,7 +470,7 @@
         {
           "frequency": 587,
           "type": "sine",
-          "time": 1.232,
+          "time": 1.216,
           "contextState": "running"
         }
       ],
@@ -476,7 +482,7 @@
         {
           "frequency": 1320,
           "type": "sine",
-          "time": 1.2693333333333334,
+          "time": 1.248,
           "contextState": "running"
         }
       ],
@@ -488,7 +494,7 @@
         {
           "frequency": 320,
           "type": "sine",
-          "time": 1.3013333333333332,
+          "time": 1.28,
           "contextState": "running"
         }
       ],
@@ -500,7 +506,7 @@
         {
           "frequency": 180,
           "type": "sine",
-          "time": 1.3333333333333333,
+          "time": 1.312,
           "contextState": "running"
         }
       ],

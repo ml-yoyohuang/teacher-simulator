@@ -28,7 +28,7 @@ document.querySelectorAll<HTMLButtonElement>('.sound').forEach(button=>button.ad
   if(track.theme==='choir')stopTimer=setTimeout(()=>{stop();status.textContent='合唱曲段播放完畢'},24050);
  }else{
   const sound=SOUND_EFFECTS.find(s=>s.id===button.dataset.sfx)!;
-  audio.lastSfx.clear();audio.event({type:sound.event,data:{item:sound.instrument}} as Parameters<AudioEngine['event']>[0]);status.textContent=`正在試聽：${sound.label}`;
+  audio.lastSfx.clear();audio.event({type:sound.event,actorId:game.player.id,sourceId:'attack:preview',data:{item:sound.instrument}} as Parameters<AudioEngine['event']>[0]);status.textContent=`正在試聽：${sound.label}`;
   stopTimer=setTimeout(()=>{button.setAttribute('aria-pressed','false');status.textContent=`試聽完畢：${sound.label}`},sound.event==='missionComplete'?650:200);
  }
 }));
