@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-24",
+  "status": "pass",
+  "normal": {
+    "x": -23.5,
+    "z": -16,
+    "home": {
+      "x": -23.5,
+      "z": -16
+    },
+    "identity": true
+  },
+  "chair": {
+    "visual": -23.5,
+    "collision": -23.5
+  },
+  "modes": {
+    "normal": -23.2,
+    "anniversary": 4,
+    "items": true
+  },
+  "checks": [
+    "home and pause menu expose the editor; 5 activity scenes and 12 zones selectable; map pointer drag and undo work",
+    "real 3D editor preview renders",
+    "item edit survives reload and changes real game original item home without duplicating identity; furniture visual and collider both move",
+    "activity layouts remain independent",
+    "export contains exact edits; valid import applies to game and invalid import is rejected",
+    "390px mobile layout has no horizontal overflow",
+    "restore one item and save returns game to baseline; blocking the player entry is rejected"
+  ],
+  "errors": [],
+  "limitations": [
+    "Physical phone and Safari not tested.",
+    "Editing is local to this browser; sharing an exported configuration requires repository integration."
+  ]
+}

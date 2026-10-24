@@ -1,9 +1,10 @@
 import {Vec,locations} from './data';
+import {applyScenePositions,readSceneEdits,ScenePosition,SceneMode} from './scene-edits';
 export type Furniture={id:string,type:string,zone:string,x:number,z:number,w:number,d:number,h:number,angle:number,solid:boolean,top?:number};
 export type Placement=Vec&{y:number,angle?:number};
 export type CampusLayout={furniture:Furniture[],placements:Record<string,Placement>,propPositions:Record<string,Vec>,signs:{text:string,x:number,z:number,y?:number,size?:number}[]};
 export const entrances:Record<string,Vec>={classroom:{x:-13,z:-16},music_room:{x:-13,z:-1},staff_room:{x:13,z:-16},principal_room:{x:13,z:-1},infirmary:{x:0,z:-13},corridor:{x:0,z:-11},courtyard:{x:0,z:0},playground:{x:-12,z:16},gate:{x:0,z:18},co_op:{x:14,z:12},toilet_corner:{x:-9,z:-15.4},storage_corner:{x:9,z:-15.4}};
-export function campusLayout(mode='normal'):CampusLayout{
+export function campusLayout(mode='normal',positions?:Record<string,ScenePosition>|null):CampusLayout{
  const furniture:Furniture[]=[],placements:Record<string,Placement>={},propPositions:Record<string,Vec>={},signs:CampusLayout['signs']=[];
  const f=(zone:string,type:string,x:number,z:number,w=1.6,d=.8,h=1,solid=true,top?:number,angle=0)=>{const v={id:`scene:${zone}:${furniture.filter(v=>v.zone===zone).length}`,type,zone,x,z,w,d,h,solid,top,angle};furniture.push(v);return v};
  const put=(id:string,x:number,z:number,y=0,angle=0)=>placements[id]={x,z,y,angle};
@@ -65,5 +66,6 @@ export function campusLayout(mode='normal'):CampusLayout{
  if(mode==='anniversary'){f('courtyard','bunting',0,9,10,.1,2.2,false);sign('校慶攤位',0,9,.3,3);}
  if(mode==='parent_day'){sign('家長會談區',-17,-18,1.6,2.5);}
  if(mode==='final_exam')put('exam_papers:0',locations.podium.x,locations.podium.z,1.06);
- return {furniture,placements,propPositions,signs};
+ const layout={furniture,placements,propPositions,signs};
+ return applyScenePositions(layout,positions===undefined?readSceneEdits().modes[mode as SceneMode]:positions||undefined);
 }

@@ -158,3 +158,7 @@ HUD 顯示家長累計及會議抽選條件；散場重新累計。校狗實際�
 ## 2026-10-09 說明書截圖更新
 
 重新擷取目前手機手持課本、校事會議與校狗卡片三張真實遊戲畫面，同步修正會議操作鍵為12px間距。建置使用新圖片指紋檔名，檢查見[TUTORIAL_SCREENSHOTS_QA_REPORT.md](TUTORIAL_SCREENSHOTS_QA_REPORT.md)。
+
+## 2026-10-24 校園佈置編輯器
+
+`editor.html` 提供五種活動、12 個校園區域的物件位置編輯：平面圖拖曳、數值輸入、實際 3D 預覽、復原／重做、儲存、匯入／匯出。首頁與暫停選單均可進入。個人調整會套用到同瀏覽器遊戲；要讓所有玩家看到，需匯出 JSON 並納入版本發布。編輯範圍與保護區域見 [SCENE_EDITOR_GUIDE.md](SCENE_EDITOR_GUIDE.md)，實際驗收與畫面見 [SCENE_EDITOR_QA_REPORT.md](SCENE_EDITOR_QA_REPORT.md)。
